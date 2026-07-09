@@ -1,0 +1,1548 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado do Reino de Vulkarys - Lojas de Ignis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #0d0705;
+            background-image: radial-gradient(circle at 50% 0%, #2c1207 0%, #0d0705 80%);
+            color: #f3f4f6;
+            font-family: 'Cinzel', 'Segoe UI', serif;
+        }
+        .glass-card {
+            background: rgba(28, 14, 8, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(249, 115, 22, 0.25);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.7);
+        }
+        .item-row {
+            transition: all 0.2s ease-in-out;
+            cursor: pointer;
+        }
+        .item-row:hover {
+            background-color: rgba(249, 115, 22, 0.15);
+            border-left: 4px solid #f97316;
+        }
+        .details-box {
+            display: none;
+            animation: fadeIn 0.3s ease-out forwards;
+            background: rgba(15, 7, 4, 0.9);
+            border-left: 3px solid #ea580c;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-5px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .badge-class {
+            font-size: 0.75rem;
+            padding: 0.125rem 0.5rem;
+            border-radius: 9999px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="min-h-screen p-4 md:p-8">
+
+    <!-- Header Section -->
+    <header class="text-center max-w-4xl mx-auto mb-12">
+        <h1 class="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-orange-500 to-amber-400 mb-4 tracking-wider uppercase">
+            Ignis: A Capital do Fogo
+        </h1>
+        <p class="text-orange-200/80 text-base md:text-lg leading-relaxed">
+            Bem-vindo ao centro comercial de Vulkarys, paragem obrigatória de gladiadores e campeões da Grande Arena. 
+            Abaixo encontram-se os inventários detalhados e interativos das guildas comerciais locais. 
+            <span class="text-amber-400 font-semibold block mt-2">Clique em qualquer item para expandir instantaneamente os dados oficiais de regras (D&D 5e/5.5 SRD).</span>
+        </p>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="max-w-7xl mx-auto space-y-16">
+
+        <!-- SECTION 1: FERREIROS -->
+        <section>
+            <div class="flex items-center gap-3 border-b border-orange-500/30 pb-3 mb-6">
+                <div class="w-3 h-8 bg-orange-600 rounded"></div>
+                <h2 class="text-3xl font-bold text-orange-400 tracking-wide uppercase">Forjas e Arsenais de Batalha</h2>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                
+                <!-- LOJA 1: A Bigorna Escaldante -->
+                <div class="glass-card rounded-xl p-5 flex flex-col justify-between">
+                    <div>
+                        <div class="mb-4">
+                            <h3 class="text-xl font-bold text-orange-300">1. A Bigorna Escaldante</h3>
+                            <span class="text-xs text-gray-400 font-mono">Proprietário: Mestre Forjador Thoradin Fireforge</span>
+                            <p class="text-xs text-gray-300 mt-1">Especializado em armaduras pesadas e armamentos tradicionais maciços.</p>
+                        </div>
+                        <div class="overflow-hidden rounded-lg border border-orange-900/40">
+                            <table class="w-full text-left border-collapse text-sm">
+                                <thead class="bg-orange-950/60 text-orange-200 text-xs uppercase font-mono tracking-wider">
+                                    <tr>
+                                        <th class="p-3">Equipamento</th>
+                                        <th class="p-3 text-right">Preço (PO)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- Items -->
+                                    <tr class="item-row border-b border-orange-950/40 bg-orange-950/10 text-yellow-400 font-semibold" onclick="toggleDetails('row-plate-adamantine')">
+                                        <td class="p-3">🛡️ Armadura Adamantina (Placas) <span class="badge-class bg-yellow-600 text-black text-[10px] ml-1">Paladino</span></td>
+                                        <td class="p-3 text-right font-mono">1.900</td>
+                                    </tr>
+                                    <tr id="row-plate-adamantine" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Armadura Pesada (Incomum) | <strong>Defesa:</strong> CA 18 (Requer Força 15, Desvantagem em Furtividade).<br><strong>Propriedades:</strong> Esta armadura é reforçada com adamantine, uma das substâncias mais duras conhecidas. Enquanto você a estiver vestindo, qualquer ataque crítico desferido contra você torna-se um ataque normal.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 bg-orange-950/10 text-yellow-400 font-semibold" onclick="toggleDetails('row-vicious-gs')">
+                                        <td class="p-3">⚔️ Montante Vicioso <span class="badge-class bg-yellow-600 text-black text-[10px] ml-1">Paladino / BH</span></td>
+                                        <td class="p-3 text-right font-mono">400</td>
+                                    </tr>
+                                    <tr id="row-vicious-gs" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Arma Marcial de Combate Corpo a Corpo (Rara) | <strong>Dano:</strong> 2d6 cortante (Pesada, duas mãos).<br><strong>Propriedades:</strong> Quando você rola um 20 natural em uma jogada de ataque com esta arma mágica, o alvo sofre um dano extra de 7 pontos do mesmo tipo do dano da arma.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-100/90" onclick="toggleDetails('row-plate-normal')">
+                                        <td class="p-3">Armadura de Placas (Mundana)</td>
+                                        <td class="p-3 text-right font-mono">1.500</td>
+                                    </tr>
+                                    <tr id="row-plate-normal" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Armadura Pesada | <strong>Defesa:</strong> CA 18 (Requer Força 15, Desvantagem em Furtividade).<br><strong>Descrição:</strong> Consiste em placas de metal moldadas para cobrir todo o corpo. Inclui manoplas, botas de couro pesado e um elmo com viseira.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-100/90" onclick="toggleDetails('row-splint-normal')">
+                                        <td class="p-3">Cota de Talas (Splint)</td>
+                                        <td class="p-3 text-right font-mono">200</td>
+                                    </tr>
+                                    <tr id="row-splint-normal" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Armadura Pesada | <strong>Defesa:</strong> CA 17 (Requer Força 15, Desvantagem em Furtividade).<br><strong>Descrição:</strong> Feita de tiras verticais de metal rebitadas a uma base de couro que é vestida sobre uma proteção de malha de metal.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-100/90" onclick="toggleDetails('row-chain-mail')">
+                                        <td class="p-3">Cota de Malha (Chain Mail)</td>
+                                        <td class="p-3 text-right font-mono">75</td>
+                                    </tr>
+                                    <tr id="row-chain-mail" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Armadura Pesada | <strong>Defesa:</strong> CA 16 (Requer Força 13, Desvantagem em Furtividade).<br><strong>Descrição:</strong> Feita de anéis de metal interligados. Inclui uma camada de tecido acolchoado por baixo para evitar escoriações.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-100/90" onclick="toggleDetails('row-ring-mail')">
+                                        <td class="p-3">Malha de Anéis (Ring Mail)</td>
+                                        <td class="p-3 text-right font-mono">30</td>
+                                    </tr>
+                                    <tr id="row-ring-mail" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Armadura Pesada | <strong>Defesa:</strong> CA 14 (Sem requerimento de Força, Desvantagem em Furtividade).<br><strong>Descrição:</strong> Armadura de couro com anéis de metal pesados costurados diretamente no tecido externo.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-100/90" onclick="toggleDetails('row-breastplate')">
+                                        <td class="p-3">Peitoral de Aço (Breastplate)</td>
+                                        <td class="p-3 text-right font-mono">400</td>
+                                    </tr>
+                                    <tr id="row-breastplate" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Armadura Média | <strong>Defesa:</strong> CA 14 + Modificador de Destreza (Máximo +2).<br><strong>Descrição:</strong> Um peitoral de metal ajustado com protetores de ombro de couro. Deixa as pernas e braços livres para máxima agilidade.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-100/90" onclick="toggleDetails('row-steel-shield')">
+                                        <td class="p-3">Escudo de Aço Pesado</td>
+                                        <td class="p-3 text-right font-mono">10</td>
+                                    </tr>
+                                    <tr id="row-steel-shield" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Escudo | <strong>Defesa:</strong> CA +2.<br><strong>Descrição:</strong> Um escudo metálico maciço com o brasão gravado da guilda dos mineradores de Ignis. Empunhar requer uma mão livre.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-100/90" onclick="toggleDetails('row-greatsword')">
+                                        <td class="p-3">Montante (Mundano)</td>
+                                        <td class="p-3 text-right font-mono">50</td>
+                                    </tr>
+                                    <tr id="row-greatsword" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Arma Marcial Corpo a Corpo | <strong>Dano:</strong> 2d6 cortante (Pesada, duas mãos).<br><strong>Descrição:</strong> Uma espada massiva de duas mãos, perfeitamente balanceada com contra-peso de bronze.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-100/90" onclick="toggleDetails('row-greataxe')">
+                                        <td class="p-3">Machado Grande</td>
+                                        <td class="p-3 text-right font-mono">30</td>
+                                    </tr>
+                                    <tr id="row-greataxe" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Arma Marcial Corpo a Corpo | <strong>Dano:</strong> 1d12 cortante (Pesada, duas mãos).<br><strong>Descrição:</strong> Um machado de duas mãos com lâmina dupla, forjado em ferro escurecido.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-100/90" onclick="toggleDetails('row-battleaxe-1')">
+                                        <td class="p-3">Machado de Batalha</td>
+                                        <td class="p-3 text-right font-mono">10</td>
+                                    </tr>
+                                    <tr id="row-battleaxe-1" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Arma Marcial Corpo a Corpo | <strong>Dano:</strong> 1d8 cortante (Versátil: 1d10 se usado com duas mãos).<br><strong>Descrição:</strong> Machado de uma mão clássico, cabo reforçado com tiras de couro e anéis de metal.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-100/90" onclick="toggleDetails('row-warhammer')">
+                                        <td class="p-3">Martelo de Guerra</td>
+                                        <td class="p-3 text-right font-mono">15</td>
+                                    </tr>
+                                    <tr id="warhammer" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Arma Marcial Corpo a Corpo | <strong>Dano:</strong> 1d8 concussão (Versátil: 1d10 se usado com duas mãos).<br><strong>Descrição:</strong> Cabeça de aço temperado com bico perfurante no lado oposto para quebrar armaduras de placas.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-100/90" onclick="toggleDetails('row-halberd')">
+                                        <td class="p-3">Alabarda</td>
+                                        <td class="p-3 text-right font-mono">20</td>
+                                    </tr>
+                                    <tr id="row-halberd" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Arma Marcial Corpo a Corpo | <strong>Dano:</strong> 1d10 cortante (Pesada, Alcance [Reach], duas mãos).<br><strong>Descrição:</strong> Lâmina de machado montada em uma haste de 2 metros de comprimento. Aumenta seu alcance de ataque em 1,5m.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-100/90" onclick="toggleDetails('row-mace')">
+                                        <td class="p-3">Maça Comum</td>
+                                        <td class="p-3 text-right font-mono">5</td>
+                                    </tr>
+                                    <tr id="row-mace" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Arma Simples Corpo a Corpo | <strong>Dano:</strong> 1d6 concussão.<br><strong>Descrição:</strong> Uma arma simples com cabeça flangeada de ferro, ideal para clérigos ou combatentes que buscam quebrar ossos.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-100/90" onclick="toggleDetails('row-longsword')">
+                                        <td class="p-3">Espada Longa</td>
+                                        <td class="p-3 text-right font-mono">15</td>
+                                    </tr>
+                                    <tr id="row-longsword" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Arma Marcial Corpo a Corpo | <strong>Dano:</strong> 1d8 cortante (Versátil: 1d10).<br><strong>Descrição:</strong> A lâmina reta clássica de duas arestas, ideal tanto para estocadas quanto para cortes amplos.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-100/90" onclick="toggleDetails('row-spear')">
+                                        <td class="p-3">Lança de Arremesso</td>
+                                        <td class="p-3 text-right font-mono">1</td>
+                                    </tr>
+                                    <tr id="row-spear" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Arma Simples Corpo a Corpo / Distância | <strong>Dano:</strong> 1d6 perfurante (Versátil: 1d8. Distância: 6m/18m).<br><strong>Descrição:</strong> Uma haste curta com ponta de metal afiada, barata e altamente eficaz.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-100/90" onclick="toggleDetails('row-scale-mail')">
+                                        <td class="p-3">Cota de Escamas (Scale Mail)</td>
+                                        <td class="p-3 text-right font-mono">50</td>
+                                    </tr>
+                                    <tr id="row-scale-mail" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Armadura Média | <strong>Defesa:</strong> CA 14 + Modificador de Destreza (Máximo +2. Desvantagem em Furtividade).<br><strong>Descrição:</strong> Camadas de pequenas escamas de metal sobrepostas presas a uma jaqueta de couro resistente.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-100/90" onclick="toggleDetails('row-ammo-p1-b1')">
+                                        <td class="p-3">Munição +1 (10x Virotes de Besta)</td>
+                                        <td class="p-3 text-right font-mono">250</td>
+                                    </tr>
+                                    <tr id="row-ammo-p1-b1" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Munição Mágica (Incomum) | <strong>Efeito:</strong> Você ganha um bônus de +1 nas jogadas de ataque e dano feitas com esta munição mágica. Uma vez que atinge o alvo, perde suas propriedades mágicas.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-yellow-400 font-semibold" onclick="toggleDetails('row-shield-p1-b1')">
+                                        <td class="p-3">🛡️ Escudo +1 <span class="badge-class bg-yellow-600 text-black text-[10px] ml-1">Clérigo / Paladino / Druida</span></td>
+                                        <td class="p-3 text-right font-mono">1.510</td>
+                                    </tr>
+                                    <tr id="row-shield-p1-b1" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Escudo Mágico (Incomum) | <strong>Defesa:</strong> CA +3 (+2 do escudo básico e +1 do bônus mágico).<br><strong>Propriedades:</strong> Um escudo de ferro polido com runas de proteção ancestrais inscritas na borda interna. Não requer sintonização.</td></tr>
+
+                                    <tr class="item-row text-yellow-400 font-semibold" onclick="toggleDetails('row-baxe-p1')">
+                                        <td class="p-3">⚔️ Machado de Batalha +1 <span class="badge-class bg-yellow-600 text-black text-[10px] ml-1">Paladino</span></td>
+                                        <td class="p-3 text-right font-mono">1.010</td>
+                                    </tr>
+                                    <tr id="row-baxe-p1" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Arma Marcial Mágica (Incomum) | <strong>Dano:</strong> 1d8+1 cortante (Versátil 1d10+1).<br><strong>Propriedades:</strong> Garante um bônus de +1 em todas as jogadas de ataque e rolagens de dano feitas com este machado mágico. Conta como dano mágico para superar resistências.</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LOJA 2: Lâminas de Cinza -->
+                <div class="glass-card rounded-xl p-5 flex flex-col justify-between">
+                    <div>
+                        <div class="mb-4">
+                            <h3 class="text-xl font-bold text-orange-300">2. Lâminas de Cinza</h3>
+                            <span class="text-xs text-gray-400 font-mono">Proprietária: Elfa Silvestre Saryss Lyath</span>
+                            <p class="text-xs text-gray-300 mt-1">Especializada em armamentos leves, armas de Destreza (Acuidade) e furtividade.</p>
+                        </div>
+                        <div class="overflow-hidden rounded-lg border border-orange-900/40">
+                            <table class="w-full text-left border-collapse text-sm">
+                                <thead class="bg-orange-950/60 text-orange-200 text-xs uppercase font-mono tracking-wider">
+                                    <tr>
+                                        <th class="p-3">Equipamento</th>
+                                        <th class="p-3 text-right">Preço (PO)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="item-row border-b border-orange-950/40 bg-orange-950/10 text-yellow-400 font-semibold" onclick="toggleDetails('row-mithral-chain')">
+                                        <td class="p-3">🛡️ Armadura de Mithral (Camisão) <span class="badge-class bg-yellow-600 text-black text-[10px] ml-1">BH / Druida</span></td>
+                                        <td class="p-3 text-right font-mono">850</td>
+                                    </tr>
+                                    <tr id="row-mithral-chain" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Armadura Média (Incomum) | <strong>Defesa:</strong> CA 13 + Modificador de Destreza (Máximo +2).<br><strong>Propriedades:</strong> Sendo feita de mithral, esta armadura extremamente leve e maleável não impõe desvantagem em testes de Furtividade (Stealth) e remove qualquer requerimento de Força normal do tipo de armadura. Encaixa sob as vestes normais.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 bg-orange-950/10 text-yellow-400 font-semibold" onclick="toggleDetails('row-vicious-ss')">
+                                        <td class="p-3">⚔️ Espada Curta Viciosa <span class="badge-class bg-yellow-600 text-black text-[10px] ml-1">Blood Hunter</span></td>
+                                        <td class="p-3 text-right font-mono">360</td>
+                                    </tr>
+                                    <tr id="row-vicious-ss" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Arma Marcial Mágica (Rara) | <strong>Dano:</strong> 1d6 perfurante (Acuidade [Finesse], Leve [Light]).<br><strong>Propriedades:</strong> Perfeita para empunhadura dupla no Blood Hunter. Ao obter um 20 natural em seu dado de ataque, a lâmina vibra agressivamente aplicando 7 pontos extras de dano perfurante imediato contra o alvo.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-100/90" onclick="toggleDetails('row-javelin-lightning')">
+                                        <td class="p-3">⚡ Dardo Relampejante (Javelin) <span class="badge-class bg-yellow-600 text-black text-[10px] ml-1">Clérigo</span></td>
+                                        <td class="p-3 text-right font-mono">1.500</td>
+                                    </tr>
+                                    <tr id="row-javelin-lightning" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Arma Marcial Mágica (Incomum) | <strong>Dano:</strong> 1d6 perfurante (Arremesso 9m/36m).<br><strong>Propriedades (Uso Único p/ Dia):</strong> Quando arremessada e pronunciada a palavra de comando, ela se transforma em um raio elétrico. Cada criatura em uma linha reta de 1,5m de largura por 36m de comprimento entre você e o alvo deve fazer um teste de salvamento de Destreza CD 13, sofrendo 4d6 de dano elétrico em uma falha (metade se passar). O alvo original sofre o dano normal do dardo mais 4d6 de dano elétrico se for atingido. Retorna à forma normal após o ataque. Recarrega totalmente ao amanhecer.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-100/90" onclick="toggleDetails('row-rapier-normal')">
+                                        <td class="p-3">Rapieira Elegante</td>
+                                        <td class="p-3 text-right font-mono">25</td>
+                                    </tr>
+                                    <tr id="row-rapier-normal" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Arma Marcial Corpo a Corpo | <strong>Dano:</strong> 1d8 perfurante (Acuidade [Finesse]).<br><strong>Descrição:</strong> Uma lâmina de perfuração longa e fina com uma guarda em cesto decorada com fios de cobre.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-100/90" onclick="toggleDetails('row-shortsword-normal')">
+                                        <td class="p-3">Espada Curta (Mundana)</td>
+                                        <td class="p-3 text-right font-mono">10</td>
+                                    </tr>
+                                    <tr id="row-shortsword-normal" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Arma Marcial Corpo a Corpo | <strong>Dano:</strong> 1d6 perfurante (Acuidade, Leve).<br><strong>Descrição:</strong> Espada leve de perfuração rápida, balanceada para combate com duas armas.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-100/90" onclick="toggleDetails('row-dagger-normal')">
+                                        <td class="p-3">Adaga de Aço Negro</td>
+                                        <td class="p-3 text-right font-mono">2</td>
+                                    </tr>
+                                    <tr id="row-dagger-normal" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Arma Simples Corpo a Corpo | <strong>Dano:</strong> 1d4 perfurante (Acuidade, Leve, Arremesso 6m/18m).<br><strong>Descrição:</strong> Lâmina compacta facilmente ocultada nas botas ou mangas de couro.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-100/90" onclick="toggleDetails('row-shortbow')">
+                                        <td class="p-3">Arco Curto de Teixo</td>
+                                        <td class="p-3 text-right font-mono">25</td>
+                                    </tr>
+                                    <tr id="row-shortbow" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Arma Simples à Distância | <strong>Dano:</strong> 1d6 perfurante (Munição, Distância 24m/96m, Duas Mãos).<br><strong>Descrição:</strong> Arco leve e compacto feito com madeira flexível, ideal para skirmishes rápidos.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-100/90" onclick="toggleDetails('row-longbow')">
+                                        <td class="p-3">Arco Longo Recurvado</td>
+                                        <td class="p-3 text-right font-mono">50</td>
+                                    </tr>
+                                    <tr id="row-longbow" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Arma Marcial à Distância | <strong>Dano:</strong> 1d8 perfurante (Munição, Distância 45m/180m, Pesada, Duas Mãos).<br><strong>Descrição:</strong> Um arco alto com forte tração, capaz de furar couros espessos a grandes distâncias.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-100/90" onclick="toggleDetails('row-light-xbow')">
+                                        <td class="p-3">Besta Leve Mecânica</td>
+                                        <td class="p-3 text-right font-mono">25</td>
+                                    </tr>
+                                    <tr id="row-light-xbow" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Arma Simples à Distância | <strong>Dano:</strong> 1d8 perfurante (Munição, Distância 24m/96m, Recarga [Loading], Duas Mãos).<br><strong>Descrição:</strong> Besta de gatilho simples com coronha de madeira leve e arco de aço.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-100/90" onclick="toggleDetails('row-leather-armor')">
+                                        <td class="p-3">Armadura de Couro Fervido</td>
+                                        <td class="p-3 text-right font-mono">10</td>
+                                    </tr>
+                                    <tr id="row-leather-armor" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Armadura Leve | <strong>Defesa:</strong> CA 11 + Modificador de Destreza.<br><strong>Descrição:</strong> Feita de tiras de couro fervidas em óleo para endurecer sem perder a flexibilidade básica.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-100/90" onclick="toggleDetails('row-studded-leather')">
+                                        <td class="p-3">Couro Batido (Studded Leather)</td>
+                                        <td class="p-3 text-right font-mono">45</td>
+                                    </tr>
+                                    <tr id="row-studded-leather" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Armadura Leve | <strong>Defesa:</strong> CA 12 + Modificador de Destreza.<br><strong>Descrição:</strong> Couro flexível reforçado internamente com pequenos rebites e tachas metálicas justapostas.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-100/90" onclick="toggleDetails('row-chain-shirt')">
+                                        <td class="p-3">Camisão de Malha (Chain Shirt)</td>
+                                        <td class="p-3 text-right font-mono">50</td>
+                                    </tr>
+                                    <tr id="row-chain-shirt" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Armadura Média | <strong>Defesa:</strong> CA 13 + Modificador de Destreza (Máximo +2).<br><strong>Descrição:</strong> Uma malha fina de anéis metálicos que cobre o tronco protegendo órgãos vitais. Silenciosa sob casacos.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-100/90" onclick="toggleDetails('row-scimitar')">
+                                        <td class="p-3">Cimitarra de Deserto</td>
+                                        <td class="p-3 text-right font-mono">25</td>
+                                    </tr>
+                                    <tr id="row-scimitar" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Arma Marcial Corpo a Corpo | <strong>Dano:</strong> 1d6 cortante (Acuidade [Finesse], Leve [Light]).<br><strong>Descrição:</strong> Lâmina curva de gume único, projetada para cortes em arco e golpes fluidos em movimento.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-100/90" onclick="toggleDetails('row-darts')">
+                                        <td class="p-3">Dardos Equilibrados (Kit com 10)</td>
+                                        <td class="p-3 text-right font-mono">5</td>
+                                    </tr>
+                                    <tr id="row-darts" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Arma Simples à Distância | <strong>Dano:</strong> 1d4 perfurante (Acuidade, Arremesso 6m/18m).<br><strong>Descrição:</strong> Pequenas estacas metálicas pesadas na ponta e estabilizadas com penas de couro na cauda.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-100/90" onclick="toggleDetails('row-blowgun')">
+                                        <td class="p-3">Zarabatana de Bambu Vulcânico</td>
+                                        <td class="p-3 text-right font-mono">10</td>
+                                    </tr>
+                                    <tr id="row-blowgun" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Arma Marcial à Distância | <strong>Dano:</strong> 1 perfurante (Munição, Distância 7.5m/30m, Recarga).<br><strong>Descrição:</strong> Um cano longo oco usado para disparar dardos minúsculos. Quase completamente silenciosa.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-100/90" onclick="toggleDetails('row-whip')">
+                                        <td class="p-3">Chicote de Couro Trançado</td>
+                                        <td class="p-3 text-right font-mono">2</td>
+                                    </tr>
+                                    <tr id="row-whip" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Arma Marcial Corpo a Corpo | <strong>Dano:</strong> 1d4 cortante (Acuidade, Alcance [Reach] de 3 metros).<br><strong>Descrição:</strong> Tiras de couro trançadas com ponta de metal farpada. Permite atacar sem se expor tanto.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-100/90" onclick="toggleDetails('row-net')">
+                                        <td class="p-3">Rede de Captura Farpada</td>
+                                        <td class="p-3 text-right font-mono">1</td>
+                                    </tr>
+                                    <tr id="row-net" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Arma Marcial Especial | <strong>Dano:</strong> Nenhum (Arremesso 1.5m/4.5m).<br><strong>Efeito:</strong> Uma criatura de tamanho Grande ou menor atingida por uma rede fica Restringida (Restrained) até se libertar. Teste de Força CD 10 ou 5 de dano cortante na rede destrói o item. Se você atacar com a rede, não pode fazer outros ataques no mesmo turno.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-100/90" onclick="toggleDetails('row-arrows-bag')">
+                                        <td class="p-3">Aljava com 20 Flechas Padrão</td>
+                                        <td class="p-3 text-right font-mono">1</td>
+                                    </tr>
+                                    <tr id="row-arrows-bag" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Equipamento / Munição | <strong>Descrição:</strong> Recipiente de couro rígido contendo 20 flechas de ponta de ferro cilíndrica.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-100/90" onclick="toggleDetails('row-ammo-v2-1')">
+                                        <td class="p-3">Munição +1 (10x Flechas Mágicas) (+10% variação)</td>
+                                        <td class="p-3 text-right font-mono">275</td>
+                                    </tr>
+                                    <tr id="row-ammo-v2-1" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Munição Mágica (Incomum) | <strong>Efeito:</strong> Concede +1 nas jogadas de ataque e dano com arco. A magia se dissipa permanentemente no impacto contra o alvo. Ponta brilha suavemente em laranja.</td></tr>
+
+                                    <tr class="item-row text-yellow-400 font-semibold" onclick="toggleDetails('row-rapier-p1')">
+                                        <td class="p-3">⚔️ Rapieira +1 <span class="badge-class bg-yellow-600 text-black text-[10px] ml-1">Blood Hunter</span></td>
+                                        <td class="p-3 text-right font-mono">1.025</td>
+                                    </tr>
+                                    <tr id="row-rapier-p1" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Arma Marcial Mágica (Incomum) | <strong>Dano:</strong> 1d8+1 perfurante (Acuidade).<br><strong>Propriedades:</strong> Forjada com ligas leves de minérios de Vulkarys, esta rapieira garante um bônus constante de +1 nos testes de acerto e rolagens de dano.</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LOJA 3: O Forjador de Campeões -->
+                <div class="glass-card rounded-xl p-5 flex flex-col justify-between">
+                    <div>
+                        <div class="mb-4">
+                            <h3 class="text-xl font-bold text-orange-300">3. O Forjador de Campeões</h3>
+                            <span class="text-xs text-gray-400 font-mono">Proprietário: Orc Gladiador Grakkar Grosh</span>
+                            <p class="text-xs text-gray-300 mt-1">Focado em excentricidades exóticas para a Arena de Gladiadores. Preços +20% inflacionados.</p>
+                        </div>
+                        <div class="overflow-hidden rounded-lg border border-orange-900/40">
+                            <table class="w-full text-left border-collapse text-sm">
+                                <thead class="bg-orange-950/60 text-orange-200 text-xs uppercase font-mono tracking-wider">
+                                    <tr>
+                                        <th class="p-3">Equipamento</th>
+                                        <th class="p-3 text-right">Preço (PO)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="item-row border-b border-orange-950/40 bg-orange-950/10 text-yellow-400 font-semibold" onclick="toggleDetails('row-adamantine-half')">
+                                        <td class="p-3">🛡️ Armadura Adamantina (Meia Armadura) <span class="badge-class bg-yellow-600 text-black text-[10px] ml-1">Clérigo</span></td>
+                                        <td class="p-3 text-right font-mono">1.500</td>
+                                    </tr>
+                                    <tr id="row-adamantine-half" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Armadura Média (Incomum) | <strong>Defesa:</strong> CA 15 + Modificador de Destreza (Máximo +2. Desvantagem em Furtividade).<br><strong>Propriedades:</strong> Forjada em placas de adamantine negro sobre cota de malha. Neutraliza o impacto devastador de golpes críticos sofridos, transformando-os em ataques normais comuns. Altamente recomendada para a linha de frente do Clérigo do Trovão.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-100/90" onclick="toggleDetails('row-trident-p1')">
+                                        <td class="p-3">🔱 Tridente +1 (Estilo Rede/Tridente)</td>
+                                        <td class="p-3 text-right font-mono">1.205</td>
+                                    </tr>
+                                    <tr id="row-trident-p1" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Arma Marcial Mágica (Incomum) | <strong>Dano:</strong> 1d6+1 perfurante (Versátil 1d8+1, Arremesso 20/60).<br><strong>Propriedades:</strong> Arma mágica clássica dos campeões marítimos da Arena. Concede +1 nas jogadas de ataque e dano.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-100/90" onclick="toggleDetails('row-shield-p3')">
+                                        <td class="p-3">Escudo +1 (Decoração Rúnica de Fogo) (+20% variação)</td>
+                                        <td class="p-3 text-right font-mono">1.812</td>
+                                    </tr>
+                                    <tr id="row-shield-p3" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Escudo Mágico (Incomum) | <strong>Defesa:</strong> CA +3 (+2 base, +1 mágico).<br><strong>Descrição:</strong> Um escudo metálico circular brasado com o símbolo de uma fênix. Adiciona +1 à sua CA além do escudo comum.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-100/90" onclick="toggleDetails('row-whip-vicious')">
+                                        <td class="p-3">Chicote Vicioso (Estilo Gladiador)</td>
+                                        <td class="p-3 text-right font-mono">422</td>
+                                    </tr>
+                                    <tr id="row-whip-vicious" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Arma Marcial Mágica (Rara) | <strong>Dano:</strong> 1d4 cortante (Acuidade, Alcance 3m).<br><strong>Propriedades:</strong> Um chicote de arame farpado. Se você rolar um 20 natural em seu teste de ataque, inflige 7 de dano cortante fixo extra na criatura.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-100/90" onclick="toggleDetails('row-trident-normal')">
+                                        <td class="p-3">Tridente de Gladiador (Mundano)</td>
+                                        <td class="p-3 text-right font-mono">5</td>
+                                    </tr>
+                                    <tr id="row-trident-normal" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Arma Marcial Corpo a Corpo | <strong>Dano:</strong> 1d6 perfurante (Versátil 1d8, Arremesso 6m/18m).<br><strong>Descrição:</strong> Lança de três pontas de aço forjado usada extensivamente nos espetáculos da arena.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-100/90" onclick="toggleDetails('row-net-reinforced')">
+                                        <td class="p-3">Rede de Gladiador Reforçada</td>
+                                        <td class="p-3 text-right font-mono">5</td>
+                                    </tr>
+                                    <tr id="row-net-reinforced" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Arma Marcial Especial | <strong>Descrição:</strong> Uma variação mundana mais pesada trançada com arames finos para dificultar a fuga (CD 12 de Força para romper). Restringe alvos.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-100/90" onclick="toggleDetails('row-flail')">
+                                        <td class="p-3">Mangual de Estrelas Pesado</td>
+                                        <td class="p-3 text-right font-mono">10</td>
+                                    </tr>
+                                    <tr id="row-flail" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Arma Marcial Corpo a Corpo | <strong>Dano:</strong> 1d8 concussão.<br><strong>Descrição:</strong> Uma esfera de metal pontiaguda conectada a uma haste por uma corrente forte de ferro. Ignora bônus menores de escudos de madeira devido à curvatura da corrente.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-100/90" onclick="toggleDetails('row-lance')">
+                                        <td class="p-3">Lança de Montaria (Lance)</td>
+                                        <td class="p-3 text-right font-mono">10</td>
+                                    </tr>
+                                    <tr id="row-lance" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Arma Marcial Corpo a Corpo | <strong>Dano:</strong> 1d12 perfurante (Alcance 3m, Especial).<br><strong>Descrição:</strong> Sofre desvantagem contra alvos a menos de 1,5m de você. Requer duas mãos para empunhar a menos que você esteja montado.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-100/90" onclick="toggleDetails('row-morningstar')">
+                                        <td class="p-3">Maça Estrela (Morningstar)</td>
+                                        <td class="p-3 text-right font-mono">15</td>
+                                    </tr>
+                                    <tr id="row-morningstar" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Arma Marcial Corpo a Corpo | <strong>Dano:</strong> 1d8 perfurante.<br><strong>Descrição:</strong> Haste com uma esfera metálica fixa coberta de espinhos cônicos e afiados.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-100/90" onclick="toggleDetails('row-pike')">
+                                        <td class="p-3">Pique Longo de Falange</td>
+                                        <td class="p-3 text-right font-mono">5</td>
+                                    </tr>
+                                    <tr id="row-pike" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Arma Marcial Corpo a Corpo | <strong>Dano:</strong> 1d10 perfurante (Pesada, Alcance 3m, duas mãos).<br><strong>Descrição:</strong> Uma lança extremamente longa (quase 4 metros), usada para deter avanços de cavalaria ou monstros massivos.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-100/90" onclick="toggleDetails('row-glaive')">
+                                        <td class="p-3">Glaive de Lâmina Curva</td>
+                                        <td class="p-3 text-right font-mono">20</td>
+                                    </tr>
+                                    <tr id="row-glaive" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Arma Marcial Corpo a Corpo | <strong>Dano:</strong> 1d10 cortante (Pesada, Alcance 3m, duas mãos).<br><strong>Descrição:</strong> Uma lâmina grande curvada presa na ponta de uma haste longa de madeira tratada.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-100/90" onclick="toggleDetails('row-half-plate')">
+                                        <td class="p-3">Meia Armadura (Half Plate)</td>
+                                        <td class="p-3 text-right font-mono">750</td>
+                                    </tr>
+                                    <tr id="row-half-plate" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Armadura Média | <strong>Defesa:</strong> CA 15 + Modificador de Destreza (Máximo +2. Desvantagem em Furtividade).<br><strong>Descrição:</strong> Placas de metal moldadas cobrem a maior parte do corpo superior. As pernas são protegidas por grevas de couro e metal.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-100/90" onclick="toggleDetails('row-breastplate-bronze')">
+                                        <td class="p-3">Peitoral de Bronze Gladiatório</td>
+                                        <td class="p-3 text-right font-mono">400</td>
+                                    </tr>
+                                    <tr id="row-breastplate-bronze" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Armadura Média | <strong>Defesa:</strong> CA 14 + Modificador de Destreza (Máximo +2).<br><strong>Descrição:</strong> Peitoral polido resistente, moldado com feições musculares heróicas para exibição em combate público.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-100/90" onclick="toggleDetails('row-gauntlets')">
+                                        <td class="p-3">Manoplas de Aço c/ Cravos</td>
+                                        <td class="p-3 text-right font-mono">15</td>
+                                    </tr>
+                                    <tr id="row-gauntlets" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Arma Simples / Improvised | <strong>Dano:</strong> 1d4 concussão/perfurante (Regra de Arma Improvisada/Ataque Desarmado modificado).<br><strong>Descrição:</strong> Luvas pesadas revestidas com placas articuladas de metal e cravos proeminentes nos nós dos dedos.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-100/90" onclick="toggleDetails('row-cestus')">
+                                        <td class="p-3">Cesto Gladiatório (Luva de Tiras)</td>
+                                        <td class="p-3 text-right font-mono">5</td>
+                                    </tr>
+                                    <tr id="row-cestus" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Arma Simples Corpo a Corpo | <strong>Dano:</strong> 1d4 concussão.<br><strong>Descrição:</strong> Tiras de couro áspero amarradas firmemente ao redor das mãos, incrustadas com pedaços de metal quebrado.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-100/90" onclick="toggleDetails('row-shortbow-comp')">
+                                        <td class="p-3">Arco Curto Composto de Chifre</td>
+                                        <td class="p-3 text-right font-mono">50</td>
+                                    </tr>
+                                    <tr id="row-shortbow-comp" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Arma Simples à Distância | <strong>Dano:</strong> 1d6 perfurante (Munição, 24m/96m).<br><strong>Descrição:</strong> Feito de camadas coladas de madeira, osso e tendões, entregando mais força de impacto que o convencional.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-100/90" onclick="toggleDetails('row-shield-spiked')">
+                                        <td class="p-3">Escudo Farpado (Spiked Shield)</td>
+                                        <td class="p-3 text-right font-mono">25</td>
+                                    </tr>
+                                    <tr id="row-shield-spiked" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Escudo | <strong>Defesa:</strong> CA +2.<br><strong>Descrição:</strong> Um escudo pesado de madeira com um grande espinho central de aço perfurante de 20cm projetado para frente.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-100/90" onclick="toggleDetails('row-bastard')">
+                                        <td class="p-3">Espada Bastarda</td>
+                                        <td class="p-3 text-right font-mono">25</td>
+                                    </tr>
+                                    <tr id="row-bastard" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Arma Marcial Corpo a Corpo | <strong>Dano:</strong> 1d8 cortante (Versátil 1d10).<br><strong>Descrição:</strong> Ligeiramente mais longa que a espada longa padrão, com um punho estendido propício para empunhadura dupla firme.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-100/90" onclick="toggleDetails('row-studded-heavy')">
+                                        <td class="p-3">Couro Batido Reforçado de Arena</td>
+                                        <td class="p-3 text-right font-mono">60</td>
+                                    </tr>
+                                    <tr id="row-studded-heavy" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Armadura Leve | <strong>Defesa:</strong> CA 12 + Modificador de Destreza.<br><strong>Descrição:</strong> Adaptação estética com ombreiras de ferro negro adicionais fixadas na base de couro batido tradicional.</td></tr>
+
+                                    <tr class="item-row text-orange-100/90" onclick="toggleDetails('row-ammo-p2-b3')">
+                                        <td class="p-3">Munição +2 (2x Flechas Mágicas de Elite)</td>
+                                        <td class="p-3 text-right font-mono">240</td>
+                                    </tr>
+                                    <tr id="row-ammo-p2-b3" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Munição Mágica (Rara) | <strong>Efeito:</strong> Fornece um bônus devastador de +2 nas jogadas de ataque e dano com armas de arremesso ou arco. Desintegra o brilho mágico após atingir qualquer superfície ou criatura.</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION 2: BOTICÁRIOS (POÇÕES) -->
+        <section>
+            <div class="flex items-center gap-3 border-b border-orange-500/30 pb-3 mb-6">
+                <div class="w-3 h-8 bg-red-600 rounded"></div>
+                <h2 class="text-3xl font-bold text-orange-400 tracking-wide uppercase">Boticários, Alquimistas e Elixires</h2>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                
+                <!-- LOJA 4: Gota de Magma -->
+                <div class="glass-card rounded-xl p-5 flex flex-col justify-between">
+                    <div>
+                        <div class="mb-4">
+                            <h3 class="text-xl font-bold text-red-400">4. Gota de Magma</h3>
+                            <span class="text-xs text-gray-400 font-mono">Proprietário: Tiefling Alquimista Ignis</span>
+                            <p class="text-xs text-gray-300 mt-1">Poções padronizadas de alta qualidade direto das fontes geotérmicas do reino.</p>
+                        </div>
+                        <div class="overflow-hidden rounded-lg border border-orange-900/40">
+                            <table class="w-full text-left border-collapse text-sm">
+                                <thead class="bg-red-950/60 text-red-200 text-xs uppercase font-mono tracking-wider">
+                                    <tr>
+                                        <th class="p-3">Poção / Item Alquímico</th>
+                                        <th class="p-3 text-right">Preço (PO)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('pot-heal-1')">
+                                        <td class="p-3">🧪 Poção de Cura (Padrão)</td>
+                                        <td class="p-3 text-right font-mono">50</td>
+                                    </tr>
+                                    <tr id="pot-heal-1" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Poção (Comum) | <strong>Efeito:</strong> Ao beber esta poção vermelha cintilante, você recupera 2d4 + 2 pontos de vida. Consome uma Ação (ou Ação Bônus sob regras customizadas comuns).</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('pot-heal-g1')">
+                                        <td class="p-3">🧪 Poção de Cura Maior (Greater)</td>
+                                        <td class="p-3 text-right font-mono">150</td>
+                                    </tr>
+                                    <tr id="pot-heal-g1" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Poção (Incomum) | <strong>Efeito:</strong> Cura aprimorada de laboratório. Beber restabelece imediatamente 4d4 + 4 pontos de vida do usuário.</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('pot-heal-s1')">
+                                        <td class="p-3">🧪 Poção de Cura Superior</td>
+                                        <td class="p-3 text-right font-mono">450</td>
+                                    </tr>
+                                    <tr id="pot-heal-s1" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Poção (Rara) | <strong>Efeito:</strong> Fluido alquímico denso e purificado. Restaura instantaneamente 8d4 + 8 pontos de vida de ferimentos severos.</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('pot-firebreath-1')">
+                                        <td class="p-3">🔥 Poção de Sopro de Fogo</td>
+                                        <td class="p-3 text-right font-mono">150</td>
+                                    </tr>
+                                    <tr id="pot-firebreath-1" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Poção (Incomum) | <strong>Efeito:</strong> Líquido laranja fumegante. Após beber, você pode usar uma Ação Bônus em seu turno para exalar fogo em um alvo a até 9 metros. O alvo deve fazer um teste de salvamento de Destreza CD 13, sofrendo 4d6 de dano de fogo em uma falha, ou metade se passar. O efeito expira após exalar 3 vezes ou após 1 hora passar.</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('pot-climb-1')">
+                                        <td class="p-3">🧪 Poção de Escalada</td>
+                                        <td class="p-3 text-right font-mono">180</td>
+                                    </tr>
+                                    <tr id="pot-climb-1" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Poção (Comum) | <strong>Efeito:</strong> Líquido com faixas prateadas. Durante 1 hora após beber, você ganha velocidade de escalada igual à sua velocidade de caminhada e vantagem em testes de Atletismo (Força) para escalar barreiras.</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('pot-waterb-1')">
+                                        <td class="p-3">🧪 Poção de Respiração Aquática</td>
+                                        <td class="p-3 text-right font-mono">180</td>
+                                    </tr>
+                                    <tr id="pot-waterb-1" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Poção (Incomum) | <strong>Efeito:</strong> Fluido verde aquoso. Permite que você respire debaixo d'água de forma natural por um período contínuo de 1 hora.</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('pot-heroism-1')">
+                                        <td class="p-3">🧪 Poção de Heroísmo</td>
+                                        <td class="p-3 text-right font-mono">180</td>
+                                    </tr>
+                                    <tr id="pot-heroism-1" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Poção (Rara) | <strong>Efeito:</strong> Líquido azul efervescente. Ao beber, você ganha 10 pontos de vida temporários por 1 hora e fica sob o efeito da magia *Bless* (Abençoar), adicionando +1d4 em todas as suas jogadas de ataque e testes de salvamento pelos próximos 60 minutos sem necessitar de concentração.</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('pot-animal-1')">
+                                        <td class="p-3">🧪 Poção de Amizade Animal</td>
+                                        <td class="p-3 text-right font-mono">200</td>
+                                    </tr>
+                                    <tr id="pot-animal-1" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Poção (Incomum) | <strong>Efeito:</strong> Líquido turvo com pedaços de ervas. Permite conjurar a magia *Animal Friendship* (Amizade Animal) à vontade contra feras selvagens por 1 hora (CD de salvamento 13).</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('pot-growth-1')">
+                                        <td class="p-3">🧪 Poção de Crescimento</td>
+                                        <td class="p-3 text-right font-mono">270</td>
+                                    </tr>
+                                    <tr id="pot-growth-1" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Poção (Incomum) | <strong>Efeito:</strong> Um frasco cujo conteúdo dobra de volume constantemente. Beber aplica o efeito de aumento da magia *Enlarge/Reduce* por 1d4 horas. Seu tamanho dobra, seu peso é multiplicado por 8, você ganha vantagem em testes de Força e seus ataques com armas causam 1d4 de dano extra.</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('pot-diminution-1')">
+                                        <td class="p-3">🧪 Poção de Diminuição</td>
+                                        <td class="p-3 text-right font-mono">270</td>
+                                    </tr>
+                                    <tr id="pot-diminution-1" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Poção (Rara) | <strong>Efeito:</strong> Reduz seu tamanho em uma categoria por 1d4 horas (Efeito de redução de *Enlarge/Reduce*). Seus ataques físicos com armas causam 1d4 a menos de dano (mínimo de 1).</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('pot-resist-fire')">
+                                        <td class="p-3">🔥 Poção de Resistência (Fogo)</td>
+                                        <td class="p-3 text-right font-mono">300</td>
+                                    </tr>
+                                    <tr id="pot-resist-fire" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Poção (Incomum) | <strong>Efeito:</strong> Essência espessa isolante térmica. Concede resistência contra todo dano do tipo Fogo por uma duração total de 1 hora após a ingestão.</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('pot-gaseous-1')">
+                                        <td class="p-3">🧪 Poção de Forma Gasosa</td>
+                                        <td class="p-3 text-right font-mono">300</td>
+                                    </tr>
+                                    <tr id="pot-gaseous-1" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Poção (Rara) | <strong>Efeito:</strong> Vapor translúcido engarrafado. Transforma você e todo o seu equipamento em uma nuvem de névoa fina por até 1 hora (sem requerer concentração), emulando perfeitamente a magia *Gaseous Form*. Você ganha resistência a danos não mágicos e velocidade de voo de 3 metros, podendo passar por frestas mínimas.</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('pot-speed-1')">
+                                        <td class="p-3">🧪 Poção de Velocidade</td>
+                                        <td class="p-3 text-right font-mono">400</td>
+                                    </tr>
+                                    <tr id="pot-speed-1" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Poção (Muito Rara) | <strong>Efeito:</strong> Fluido amarelo neon hiperativo. Concede os efeitos benéficos diretos da magia *Haste* (Velocidade) por 1 minuto inteiro, sem necessidade de concentração do usuário. Sua CA aumenta em +2, seu deslocamento dobra e você ganha uma ação extra por turno para atacar (um golpe), disparar, desengajar, esconder ou usar objeto.</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('pot-fly-1')">
+                                        <td class="p-3">🧪 Poção de Voo</td>
+                                        <td class="p-3 text-right font-mono">500</td>
+                                    </tr>
+                                    <tr id="pot-fly-1" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Poção (Muito Rara) | <strong>Efeito:</strong> Fluido azul celeste límpido com partículas flutuantes. O usuário ganha velocidade de voo idêntica à sua velocidade de caminhada terrestre por 1 hora completa. Se expirar no ar, você cai.</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('elixir-health-1')">
+                                        <td class="p-3">🧪 Elixir de Saúde (Health)</td>
+                                        <td class="p-3 text-right font-mono">120</td>
+                                    </tr>
+                                    <tr id="elixir-health-1" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Poção (Rara) | <strong>Efeito:</strong>Líquido vermelho opaco contendo traços de diamante em pó. Beber cura imediatamente qualquer doença ativa e remove as condições: Cegueira (Blinded), Surdez (Deafened), Paralisia (Paralyzed) e Envenenamento (Poisoned).</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('pot-poison-1')">
+                                        <td class="p-3">🧪 Poção de Veneno (Armadilha)</td>
+                                        <td class="p-3 text-right font-mono">100</td>
+                                    </tr>
+                                    <tr id="pot-poison-1" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Poção (Incomum) | <strong>Efeito Oculto:</strong> Identifica-se falsamente como uma Poção de Cura comum. Beber inflige imediatamente 3d6 de dano de veneno e exige um teste de salvamento de Constituição CD 12. Se falhar, fica Envenenado (Poisoned) sofrendo 1d6 de dano por turno; repete o teste ao final de cada turno para encerrar a condição.</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('philter-love-1')">
+                                        <td class="p-3">🧪 Filtro do Amor</td>
+                                        <td class="p-3 text-right font-mono">90</td>
+                                    </tr>
+                                    <tr id="philter-love-1" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Poção (Incomum) | <strong>Efeito:</strong>Líquido rosa com aroma adocicado. Após beber, você fica sob a condição Encantado (Charmed) pela primeira criatura que avistar nos próximos 10 minutos. Se a criatura for de uma espécie compatível, você a enxerga como seu amor verdadeiro por 1 hora.</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('ointment-1')">
+                                        <td class="p-3">🧪 Unguento de Keoghtom (1 Dose)</td>
+                                        <td class="p-3 text-right font-mono">120</td>
+                                    </tr>
+                                    <tr id="ointment-1" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Item Maravilhoso / Consumível (Incomum) | <strong>Efeito:</strong> Um pote pequeno contendo uma pasta espessa. Aplicar uma dose na pele consome uma ação, restaura 2d8 + 2 pontos de vida e remove completamente qualquer veneno ou doença ativa que esteja afligindo o alvo.</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('oil-slip-1')">
+                                        <td class="p-3">🧪 Óleo de Escorregadio</td>
+                                        <td class="p-3 text-right font-mono">480</td>
+                                    </tr>
+                                    <tr id="oil-slip-1" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Poção / Óleo (Incomum) | <strong>Efeito:</strong> Demora 10 minutos para ser aplicado no corpo. Garante ao usuário os benefícios diretos da magia *Freedom of Movement* (Liberdade de Movimento) por 8 horas seguidas. Você ignora terrenos difíceis e não pode ser paralisado ou restringido por magias/redes.</td></tr>
+
+                                    <tr class="item-row text-red-100" onclick="toggleDetails('pot-mindread-1')">
+                                        <td class="p-3">🧪 Poção de Leitura Mental</td>
+                                        <td class="p-3 text-right font-mono">180</td>
+                                    </tr>
+                                    <tr id="pot-mindread-1" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Poção (Rara) | <strong>Efeito:</strong>Líquido roxo denso. Beber concede o uso imediato e contínuo da magia *Detect Thoughts* (Detectar Pensamentos) com CD 13 para resistir, durando até 1 hora.</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LOJA 5: O Caldeirão Fervente -->
+                <div class="glass-card rounded-xl p-5 flex flex-col justify-between">
+                    <div>
+                        <div class="mb-4">
+                            <h3 class="text-xl font-bold text-red-400">5. O Caldeirão Fervente</h3>
+                            <span class="text-xs text-gray-400 font-mono">Proprietário: Humano Mago de Alquimia Barnaby</span>
+                            <p class="text-xs text-gray-300 mt-1">Produtos importados e pós mágicos raros. Taxas alfandegárias inclusas (+15%).</p>
+                        </div>
+                        <div class="overflow-hidden rounded-lg border border-orange-900/40">
+                            <table class="w-full text-left border-collapse text-sm">
+                                <thead class="bg-red-950/60 text-red-200 text-xs uppercase font-mono tracking-wider">
+                                    <tr>
+                                        <th class="p-3">Poção / Pó Mágico</th>
+                                        <th class="p-3 text-right">Preço (PO)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('pot-heal-2')">
+                                        <td class="p-3">🧪 Poção de Cura (Padrão)</td>
+                                        <td class="p-3 text-right font-mono">57</td>
+                                    </tr>
+                                    <tr id="pot-heal-2" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Cura comum importada. Restaura 2d4+2 pontos de vida ao ser consumida.</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('pot-heal-g2')">
+                                        <td class="p-3">🧪 Poção de Cura Maior (Greater)</td>
+                                        <td class="p-3 text-right font-mono">172</td>
+                                    </tr>
+                                    <tr id="pot-heal-g2" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Cura moderada destilada em frasco selado. Restaura 4d4+4 pontos de vida.</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('pot-heal-s2')">
+                                        <td class="p-3">🧪 Poção de Cura Superior</td>
+                                        <td class="p-3 text-right font-mono">517</td>
+                                    </tr>
+                                    <tr id="pot-heal-s2" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Fórmula curativa avançada de alta patente. Cura 8d4+8 pontos de vida.</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('pot-fbreath-2')">
+                                        <td class="p-3">🔥 Poção de Sopro de Fogo</td>
+                                        <td class="p-3 text-right font-mono">172</td>
+                                    </tr>
+                                    <tr id="pot-fbreath-2" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Permite exalar chamas rústicas 3 vezes por ação bônus (Dano: 4d6 de fogo, CD 13 Destreza). Duração: 1 hora.</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('pot-climb-2')">
+                                        <td class="p-3">🧪 Poção de Escalada</td>
+                                        <td class="p-3 text-right font-mono">207</td>
+                                    </tr>
+                                    <tr id="pot-climb-2" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Concede velocidade de escalada idêntica ao deslocamento e vantagem em Atletismo para subir superfícies por 1 hora.</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('pot-wbreath-2')">
+                                        <td class="p-3">🧪 Poção de Respiração Aquática</td>
+                                        <td class="p-3 text-right font-mono">207</td>
+                                    </tr>
+                                    <tr id="pot-wbreath-2" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Garante a capacidade biológica temporária de extrair oxigênio da água por 1 hora completa.</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('pot-hero-2')">
+                                        <td class="p-3">🧪 Poção de Heroísmo</td>
+                                        <td class="p-3 text-right font-mono">207</td>
+                                    </tr>
+                                    <tr id="pot-hero-2" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Garante 10 HP temporários estáveis e o efeito completo da magia *Bless* (+1d4 em ataques/salvamentos) por 1 hora sem concentração.</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('pot-friend-2')">
+                                        <td class="p-3">🧪 Poção de Amizade Animal</td>
+                                        <td class="p-3 text-right font-mono">230</td>
+                                    </tr>
+                                    <tr id="pot-friend-2" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Permite subjugar feras selvagens de forma passiva através da conjuração da magia *Animal Friendship* CD 13 por 1 hora.</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('pot-grow-2')">
+                                        <td class="p-3">🧪 Poção de Crescimento</td>
+                                        <td class="p-3 text-right font-mono">310</td>
+                                    </tr>
+                                    <tr id="pot-grow-2" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Efeito *Enlarge* físico por 1d4 horas. Tamanho aumenta em uma categoria e adiciona +1d4 de dano fixo em ataques com armas.</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('pot-dim-2')">
+                                        <td class="p-3">🧪 Poção de Diminuição</td>
+                                        <td class="p-3 text-right font-mono">310</td>
+                                    </tr>
+                                    <tr id="pot-dim-2" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Efeito *Reduce* por 1d4 horas. Tamanho encolhe uma categoria e penaliza ataques com armas em -1d4 (mínimo 1 de dano).</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('dust-dryness')">
+                                        <td class="p-3">✨ Pó da Secura (1 Pellet / Esfera)</td>
+                                        <td class="p-3 text-right font-mono">138</td>
+                                    </tr>
+                                    <tr id="dust-dryness" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Item Maravilhoso / Consumível (Incomum) | <strong>Efeito:</strong> Pó mágico capaz de absorver instantaneamente até uma piscina ou cubo de 4,5 metros de água pura para dentro de uma pequena esfera sólida. Jogar a esfera contra o chão libera toda a água retida de forma violenta e abrupta.</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('dust-disappearance')">
+                                        <td class="p-3">✨ Pó do Desaparecimento</td>
+                                        <td class="p-3 text-right font-mono">345</td>
+                                    </tr>
+                                    <tr id="dust-disappearance" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Item Maravilhoso / Consumível (Incomum) | <strong>Efeito:</strong> Lançar este pó no ar torna todas as criaturas em um raio de 3 metros invisíveis por 2d4 minutos. A invisibilidade quebra imediatamente se qualquer criatura afetada atacar ou conjurar uma magia. Não requer concentração.</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('pot-speed-2')">
+                                        <td class="p-3">🧪 Poção de Velocidade</td>
+                                        <td class="p-3 text-right font-mono">460</td>
+                                    </tr>
+                                    <tr id="pot-speed-2" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Garante os efeitos diretos da magia *Haste* por 1 minuto contínuo. Dobra o deslocamento, adiciona +2 na CA e fornece uma ação adicional limitada.</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('pot-fly-2')">
+                                        <td class="p-3">🧪 Poção de Voo</td>
+                                        <td class="p-3 text-right font-mono">575</td>
+                                    </tr>
+                                    <tr id="pot-fly-2" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Concede velocidade de voo igual ao seu deslocamento em caminhada por 1 hora completa.</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('elixir-health-2')">
+                                        <td class="p-3">🧪 Elixir de Saúde</td>
+                                        <td class="p-3 text-right font-mono">138</td>
+                                    </tr>
+                                    <tr id="elixir-health-2" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Cura instantaneamente doenças biológicas e as condições Cegueira, Surdez, Paralisia e Envenenamento.</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('pot-poison-2')">
+                                        <td class="p-3">🧪 Poção de Veneno</td>
+                                        <td class="p-3 text-right font-mono">115</td>
+                                    </tr>
+                                    <tr id="pot-poison-2" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Armadilha alquímica disfarçada de cura. Causa 3d6 de dano venenoso e aplica a condição Envenenado (CD 12 Constituição).</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('philter-love-2')">
+                                        <td class="p-3">🧪 Filtro do Amor</td>
+                                        <td class="p-3 text-right font-mono">103</td>
+                                    </tr>
+                                    <tr id="philter-love-2" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Induz a condição Encantado em relação ao primeiro indivíduo avistado pelo usuário nos próximos 10 minutos.</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('oil-slip-2')">
+                                        <td class="p-3">🧪 Óleo de Escorregadio</td>
+                                        <td class="p-3 text-right font-mono">552</td>
+                                    </tr>
+                                    <tr id="oil-slip-2" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Concede imunidade a restrições de movimento física/mágica por 8 horas (*Freedom of Movement*).</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('pot-mind-2')">
+                                        <td class="p-3">🧪 Poção de Leitura Mental</td>
+                                        <td class="p-3 text-right font-mono">207</td>
+                                    </tr>
+                                    <tr id="pot-mind-2" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Concede a capacidade de ler mentes superficiais via magia *Detect Thoughts* CD 13 por 1 hora.</td></tr>
+
+                                    <tr class="item-row text-red-100" onclick="toggleDetails('oil-etherealness')">
+                                        <td class="p-3">🔮 Óleo de Eterealidade (Etherealness)</td>
+                                        <td class="p-3 text-right font-mono">2.208</td>
+                                    </tr>
+                                    <tr id="oil-etherealness" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Poção / Óleo (Raro) | <strong>Efeito:</strong> Esfregar este óleo cinzento em seu corpo demora 10 minutos. Transfere você e seu equipamento para a Orla do Plano Etéreo (Border Ethereal) por 1 hora completa. Permite atravessar paredes e objetos sólidos no plano material.</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LOJA 6: Essências de Ignis -->
+                <div class="glass-card rounded-xl p-5 flex flex-col justify-between">
+                    <div>
+                        <div class="mb-4">
+                            <h3 class="text-xl font-bold text-red-400">6. Essências de Ignis</h3>
+                            <span class="text-xs text-gray-400 font-mono">Proprietário: Elfo do Fogo Malakor</span>
+                            <p class="text-xs text-gray-300 mt-1">Patrocinador oficial dos lutadores da Grande Arena. Descontos de atacado (-10%).</p>
+                        </div>
+                        <div class="overflow-hidden rounded-lg border border-orange-900/40">
+                            <table class="w-full text-left border-collapse text-sm">
+                                <thead class="bg-red-950/60 text-red-200 text-xs uppercase font-mono tracking-wider">
+                                    <tr>
+                                        <th class="p-3">Poção / Fluido Protetor</th>
+                                        <th class="p-3 text-right">Preço (PO)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('pot-heal-3')">
+                                        <td class="p-3">🧪 Poção de Cura (Preço Promocional)</td>
+                                        <td class="p-3 text-right font-mono">45</td>
+                                    </tr>
+                                    <tr id="pot-heal-3" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Cura básica para gladiadores de baixo escalão. Recupera 2d4+2 pontos de vida.</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('pot-heal-g3')">
+                                        <td class="p-3">🧪 Poção de Cura Maior (Greater)</td>
+                                        <td class="p-3 text-right font-mono">135</td>
+                                    </tr>
+                                    <tr id="pot-heal-g3" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Líquido carmesim filtrado para ferimentos profundos da arena. Recupera 4d4+4 HP.</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('pot-heal-s3')">
+                                        <td class="p-3">🧪 Poção de Cura Superior</td>
+                                        <td class="p-3 text-right font-mono">405</td>
+                                    </tr>
+                                    <tr id="pot-heal-s3" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Tônico de cura potente usado pelos grandes campeões sobreviventes. Cura 8d4+8 HP.</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('pot-fbreath-3')">
+                                        <td class="p-3">🔥 Poção de Sopro de Fogo</td>
+                                        <td class="p-3 text-right font-mono">135</td>
+                                    </tr>
+                                    <tr id="pot-fbreath-3" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Permite usar uma ação bônus para expelir labaredas de fogo 3 vezes (4d6 de dano, CD 13 Destreza). Duração: 1 hora.</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('pot-climb-3')">
+                                        <td class="p-3">🧪 Poção de Escalada</td>
+                                        <td class="p-3 text-right font-mono">162</td>
+                                    </tr>
+                                    <tr id="pot-climb-3" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Concede velocidade de escalada equivalente à terrestre e vantagem em testes de Força (Atletismo) por 1 hora.</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('pot-hero-3')">
+                                        <td class="p-3">🧪 Poção de Heroísmo</td>
+                                        <td class="p-3 text-right font-mono">162</td>
+                                    </tr>
+                                    <tr id="pot-hero-3" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Garante bônus de combate imbatíveis: +10 HP temporários e efeito estável de *Bless* por 1 hora.</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('pot-friend-3')">
+                                        <td class="p-3">🧪 Poção de Amizade Animal</td>
+                                        <td class="p-3 text-right font-mono">180</td>
+                                    </tr>
+                                    <tr id="pot-friend-3" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Garante a habilidade de acalmar bestas e monstros animais através da magia *Animal Friendship* CD 13 por 1 hora.</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('pot-resist-3')">
+                                        <td class="p-3">🧪 Poção de Resistência Elementar</td>
+                                        <td class="p-3 text-right font-mono">270</td>
+                                    </tr>
+                                    <tr id="pot-resist-3" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Garante resistência total contra um tipo específico de dano elemental (ex: Fogo) por 1 hora contínua.</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('pot-gas-3')">
+                                        <td class="p-3">🧪 Poção de Forma Gasosa</td>
+                                        <td class="p-3 text-right font-mono">270</td>
+                                    </tr>
+                                    <tr id="pot-gas-3" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Transforma o usuário e seus pertences em uma nuvem de fumaça etérea maleável (*Gaseous Form*) por até 1 hora.</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('pot-speed-3')">
+                                        <td class="p-3">🧪 Poção de Velocidade</td>
+                                        <td class="p-3 text-right font-mono">360</td>
+                                    </tr>
+                                    <tr id="pot-speed-3" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Garante o estado de aceleração mágica da magia *Haste* por 1 minuto sem requerer concentração.</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('pot-fly-3')">
+                                        <td class="p-3">🧪 Poção de Voo</td>
+                                        <td class="p-3 text-right font-mono">450</td>
+                                    </tr>
+                                    <tr id="pot-fly-3" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Libera a capacidade de pairar e voar com deslocamento igual à caminhada por 1 hora completa.</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('pot-poison-3')">
+                                        <td class="p-3">🧪 Poção de Veneno</td>
+                                        <td class="p-3 text-right font-mono">90</td>
+                                    </tr>
+                                    <tr id="pot-poison-3" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Líquido tóxico disfarçado. Causa 3d6 de dano e envenenamento persistente em caso de falha em salvamento CD 12 de Con.</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('ointment-3')">
+                                        <td class="p-3">🧪 Unguento de Keoghtom (Dose)</td>
+                                        <td class="p-3 text-right font-mono">108</td>
+                                    </tr>
+                                    <tr id="ointment-3" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Pasta medicinal refinada. Restaura 2d8+2 de vida e purifica todas as doenças e venenos biológicos imediatamente.</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('elixir-health-3')">
+                                        <td class="p-3">🧪 Elixir de Saúde</td>
+                                        <td class="p-3 text-right font-mono">108</td>
+                                    </tr>
+                                    <tr id="elixir-health-3" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Cura debilidades físicas corporais agudas como Cegueira, Surdez, Paralisia ou Envenenamentos graves.</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('philter-love-3')">
+                                        <td class="p-3">🧪 Filtro do Amor</td>
+                                        <td class="p-3 text-right font-mono">81</td>
+                                    </tr>
+                                    <tr id="philter-love-3" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Enfeitiça o consumidor, induzindo a condição Encantado perante o primeiro alvo avistado em 10 minutos.</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('pot-mind-3')">
+                                        <td class="p-3">🧪 Poção de Leitura Mental</td>
+                                        <td class="p-3 text-right font-mono">162</td>
+                                    </tr>
+                                    <tr id="pot-mind-3" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Permite ler a mente de seres inteligentes através de emulação direta da magia *Detect Thoughts* CD 13 por 1 hora.</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('pot-invis-3')">
+                                        <td class="p-3">🧪 Poção de Invisibilidade</td>
+                                        <td class="p-3 text-right font-mono">162</td>
+                                    </tr>
+                                    <tr id="pot-invis-3" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Poção (Muito Rara) | <strong>Efeito:</strong> Um frasco contendo um líquido perfeitamente transparente. Beber torna você e seus itens invisíveis por 1 hora completa. O efeito quebra imediatamente caso você realize um ataque físico ou conjure qualquer magia.</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('pot-vitality')">
+                                        <td class="p-3">🧪 Poção de Vitalidade (Alta Performance)</td>
+                                        <td class="p-3 text-right font-mono">864</td>
+                                    </tr>
+                                    <tr id="pot-vitality" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Poção (Muito Rara) | <strong>Efeito:</strong> Fluido vermelho vivo com vitalidade pulsante. Remove qualquer nível de Exaustão (Exhaustion), cura todas as doenças/venenos ativos e faz com que, pelas próximas 24 horas, qualquer Dado de Vida (Hit Die) gasto para recuperar vida cure o valor máximo possível sem rolagens.</td></tr>
+
+                                    <tr class="item-row border-b border-red-950/40 text-red-100" onclick="toggleDetails('dust-dry-3')">
+                                        <td class="p-3">✨ Pó da Secura (Pellet Único)</td>
+                                        <td class="p-3 text-right font-mono">108</td>
+                                    </tr>
+                                    <tr id="dust-dry-3" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Pó absorvente de fluidos aquosos em massa. Retém até 4,5m cúbicos de água pura em uma pequena pérola esférica rígida.</td></tr>
+
+                                    <tr class="item-row text-red-100" onclick="toggleDetails('oil-sharpness')">
+                                        <td class="p-3">⚔️ Óleo de Precisão (+3 Óleo de Lâmina) <span class="badge-class bg-yellow-600 text-black text-[10px] ml-1">Blood Hunter</span></td>
+                                        <td class="p-3 text-right font-mono">2.880</td>
+                                    </tr>
+                                    <tr id="oil-sharpness" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Poção / Óleo (Muito Raro) | <strong>Efeito:</strong> Requer 10 minutos para aplicar na lâmina de uma arma cortante ou perfurante (como a espada viciosa do Blood Hunter). Durante 1 hora inteira, a arma torna-se mágica e recebe um bônus devastador de +3 em suas jogadas de ataque e rolagens de dano.</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: MANTIMENTOS GERAIS (MASSA PARA GOBLINS) -->
+        <section>
+            <div class="flex items-center gap-3 border-b border-orange-500/30 pb-3 mb-6">
+                <div class="w-3 h-8 bg-amber-600 rounded"></div>
+                <h2 class="text-3xl font-bold text-orange-400 tracking-wide uppercase">Armazéns de Mantimentos Gerais e Logística Goblinoide</h2>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                
+                <!-- LOJA 7: O Celeiro do Deserto -->
+                <div class="glass-card rounded-xl p-5 flex flex-col justify-between">
+                    <div>
+                        <div class="mb-4">
+                            <h3 class="text-xl font-bold text-amber-400">7. O Celeiro do Deserto</h3>
+                            <span class="text-xs text-gray-400 font-mono">Gerente: Meio-Orc Hodor</span>
+                            <p class="text-xs text-gray-300 mt-1">Venda em massa de grãos, cereais e rações secas. Ideal para suprir acampamentos inteiros de aliados goblins com muito dinheiro.</p>
+                        </div>
+                        <div class="overflow-hidden rounded-lg border border-orange-900/40">
+                            <table class="w-full text-left border-collapse text-sm">
+                                <thead class="bg-amber-950/60 text-amber-200 text-xs uppercase font-mono tracking-wider">
+                                    <tr>
+                                        <th class="p-3">Mantimento em Lote</th>
+                                        <th class="p-3 text-right">Preço</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="item-row border-b border-amber-950/40 text-amber-100" onclick="toggleDetails('bulk-wheat')">
+                                        <td class="p-3">🌾 Saco de Trigo Puro Reforçado (50 kg)</td>
+                                        <td class="p-3 text-right font-mono">1 PO</td>
+                                    </tr>
+                                    <tr id="bulk-wheat" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Provisão Comercial | <strong>Descrição:</strong> Grãos brutos secos de trigo de alta durabilidade, ensacados em juta grossa vedada contra pragas. Excelente para estocagem goblin de longo prazo.</td></tr>
+
+                                    <tr class="item-row border-b border-amber-950/40 text-amber-100" onclick="toggleDetails('bulk-oats')">
+                                        <td class="p-3">🌾 Saco de Aveia Grossa para Rações (50 kg)</td>
+                                        <td class="p-3 text-right font-mono">1 PO</td>
+                                    </tr>
+                                    <tr id="bulk-oats" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Provisão Comercial | <strong>Descrição:</strong> Aveia integral seca, ideal para o preparo de mingaus calóricos ou alimentação de animais de tração em viagens áridas.</td></tr>
+
+                                    <tr class="item-row border-b border-amber-950/40 text-amber-100" onclick="toggleDetails('bulk-rice')">
+                                        <td class="p-3">🌾 Saco de Arroz das Planícies Secas (50 kg)</td>
+                                        <td class="p-3 text-right font-mono">2 PO</td>
+                                    </tr>
+                                    <tr id="bulk-rice" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Provisão Comercial | <strong>Descrição:</strong> Grãos selecionados de arroz seco, base de carboidratos densa e fácil de cozinhar em caldeirões de acampamento.</td></tr>
+
+                                    <tr class="item-row border-b border-amber-950/40 text-amber-100" onclick="toggleDetails('bulk-meat')">
+                                        <td class="p-3">🍖 Caixote de Carne Seca Salgada (100 Rações Diárias)</td>
+                                        <td class="p-3 text-right font-mono">50 PO</td>
+                                    </tr>
+                                    <tr id="bulk-meat" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Ração de Sobrevivência | <strong>Descrição:</strong> Carne desidratada curtida em sal grosso vulcânico. Não estraga sob o calor forte de Vulkarys. Suprema fonte de proteína para a tribo goblin.</td></tr>
+
+                                    <tr class="item-row border-b border-amber-950/40 text-amber-100" onclick="toggleDetails('bulk-water')">
+                                        <td class="p-3">🛢️ Barril de Carvalho com Água Potável Pura (150L)</td>
+                                        <td class="p-3 text-right font-mono">2 PO</td>
+                                    </tr>
+                                    <tr id="bulk-water" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Provisão Líquida | <strong>Descrição:</strong> Água fresca selada com cera alquímica para evitar evaporação no deserto. Essencial para deslocamentos táticos.</td></tr>
+
+                                    <tr class="item-row border-b border-amber-950/40 text-amber-100" onclick="toggleDetails('bulk-ale')">
+                                        <td class="p-3">🍺 Barril de Cerveja Forte Anã (50L)</td>
+                                        <td class="p-3 text-right font-mono">15 PO</td>
+                                    </tr>
+                                    <tr id="bulk-ale" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Provisão Bebida | <strong>Descrição:</strong> Cerveja encorpada e fermentada, alto teor calórico. Excelente para elevar o moral dos trabalhadores e guerreiros do vilarejo.</td></tr>
+
+                                    <tr class="item-row border-b border-amber-950/40 text-amber-100" onclick="toggleDetails('bulk-hay')">
+                                        <td class="p-3">🌾 Fardo de Feno Prensado de Viagem</td>
+                                        <td class="p-3 text-right font-mono">5 PP</td>
+                                    </tr>
+                                    <tr id="bulk-hay" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Alimento básico comprimido para camelos, mulas e cavalos de carga durante travessias no deserto de cinzas.</td></tr>
+
+                                    <tr class="item-row border-b border-amber-950/40 text-amber-100" onclick="toggleDetails('bulk-salt')">
+                                        <td class="p-3">🧂 Saco de Sal de Rocha Vulcânico (10 kg)</td>
+                                        <td class="p-3 text-right font-mono">5 PO</td>
+                                    </tr>
+                                    <tr id="bulk-salt" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Sal mineral purificado, usado para conservar carnes frescas caçadas pelos goblins ou para temperar rações insossas.</td></tr>
+
+                                    <tr class="item-row border-b border-amber-950/40 text-amber-100" onclick="toggleDetails('bulk-spices')">
+                                        <td class="p-3">🌶️ Especiarias Picantes de Ignis (1 kg)</td>
+                                        <td class="p-3 text-right font-mono">20 PO</td>
+                                    </tr>
+                                    <tr id="bulk-spices" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Condimentos raros locais de alto valor comercial, fáceis de carregar e ótimos para barganha ou uso culinário aristocrático.</td></tr>
+
+                                    <tr class="item-row border-b border-amber-950/40 text-amber-100" onclick="toggleDetails('ration-1d')">
+                                        <td class="p-3">🍱 Ração de Viagem Individual Selada (1 dia)</td>
+                                        <td class="p-3 text-right font-mono">5 PP</td>
+                                    </tr>
+                                    <tr id="ration-1d" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Item de Aventura | <strong>Descrição:</strong> Embalagem contendo frutas secas, carne compactada, nozes e biscoitos duros. Nutrição completa para um humanoide por 24 horas.</td></tr>
+
+                                    <tr class="item-row border-b border-amber-950/40 text-amber-100" onclick="toggleDetails('backpack')">
+                                        <td class="p-3">🎒 Mochila de Viagem de Couro Cru</td>
+                                        <td class="p-3 text-right font-mono">2 PO</td>
+                                    </tr>
+                                    <tr id="backpack" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Mochila resistente com fivelas de bronze, capacidade interna padrão para cerca de 15 kg de suprimentos variados.</td></tr>
+
+                                    <tr class="item-row border-b border-amber-950/40 text-amber-100" onclick="toggleDetails('waterskin')">
+                                        <td class="p-3">🎒 Odre de Água de Couro (2 Litros)</td>
+                                        <td class="p-3 text-right font-mono">2 PP</td>
+                                    </tr>
+                                    <tr id="waterskin" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Bolsa flexível de couro untado internamente com resina para evitar vazamentos de fluidos. Vital para aventureiros individuais.</td></tr>
+
+                                    <tr class="item-row border-b border-amber-950/40 text-amber-100" onclick="toggleDetails('rope-hemp')">
+                                        <td class="p-3">🪢 Corda de Cânhamo Reforçada (15 metros)</td>
+                                        <td class="p-3 text-right font-mono">1 PO</td>
+                                    </tr>
+                                    <tr id="rope-hemp" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Corda trançada clássica com ponto de ruptura elevado, indispensável para amarrar cargas em carroças ou rapel de emergência.</td></tr>
+
+                                    <tr class="item-row border-b border-amber-950/40 text-amber-100" onclick="toggleDetails('torches-10')">
+                                        <td class="p-3">🕯️ Kit com 10 Tochas de Resina Vulcânica</td>
+                                        <td class="p-3 text-right font-mono">1 PO</td>
+                                    </tr>
+                                    <tr id="torches-10" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Tochas de madeira embebidas em piche e óleo mineral grosso. Cada uma queima iluminando um raio de 6 metros por 1 hora.</td></tr>
+
+                                    <tr class="item-row border-b border-amber-950/40 text-amber-100" onclick="toggleDetails('oil-flask')">
+                                        <td class="p-3">🛢️ Frasco de Óleo Combustível Comum (500ml)</td>
+                                        <td class="p-3 text-right font-mono">1 PP</td>
+                                    </tr>
+                                    <tr id="oil-flask" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Combustível para lanternas. Pode ser jogado no chão e acendido para queimar uma área pequena infligindo 5 de dano de fogo por turno.</td></tr>
+
+                                    <tr class="item-row border-b border-amber-950/40 text-amber-100" onclick="toggleDetails('bulk-potatoes')">
+                                        <td class="p-3">🥔 Saco de Batatas da Terra de Cinza (50 kg)</td>
+                                        <td class="p-3 text-right font-mono">1 PO</td>
+                                    </tr>
+                                    <tr id="bulk-potatoes" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Tubérculos resistentes cultivados nas bases vulcânicas ricas em minerais. Alimento pesado e de longa conservação.</td></tr>
+
+                                    <tr class="item-row border-b border-amber-950/40 text-amber-100" onclick="toggleDetails('bulk-cheese')">
+                                        <td class="p-3">🧀 Roda de Queijo de Cabra Curado Inteira (5 kg)</td>
+                                        <td class="p-3 text-right font-mono">5 PO</td>
+                                    </tr>
+                                    <tr id="bulk-cheese" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Queijo de casca dura e espessa selada com cera, sabor forte e picante, perfeito para conservação em viagens longas.</td></tr>
+
+                                    <tr class="item-row border-b border-amber-950/40 text-amber-100" onclick="toggleDetails('bulk-honey')">
+                                        <td class="p-3">🍯 Galão de Mel de Abelhas de Fogo (3.8L)</td>
+                                        <td class="p-3 text-right font-mono">8 PO</td>
+                                    </tr>
+                                    <tr id="bulk-honey" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Mel âmbar escuro superconcentrado. Não estraga jamais, serve como adoçante calórico e agente antisséptico básico.</td></tr>
+
+                                    <tr class="item-row border-b border-amber-950/40 text-amber-100" onclick="toggleDetails('bulk-fish')">
+                                        <td class="p-3">🐟 Barril de Peixe Salgado Desidratado</td>
+                                        <td class="p-3 text-right font-mono">10 PO</td>
+                                    </tr>
+                                    <tr id="bulk-fish" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Peixes secos importados das costas e curados em sal vulcânico. Fonte alimentar prática para acampamentos goblins.</td></tr>
+
+                                    <tr class="item-row text-amber-100" onclick="toggleDetails('bulk-herbs')">
+                                        <td class="p-3">🌿 Saco de Ervas Aromáticas Básicas Secas</td>
+                                        <td class="p-3 text-right font-mono">1 PO</td>
+                                    </tr>
+                                    <tr id="bulk-herbs" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Mistura de ervas rústicas desidratadas para infusão em chás de acampamento ou para disfarçar o gosto de carnes velhas.</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LOJA 8: Suprimentos do Viajante -->
+                <div class="glass-card rounded-xl p-5 flex flex-col justify-between">
+                    <div>
+                        <div class="mb-4">
+                            <h3 class="text-xl font-bold text-amber-400">8. Suprimentos do Viajante</h3>
+                            <span class="text-xs text-gray-400 font-mono">Gerente: Anão Engenheiro Logístico Thorgar</span>
+                            <p class="text-xs text-gray-300 mt-1">Carroças, animais de tração pesada, selas e equipamentos de engenharia civil para transporte de grãos em massa.</p>
+                        </div>
+                        <div class="overflow-hidden rounded-lg border border-orange-900/40">
+                            <table class="w-full text-left border-collapse text-sm">
+                                <thead class="bg-amber-950/60 text-amber-200 text-xs uppercase font-mono tracking-wider">
+                                    <tr>
+                                        <th class="p-3">Veículo / Montaria / Ferramenta</th>
+                                        <th class="p-3 text-right">Preço</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="item-row border-b border-amber-950/40 text-amber-100" onclick="toggleDetails('veh-cart')">
+                                        <td class="p-3">🛒 Carroça Comercial de Dois Eixos (Madeira de Lei)</td>
+                                        <td class="p-3 text-right font-mono">15 PO</td>
+                                    </tr>
+                                    <tr id="veh-cart" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Veículo Terrestre | <strong>Capacidade:</strong> Suporta até 1.000 kg de carga se tracionada por dois cavalos ou mulas. Essencial para escoar os sacos de trigo dos goblins.</td></tr>
+
+                                    <tr class="item-row border-b border-amber-950/40 text-amber-100" onclick="toggleDetails('veh-carriage')">
+                                        <td class="p-3">🛒 Carruagem Coberta Reforçada de Viagem</td>
+                                        <td class="p-3 text-right font-mono">100 PO</td>
+                                    </tr>
+                                    <tr id="veh-carriage" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Veículo Terrestre | <strong>Descrição:</strong> Cabine fechada acolchoada para até 4 passageiros internos mais o condutor. Requer tração animal dupla.</td></tr>
+
+                                    <tr class="item-row border-b border-amber-950/40 text-amber-100" onclick="toggleDetails('beast-mule')">
+                                        <td class="p-3">🐴 Mula de Carga Adestrada Rústica</td>
+                                        <td class="p-3 text-right font-mono">8 PO</td>
+                                    </tr>
+                                    <tr id="beast-mule" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Montaria / Animal | <strong>Atributos:</strong> Deslocamento 12m. Capacidade de carga estendida passiva. Animal teimoso mas extremamente resistente ao clima adverso.</td></tr>
+
+                                    <tr class="item-row border-b border-amber-950/40 text-amber-100" onclick="toggleDetails('beast-draft')">
+                                        <td class="p-3">🐴 Cavalo de Tiro Pesado (Draft Horse)</td>
+                                        <td class="p-3 text-right font-mono">50 PO</td>
+                                    </tr>
+                                    <tr id="beast-draft" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Animal de Tração | <strong>Atributos:</strong> Força elevada, perfeito para engate em carroças pesadas de grãos. Deslocamento 12m.</td></tr>
+
+                                    <tr class="item-row border-b border-amber-950/40 text-amber-100" onclick="toggleDetails('beast-riding')">
+                                        <td class="p-3">🐴 Cavalo de Montaria Rápido (Riding Horse)</td>
+                                        <td class="p-3 text-right font-mono">75 PO</td>
+                                    </tr>
+                                    <tr id="beast-riding" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Montaria | <strong>Atributos:</strong> Deslocamento veloz de 18 metros por turno. Ideal para batedores ou mensageiros rápidos na estrada.</td></tr>
+
+                                    <tr class="item-row border-b border-amber-950/40 text-amber-100" onclick="toggleDetails('beast-feed')">
+                                        <td class="p-3">🌾 Ração Animal Diária Concentrada (Lote 1 dia)</td>
+                                        <td class="p-3 text-right font-mono">5 PC</td>
+                                    </tr>
+                                    <tr id="beast-feed" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Mistura de grãos enriquecida para manter a estamina e saúde de montarias operando sob estresse físico forte.</td></tr>
+
+                                    <tr class="item-row border-b border-amber-950/40 text-amber-100" onclick="toggleDetails('saddle-pack')">
+                                        <td class="p-3">🪢 Sela de Carga Alcochoada com Ganchos</td>
+                                        <td class="p-3 text-right font-mono">5 PO</td>
+                                    </tr>
+                                    <tr id="saddle-pack" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Armação de madeira e couro projetada especificamente para fixar baús, sacos e caixas diretamente no lombo de mulas ou cavalos.</td></tr>
+
+                                    <tr class="item-row border-b border-amber-950/40 text-amber-100" onclick="toggleDetails('saddle-riding')">
+                                        <td class="p-3">🪢 Sela de Montaria Comum de Couro</td>
+                                        <td class="p-3 text-right font-mono">10 PO</td>
+                                    </tr>
+                                    <tr id="saddle-riding" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Sela padrão confortável para viagens longas a cavalo, inclui estribos de ferro e tiras de fixação torácica.</td></tr>
+
+                                    <tr class="item-row border-b border-amber-950/40 text-amber-100" onclick="toggleDetails('tent-2p')">
+                                        <td class="p-3">⛺ Barraca de Lona Impermeável (2 Pessoas)</td>
+                                        <td class="p-3 text-right font-mono">2 PO</td>
+                                    </tr>
+                                    <tr id="tent-2p" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Estrutura compacta desmontável de lona grossa com estacas de sustentação, ideal para batedores.</td></tr>
+
+                                    <tr class="item-row border-b border-amber-950/40 text-amber-100" onclick="toggleDetails('tent-10p')">
+                                        <td class="p-3">⛺ Barraca Tipo Pavilhão Militar (10 Pessoas)</td>
+                                        <td class="p-3 text-right font-mono">20 PO</td>
+                                    </tr>
+                                    <tr id="tent-10p" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Tenda enorme de campanha usada por oficiais ou para abrigar pelotões inteiros de trabalhadores no campo.</td></tr>
+
+                                    <tr class="item-row border-b border-amber-950/40 text-amber-100" onclick="toggleDetails('bedroll')">
+                                        <td class="p-3">🪢 Saco de Dormir de Lã Forrado</td>
+                                        <td class="p-3 text-right font-mono">1 PO</td>
+                                    </tr>
+                                    <tr id="bedroll" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Manta térmica enrolável, isolante básico para o frio cortante das noites no deserto aberto de Vulkarys.</td></tr>
+
+                                    <tr class="item-row border-b border-amber-950/40 text-amber-100" onclick="toggleDetails('climbers-kit')">
+                                        <td class="p-3">⛏️ Kit de Escalada Profissional de Minerador</td>
+                                        <td class="p-3 text-right font-mono">25 PO</td>
+                                    </tr>
+                                    <tr id="climbers-kit" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Ferramenta | <strong>Descrição:</strong> Inclui pítons, botas com cravos, luvas de couro reforçadas e uma cadeirinha de amarração. Impede quedas fatais em paredões íngremes de rocha vulcânica.</td></tr>
+
+                                    <tr class="item-row border-b border-amber-950/40 text-amber-100" onclick="toggleDetails('crowbar')">
+                                        <td class="p-3">⛏️ Pé de Cabra de Ferro Forjado</td>
+                                        <td class="p-3 text-right font-mono">2 PO</td>
+                                    </tr>
+                                    <tr id="crowbar" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Ferramenta de alavancagem pesada. Concede vantagem em testes de Força física para arrombar caixotes emperrados ou portas trancadas.</td></tr>
+
+                                    <tr class="item-row border-b border-amber-950/40 text-amber-100" onclick="toggleDetails('chain-3m')">
+                                        <td class="p-3">⛓️ Corrente de Ferro Reforçada (3 metros)</td>
+                                        <td class="p-3 text-right font-mono">5 PO</td>
+                                    </tr>
+                                    <tr id="chain-3m" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Elos soldados de ferro grosso. Pode ser arrebentada apenas com sucesso em teste severo de Força CD 20 (ou 10 HP).</td></tr>
+
+                                    <tr class="item-row border-b border-amber-950/40 text-amber-100" onclick="toggleDetails('padlock')">
+                                        <td class="p-3">🔒 Cadeado de Ferro com Chave de Latão</td>
+                                        <td class="p-3 text-right font-mono">10 PO</td>
+                                    </tr>
+                                    <tr id="padlock" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Mecanismo de tranca padrão para baús de tesouro ou correntes de segurança. Exige teste de Destreza CD 15 com ferramentas de ladrão para abrir.</td></tr>
+
+                                    <tr class="item-row border-b border-amber-950/40 text-amber-100" onclick="toggleDetails('shovel')">
+                                        <td class="p-3">⛏️ Pá de Ferro de Trincheira</td>
+                                        <td class="p-3 text-right font-mono">2 PO</td>
+                                    </tr>
+                                    <tr id="shovel" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Pá robusta de cabo curto, indispensável para cavar trincheiras defensivas no acampamento ou desenterrar minerais.</td></tr>
+
+                                    <tr class="item-row border-b border-amber-950/40 text-amber-100" onclick="toggleDetails('pickaxe')">
+                                        <td class="p-3">⛏️ Picareta de Minerador de Ignis</td>
+                                        <td class="p-3 text-right font-mono">2 PO</td>
+                                    </tr>
+                                    <tr id="pickaxe" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Ferramenta pesada com ponta dupla reforçada, ideal para romper camadas espessas de pedra calcária e basalto vulcânico.</td></tr>
+
+                                    <tr class="item-row border-b border-amber-950/40 text-amber-100" onclick="toggleDetails('lantern-hood')">
+                                        <td class="p-3">💡 Lanterna Coberta c/ Lentes de Vidro (Hooded)</td>
+                                        <td class="p-3 text-right font-mono">5 PO</td>
+                                    </tr>
+                                    <tr id="lantern-hood" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Lanterna regulável. Ilumina 9 metros de raio com luz plena e mais 9 metros com luz fraca. Possui uma aba regulável para ocultar o feixe de luz instantaneamente. Consome 1 frasco de óleo a cada 6 horas.</td></tr>
+
+                                    <tr class="item-row border-b border-amber-950/40 text-amber-100" onclick="toggleDetails('sledgehammer')">
+                                        <td class="p-3">⛏️ Marreta de Demolição de Duas Mãos</td>
+                                        <td class="p-3 text-right font-mono">2 PO</td>
+                                    </tr>
+                                    <tr id="sledgehammer" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Marreta de aço pesado de 5 kg, usada para quebrar estruturas de alvenaria, rochas grandes ou estacas de contenção.</td></tr>
+
+                                    <tr class="item-row text-amber-100" onclick="toggleDetails('pitons-10')">
+                                        <td class="p-3">⛏️ Pítons Metálicos de Fixação (Kit com 10)</td>
+                                        <td class="p-3 text-right font-mono">5 PP</td>
+                                    </tr>
+                                    <tr id="pitons-10" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Pinos de ferro com olhal na ponta, martelados em frestas de rochas para ancorar cordas de sustentação em escaladas.</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: BUGIGANGAS & MAGIA -->
+        <section>
+            <div class="flex items-center gap-3 border-b border-orange-500/30 pb-3 mb-6">
+                <div class="w-3 h-8 bg-purple-600 rounded"></div>
+                <h2 class="text-3xl font-bold text-orange-400 tracking-wide uppercase">Arcanismo, Artefatos Menores e Bugigangas</h2>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                
+                <!-- LOJA 9: O Baú de Fumaça -->
+                <div class="glass-card rounded-xl p-5 flex flex-col justify-between">
+                    <div>
+                        <div class="mb-4">
+                            <h3 class="text-xl font-bold text-purple-400">9. O Baú de Fumaça (Bugigangas Utilitárias)</h3>
+                            <span class="text-xs text-gray-400 font-mono">Proprietário: Gnomo das Chamas Barnaby Spark</span>
+                            <p class="text-xs text-gray-300 mt-1">Quinquilharias mecânicas curiosas, itens exóticos menores e relíquias mundanas raras de colecionadores.</p>
+                        </div>
+                        <div class="overflow-hidden rounded-lg border border-orange-900/40">
+                            <table class="w-full text-left border-collapse text-sm">
+                                <thead class="bg-purple-950/60 text-purple-200 text-xs uppercase font-mono tracking-wider">
+                                    <tr>
+                                        <th class="p-3">Artefato Menor / Bugiganga</th>
+                                        <th class="p-3 text-right">Preço (PO)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="item-row border-b border-purple-950/40 text-purple-100" onclick="toggleDetails('token-anchor')">
+                                        <td class="p-3">🪙 Símbolo de Pena de Quaal: Âncora</td>
+                                        <td class="p-3 text-right font-mono">50</td>
+                                    </tr>
+                                    <tr id="token-anchor" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Item Maravilhoso / Consumível (Raro) | <strong>Efeito:</strong> Uma pequena pena pintada com a forma de uma âncora. Lançar o token de um barco sintoniza uma âncora invisível mística que prende a embarcação rigidamente no lugar por até 24 horas, impedindo que correntes ou ventos a movam.</td></tr>
+
+                                    <tr class="item-row border-b border-purple-950/40 text-purple-100" onclick="toggleDetails('token-fan')">
+                                        <td class="p-3">🪙 Símbolo de Pena de Quaal: Leque</td>
+                                        <td class="p-3 text-right font-mono">250</td>
+                                    </tr>
+                                    <tr id="token-fan" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Item Maravilhoso / Consumível (Raro) | <strong>Efeito:</strong> Ativar este token transforma-o em um leque gigante flutuante que gera uma rajada constante de vento forte capaz de impulsionar barcos ou dispersar fumaça/gases tóxicos em uma direção por até 8 horas.</td></tr>
+
+                                    <tr class="item-row border-b border-purple-950/40 text-purple-100" onclick="toggleDetails('token-whip')">
+                                        <td class="p-3">🪙 Símbolo de Pena de Quaal: Chicote</td>
+                                        <td class="p-3 text-right font-mono">250</td>
+                                    </tr>
+                                    <tr id="token-whip" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Item Maravilhoso / Consumível (Raro) | <strong>Efeito:</strong> Ativar com uma ação transforma a pena em um chicote flutuante mágico que ataca autonomamente alvos a até 3 metros de distância sob seu comando por 1 hora. Concede bônus de ataque de +9, infligindo 1d6+4 de dano de força em acertos.</td></tr>
+
+                                    <tr class="item-row border-b border-purple-950/40 text-purple-100" onclick="toggleDetails('driftglobe')">
+                                        <td class="p-3">🔮 Globo de Luz Flutuante (Driftglobe)</td>
+                                        <td class="p-3 text-right font-mono">750</td>
+                                    </tr>
+                                    <tr id="driftglobe" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Item Maravilhoso (Incomum) | <strong>Efeito:</strong> Uma esfera de vidro inquebrável. Pronunciar a palavra de comando faz com que ela flutue autonomamente a até 1,5m do chão acompanhando seus passos. Pode conjurar a magia *Light* (Luz) à vontade ou a magia *Daylight* (Luz do Dia) uma vez por dia (expira após 1 hora e recarrega ao amanhecer).</td></tr>
+
+                                    <tr class="item-row border-b border-purple-950/40 text-purple-100" onclick="toggleDetails('goggles-night')">
+                                        <td class="p-3">👓 Óculos de Visão Noturna (Goggles of Night)</td>
+                                        <td class="p-3 text-right font-mono">1.500</td>
+                                    </tr>
+                                    <tr id="goggles-night" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Item Maravilhoso (Incomum) | <strong>Efeito:</strong> Lentes de cristal escurecido com armação de cobre. Ao serem vestidos, concedem Visão no Escuro (Darkvision) com alcance de 18 metros. Caso você já possua visão no escuro racial nativa, o alcance dela é estendido em mais 18 metros adicionais. Não requer sintonização.</td></tr>
+
+                                    <tr class="item-row border-b border-purple-950/40 text-purple-100" onclick="toggleDetails('helm-lang')">
+                                        <td class="p-3">🪘 Elmo de Compreender Idiomas</td>
+                                        <td class="p-3 text-right font-mono">500</td>
+                                    </tr>
+                                    <tr id="helm-lang" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Item Maravilhoso (Incomum) | <strong>Efeito:</strong> Enquanto usar este elmo leve de metal escovado, você pode conjurar a magia *Comprehend Languages* (Compreender Idiomas) à vontade através de uma ação, permitindo entender qualquer idioma falado ou escrito que presencie.</td></tr>
+
+                                    <tr class="item-row border-b border-purple-950/40 text-purple-100" onclick="toggleDetails('cap-waterb')">
+                                        <td class="p-3">🪘 Gorro da Respiração Aquática (Cap)</td>
+                                        <td class="p-3 text-right font-mono">1.000</td>
+                                    </tr>
+                                    <tr id="cap-waterb" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Item Maravilhoso (Incomum) | <strong>Efeito:</strong> Um gorro de tecido impermeável que ajusta-se à cabeça. Permite conjurar a magia *Water Breathing* à vontade sobre si mesmo, garantindo sobrevivência irrestrita submerso em oceanos ou lagos.</td></tr>
+
+                                    <tr class="item-row border-b border-purple-950/40 text-purple-100" onclick="toggleDetails('chime-open')">
+                                        <td class="p-3">🔔 Sino de Abertura Mecânico (Chime of Opening)</td>
+                                        <td class="p-3 text-right font-mono">1.500</td>
+                                    </tr>
+                                    <tr id="chime-open" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Item Maravilhoso (Raro) | <strong>Efeito:</strong> Um pequeno carrilhão de metal com 10 cargas estáveis. Apontar para uma porta, baú, tranca, ferrolho ou corrente trancada a até 9 metros e soar o sino gasta 1 carga. O mecanismo emite um tom harmônico audível a 9m e a tranca física ou mágica abre-se automaticamente. O item desintegra-se após esgotar a 10ª carga.</td></tr>
+
+                                    <tr class="item-row border-b border-purple-950/40 text-purple-100" onclick="toggleDetails('sending-stones')">
+                                        <td class="p-3">🪨 Pedras de Envio Telepático (Par de Stones)</td>
+                                        <td class="p-3 text-right font-mono">2.000</td>
+                                    </tr>
+                                    <tr id="sending-stones" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Item Maravilhoso (Incomum) | <strong>Efeito:</strong> Vem em um par sintonizado de pedras rúnicas lisas. Segurar uma das pedras permite conjurar a magia *Sending* (Enviar Mensagem) 1 vez por dia direcionada especificamente para o portador da pedra irmã sintonizada, cruzando qualquer distância ou plano. Recarrega ao amanhecer.</td></tr>
+
+                                    <tr class="item-row border-b border-purple-950/40 text-purple-100" onclick="toggleDetails('deck-illusions')">
+                                        <td class="p-3">🃏 Baralho das Ilusões (Incompleto - 12 cartas)</td>
+                                        <td class="p-3 text-right font-mono">6.120</td>
+                                    </tr>
+                                    <tr id="deck-illusions" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Item Maravilhoso (Incomum) | <strong>Efeito:</strong> Um maço de cartas de pergaminho pintadas. Sacar uma carta aleatoriamente e jogá-la ao chão conjura uma ilusão perfeita e estática da magia *Major Image* representando uma criatura perigosa (ex: Dragão, Beholder, Lich). A ilusão engana sentidos visuais e sonoros básicos e dura até que a carta seja recolhida fisicamente do chão.</td></tr>
+
+                                    <tr class="item-row border-b border-purple-950/40 text-purple-100" onclick="toggleDetails('hourglass-silver')">
+                                        <td class="p-3">⏳ Ampulheta de Prata de Precisão</td>
+                                        <td class="p-3 text-right font-mono">25</td>
+                                    </tr>
+                                    <tr id="hourglass-silver" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Ampulheta entalhada em prata pura preenchida com areia vulcânica vermelha finíssima. Mede exatamente 1 hora contínua ao ser virada.</td></tr>
+
+                                    <tr class="item-row border-b border-purple-950/40 text-purple-100" onclick="toggleDetails('spyglass')">
+                                        <td class="p-3">🔭 Luneta Telescópica de Bronze (Spyglass)</td>
+                                        <td class="p-3 text-right font-mono">1.000</td>
+                                    </tr>
+                                    <tr id="spyglass" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Instrumento ótico avançado com duas lentes de cristal polido. Amplia objetos e criaturas distantes em até 20 vezes a aproximação visual real.</td></tr>
+
+                                    <tr class="item-row border-b border-purple-950/40 text-purple-100" onclick="toggleDetails('clothes-fine')">
+                                        <td class="p-3">👔 Vestes Finas Aristocráticas de Seda</td>
+                                        <td class="p-3 text-right font-mono">15</td>
+                                    </tr>
+                                    <tr id="clothes-fine" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Roupas costuradas com fios de seda importados e botões de osso polido, adequadas para jantares com barões ou diplomatas comerciais.</td></tr>
+
+                                    <tr class="item-row border-b border-purple-950/40 text-purple-100" onclick="toggleDetails('perfume')">
+                                        <td class="p-3">🧪 Perfume de Flores Exóticas (Frasco de Cristal)</td>
+                                        <td class="p-3 text-right font-mono">5</td>
+                                    </tr>
+                                    <tr id="perfume" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Frasco contendo essências concentradas de jasmim da noite, capaz de mascarar odores corporais de viagens longas por até 24 horas.</td></tr>
+
+                                    <tr class="item-row border-b border-purple-950/40 text-purple-100" onclick="toggleDetails('magnifying-glass')">
+                                        <td class="p-3">🔍 Lupa de Vidro de Alta Ampliação</td>
+                                        <td class="p-3 text-right font-mono">100</td>
+                                    </tr>
+                                    <tr id="magnifying-glass" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Lente convexa circular pesada montada em cabo de osso. Fornece vantagem em testes de Investigação para ler runas minúsculas ou falsificações.</td></tr>
+
+                                    <tr class="item-row border-b border-purple-950/40 text-purple-100" onclick="toggleDetails('bell-trinket')">
+                                        <td class="p-3">🔔 Sininho de Bronze de Mesa</td>
+                                        <td class="p-3 text-right font-mono">1</td>
+                                    </tr>
+                                    <tr id="bell-trinket" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Um sino minúsculo com som agudo e cristalino, audível a até 18 metros de distância em ambientes silenciosos.</td></tr>
+
+                                    <tr class="item-row border-b border-purple-950/40 text-purple-100" onclick="toggleDetails('ink-quill')">
+                                        <td class="p-3">✒️ Tinteiro de Vidro e Pena de Grifo Luxuosa</td>
+                                        <td class="p-3 text-right font-mono">10</td>
+                                    </tr>
+                                    <tr id="ink-quill" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Frasco de tinta preta ferrogálica indelével e de secagem rápida, acompanhado de uma pena de Grifo balanceada para caligrafia oficial.</td></tr>
+
+                                    <tr class="item-row border-b border-purple-950/40 text-purple-100" onclick="toggleDetails('blank-book')">
+                                        <td class="p-3">📖 Livro de Tombo em Branco (Couro e Pergaminho)</td>
+                                        <td class="p-3 text-right font-mono">25</td>
+                                    </tr>
+                                    <tr id="blank-book" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Contém 100 páginas limpas de pergaminho liso costurado, encadernação pesada em couro de bezerro com fecho metálico simples.</td></tr>
+
+                                    <tr class="item-row border-b border-purple-950/40 text-purple-100" onclick="toggleDetails('merchant-scales')">
+                                        <td class="p-3">⚖️ Balança Portátil de Mercador de Joias</td>
+                                        <td class="p-3 text-right font-mono">5</td>
+                                    </tr>
+                                    <tr id="merchant-scales" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Pequena balança de braço articulado em estojo de madeira, inclui pesos padrão de latão para aferir moedas de ouro ou gemas.</td></tr>
+
+                                    <tr class="item-row text-purple-100" onclick="toggleDetails('tinderbox')">
+                                        <td class="p-3">🔥 Caixa de Fogo Mecânica (Tinderbox)</td>
+                                        <td class="p-3 text-right font-mono">5 PP</td>
+                                    </tr>
+                                    <tr id="tinderbox" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Pequeno estojo metálico contendo uma pederneira de silício, um batedor de aço e um rolo de pavio de algodão seco para acender tochas em 1 rodada.</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LOJA 10: O Pergaminho Chamuscado -->
+                <div class="glass-card rounded-xl p-5 flex flex-col justify-between border-orange-500/40 shadow-[0_0_20px_rgba(249,115,22,0.2)]">
+                    <div>
+                        <div class="mb-4">
+                            <h3 class="text-xl font-bold text-orange-400">10. O Pergaminho Chamuscado (Torre de Magia)</h3>
+                            <span class="text-xs text-gray-400 font-mono">Proprietário: Mago Conjurador Ignis Pyromis</span>
+                            <p class="text-xs text-gray-300 mt-1">Biblioteca mística rústica. Não vende itens mágicos permanentes complexos, contendo **apenas 3 armas/defesas +1 de combate** e uma vasta coleção de rolos escritos e elixires consumíveis existentes.</p>
+                        </div>
+                        <div class="overflow-hidden rounded-lg border border-orange-900/40">
+                            <table class="w-full text-left border-collapse text-sm">
+                                <thead class="bg-orange-950/60 text-orange-200 text-xs uppercase font-mono tracking-wider">
+                                    <tr>
+                                        <th class="p-3">Pergaminho / Arma +1 Limitada</th>
+                                        <th class="p-3 text-right">Preço (PO)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- EXATAMENTE TRÊS ITENS +1 DE COMBATE -->
+                                    <tr class="item-row border-b border-orange-950/40 bg-orange-950/20 text-yellow-400 font-bold" onclick="toggleDetails('mag-wand-war')">
+                                        <td class="p-3">🔮 [Relíquia 1 de 3] Varinha do Mago de Guerra +1 <span class="badge-class bg-yellow-600 text-black text-[10px] ml-1">Druida</span></td>
+                                        <td class="p-3 text-right font-mono">1.200</td>
+                                    </tr>
+                                    <tr id="mag-wand-war" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Varinha Mágica de Canalização (Incomum) | <strong>Efeito:</strong> Enquanto empunhar esta varinha de madeira petrificada vulcanizada, você recebe um bônus constante de +1 em suas jogadas de ataque de magia (Spell Attack Rolls) e suas magias ignoram cobertura de meio-couro (Half Cover) de alvos. Perfeita para a forma de Estrelas (Arqueiro) do Druida. Requer sintonização.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 bg-orange-950/20 text-yellow-400 font-bold" onclick="toggleDetails('mag-dagger-1')">
+                                        <td class="p-3">⚔️ [Relíquia 2 de 3] Adaga Rúnica +1 <span class="badge-class bg-yellow-600 text-black text-[10px] ml-1">Blood Hunter</span></td>
+                                        <td class="p-3 text-right font-mono">1.002</td>
+                                    </tr>
+                                    <tr id="mag-dagger-1" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Arma Simples Mágica (Incomum) | <strong>Dano:</strong> 1d4+1 perfurante (Acuidade, Leve, Arremesso 6m/18m).<br><strong>Propriedades:</strong> Uma adaga cerimonial de obsidiana. Concede bônus de +1 nos testes de ataque e rolagens de dano. Conta como dano mágico para superar imunidades físicas.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 bg-orange-950/20 text-yellow-400 font-bold" onclick="toggleDetails('mag-shield-1')">
+                                        <td class="p-3">🛡️ [Relíquia 3 de 3] Escudo +1 de Carvalho de Fogo <span class="badge-class bg-yellow-600 text-black text-[10px] ml-1">Clérigo / Paladino / Druida</span></td>
+                                        <td class="p-3 text-right font-mono">1.510</td>
+                                    </tr>
+                                    <tr id="mag-shield-1" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Escudo Mágico (Incomum) | <strong>Defesa:</strong> CA +3 (+2 base do escudo e +1 de bônus mágico passivo incorporado).<br><strong>Propriedades:</strong> Escudo feito com casca de árvore elemental petrificada em magma. Não requer sintonização. Protege os conjuradores de linha de frente.</td></tr>
+
+                                    <!-- PERGAMINHOS EXISTENTES E POÇÕES -->
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-200" onclick="toggleDetails('scroll-cantrip')">
+                                        <td class="p-3">📜 Pergaminho de Magia Base (Truque / Cantrip)</td>
+                                        <td class="p-3 text-right font-mono">10</td>
+                                    </tr>
+                                    <tr id="scroll-cantrip" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Pergaminho Mágico (Comum) | <strong>Efeito:</strong> Contém um Truque escrito (ex: *Frostbite* ou *Fire Bolt*). Esfumaça-se ao ser conjurado. Se o feitiço estiver na sua lista de classe, você pode ler o rolo e ativá-lo como uma ação sem gastar slots. Se for de nível maior do que você pode lançar, rola teste da sua habilidade de conjuração CD 10 para não falhar.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-200" onclick="toggleDetails('scroll-lv1')">
+                                        <td class="p-3">📜 Pergaminho de Magia (Nível 1)</td>
+                                        <td class="p-3 text-right font-mono">60</td>
+                                    </tr>
+                                    <tr id="scroll-lv1" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Pergaminho Mágico (Comum) | <strong>Efeito:</strong> Contém uma magia de 1º círculo (CD de salvamento de magia fixa em 13, modificador de ataque mágico em +5). Rolo desintegra-se em cinzas douradas após a conjuração.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-200" onclick="toggleDetails('scroll-lv2')">
+                                        <td class="p-3">📜 Pergaminho de Magia (Nível 2)</td>
+                                        <td class="p-3 text-right font-mono">120</td>
+                                    </tr>
+                                    <tr id="scroll-lv2" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Pergaminho Mágico (Incomum) | <strong>Efeito:</strong> Contém uma magia de 2º círculo (CD fixa em 13, bônus de ataque em +5). Consome-se integralmente no ato do lançamento.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-200" onclick="toggleDetails('scroll-lv3')">
+                                        <td class="p-3">📜 Pergaminho de Magia (Nível 3)</td>
+                                        <td class="p-3 text-right font-mono">200</td>
+                                    </tr>
+                                    <tr id="scroll-lv3" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Pergaminho Mágico (Incomum) | <strong>Efeito:</strong> Contém uma magia potente de 3º círculo (CD fixa em 15, modificador de ataque em +7). Essencial para magias de impacto tático na arena.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-200" onclick="toggleDetails('scroll-lv4')">
+                                        <td class="p-3">📜 Pergaminho de Magia (Nível 4)</td>
+                                        <td class="p-3 text-right font-mono">320</td>
+                                    </tr>
+                                    <tr id="scroll-lv4" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Pergaminho Mágico (Raro) | <strong>Efeito:</strong> Contém uma magia complexa de 4º círculo (CD fixa em 15, modificador de ataque em +7). Rolo de pergaminho de alta qualidade rúnica.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-200" onclick="toggleDetails('scroll-lv5')">
+                                        <td class="p-3">📜 Pergaminho de Magia (Nível 5)</td>
+                                        <td class="p-3 text-right font-mono">640</td>
+                                    </tr>
+                                    <tr id="scroll-lv5" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Pergaminho Mágico (Raro) | <strong>Efeito:</strong> Contém feitiço devastador de 5º círculo (CD de salvamento fixa em 17, modificador de ataque mágico em +9). Exige habilidade arcana extrema.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-200" onclick="toggleDetails('scroll-prot')">
+                                        <td class="p-3">📜 Pergaminho de Proteção Universal (Protection)</td>
+                                        <td class="p-3 text-right font-mono">180</td>
+                                    </tr>
+                                    <tr id="scroll-prot" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Pergaminho Mágico (Raro) | <strong>Efeito:</strong> Ativar este rolo com uma ação cria uma barreira protetora invisível de 3 metros de raio centrada em você por 5 minutos. Escolha uma categoria de criatura: Aberrações, Celestiais, Elementais, Fadas, Demônios/Diabos ou Mortos-Vivos. Os tipos escolhidos possuem desvantagem em jogadas de ataque contra qualquer aliado dentro da barreira e não podem entrar na área de proteção voluntariamente. Não requer concentração.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-200" onclick="toggleDetails('pot-heal-m1')">
+                                        <td class="p-3">🧪 Poção de Cura Essencial</td>
+                                        <td class="p-3 text-right font-mono">50</td>
+                                    </tr>
+                                    <tr id="pot-heal-m1" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Elixir carmesim clássico para emergências biológicas. Cura 2d4+2 pontos de vida estáveis.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-200" onclick="toggleDetails('pot-heal-m2')">
+                                        <td class="p-3">🧪 Poção de Cura Maior (Greater)</td>
+                                        <td class="p-3 text-right font-mono">150</td>
+                                    </tr>
+                                    <tr id="pot-heal-m2" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Restaurador celular místico aprimorado para feridas abrasivas. Cura 4d4+4 HP.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-200" onclick="toggleDetails('sc-mmis')">
+                                        <td class="p-3">📜 Perg. Específico: Mísseis Mágicos (Nível 1) (+10% variação)</td>
+                                        <td class="p-3 text-right font-mono">66</td>
+                                    </tr>
+                                    <tr id="sc-mmis" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Garante a conjuração instantânea de 3 dardos infalíveis de energia mística da força da magia *Magic Missiles*. Cada dardo causa 1d4+1 de dano de força.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-200" onclick="toggleDetails('sc-invis')">
+                                        <td class="p-3">📜 Perg. Específico: Invisibilidade (Nível 2) (+10% variação)</td>
+                                        <td class="p-3 text-right font-mono">132</td>
+                                    </tr>
+                                    <tr id="sc-invis" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Conjura os efeitos diretos da magia *Invisibility* em uma criatura tocada pelo leitor do pergaminho. Dura até 1 hora ou até atacar/lançar magia.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-200" onclick="toggleDetails('sc-fball')">
+                                        <td class="p-3">📜 Perg. Específico: Bola de Fogo (Nível 3) (+10% variação)</td>
+                                        <td class="p-3 text-right font-mono">220</td>
+                                    </tr>
+                                    <tr id="sc-fball" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Explosão rúnica massiva em área. Emula a magia *Fireball*. Uma esfera de fogo explode em um ponto escolhido a até 45 metros, causando 8d6 de dano de fogo em um raio de 6 metros (Salvamento de Destreza CD 15 reduz à metade).</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-200" onclick="toggleDetails('sc-sholy')">
+                                        <td class="p-3">📜 Perg. Específico: Chama Sagrada (Truque) (+20% variação)</td>
+                                        <td class="p-3 text-right font-mono">12</td>
+                                    </tr>
+                                    <tr id="sc-sholy" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Emula o truque clerical *Sacred Flame*. Radiação divina desce sobre uma criatura visível a até 18 metros. Alvo deve passar em salvamento de Destreza CD 13 ou sofrerá 2d8 de dano radiante (ignora bônus de cobertura).</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-200" onclick="toggleDetails('sc-prot-fire')">
+                                        <td class="p-3">📜 Pergaminho de Proteção (Elementais do Fogo) (+10%)</td>
+                                        <td class="p-3 text-right font-mono">198</td>
+                                    </tr>
+                                    <tr id="sc-prot-fire" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Rolo rúnico focado em expelir e reprimir investidas de seres do plano elemental do fogo. Fornece desvantagem de ataque a eles.</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-200" onclick="toggleDetails('pot-fbreath-m')">
+                                        <td class="p-3">🧪 Poção de Sopro de Fogo Estocada</td>
+                                        <td class="p-3 text-right font-mono">150</td>
+                                    </tr>
+                                    <tr id="pot-fbreath-m" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300">Frasco de vidro contendo essência de salamandra vulcânica líquida. Permite bufar fogo por ação bônus 3 vezes (4d6 de dano).</td></tr>
+
+                                    <tr class="item-row border-b border-orange-950/40 text-orange-200" onclick="toggleDetails('sc-passwithout')">
+                                        <td class="p-3">📜 Perg. Específico: Passos sem Pegadas <span class="badge-class bg-yellow-600 text-black text-[10px] ml-1">Druida / BH</span></td>
+                                        <td class="p-3 text-right font-mono">120</td>
+                                    </tr>
+                                    <tr id="sc-passwithout" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Pergaminho Mágico (Incomum) | <strong>Efeito:</strong> Conjura em área a magia *Pass Without a Trace*. Uma cortina de sombras e silêncio estende-se ao redor do leitor. Por 1 hora, você e seus aliados a até 9 metros ganham um bônus absurdo de +10 em testes de Destreza (Furtividade/Stealth) e não podem ser rastreados por meios não mágicos. Excelente utilitário para o Druida ou Blood Hunter.</td></tr>
+
+                                    <tr class="item-row text-orange-200" onclick="toggleDetails('sc-revivify')">
+                                        <td class="p-3">📜 Perg. Específico: Revivificar (Nível 3) <span class="badge-class bg-yellow-600 text-black text-[10px] ml-1">Clérigo / Paladino</span></td>
+                                        <td class="p-3 text-right font-mono">200</td>
+                                    </tr>
+                                    <tr id="sc-revivify" class="details-box bg-black/40"><td colspan="2" class="p-4 text-xs text-gray-300"><strong>Tipo:</strong> Pergaminho Mágico (Incomum) | <strong>Efeito:</strong> Conjura instantaneamente os efeitos sagrados da magia de ressurreição *Revivify*. Tocar o corpo de uma criatura que tenha morrido em até 1 minuto faz com que ela retorne à vida imediatamente com 1 ponto de vida estável. O pergaminho fornece a energia mágica rúnica, mas consome o rolo.</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Vanilla Javascript Interactive Controls -->
+    <script>
+        function toggleDetails(rowId) {
+            const detailsBox = document.getElementById(rowId);
+            if (detailsBox.style.display === "table-row") {
+                detailsBox.style.display = "none";
+            } else {
+                // First close all other details boxes to keep it clean
+                const allBoxes = document.querySelectorAll('.details-box');
+                allBoxes.forEach(box => box.style.display = 'none');
+                
+                // Open the targeted one
+                detailsBox.style.display = "table-row";
+            }
+        }
+    </script>
+</body>
+</html>
