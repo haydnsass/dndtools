@@ -641,7 +641,7 @@
 			"ac": 14,
 			"armor": true,
 			"entries": [
-				"This armor consists of a fitted metal chest piece worn with supple leather. Although it leaves the legs and arms relatively unprotected, this armor provides good protection for the wearer's vital organs while leaving the wearer relatively unencumbered."
+				"Esta armadura consiste em uma peça de metal ajustada no peito, usada com couro macio. Embora deixe as pernas e os braços relativamente desprotegidos, esta armadura oferece boa proteção para os órgãos vitais do usuário, enquanto o mantém relativamente desimpedido."
 			]
 		},
 		{
@@ -820,41 +820,41 @@
 			"weight": 5,
 			"value": 1000,
 			"additionalEntries": [
-				"Calligraphy treats writing as a delicate, beautiful art. Calligraphers produce text that is pleasing to the eye, using a style that is difficult to forge. Their supplies also give them some ability to examine scripts and determine if they are legitimate, since a calligrapher's training involves long hours of studying writing and attempting to replicate its style and design.",
+				"A caligrafia trata a escrita como uma arte delicada e bela. Calígrafos produzem textos que são agradáveis aos olhos, utilizando um estilo que é difícil de falsificar. Seus suprimentos também lhes conferem alguma habilidade para examinar manuscritos e determinar se são legítimos, uma vez que o treinamento de um calígrafo envolve longas horas de estudo da escrita e tentativas de replicar seu estilo e design.",
 				{
 					"type": "entries",
-					"name": "Components",
+					"name": "Componentes",
 					"entries": [
-						"Calligrapher's supplies include ink, a dozen sheets of parchment, and three quills."
+						"Os suprimentos de caligrafia incluem tinta, uma dúzia de folhas de pergaminho e três penas."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Arcana",
 					"entries": [
-						"Although calligraphy is of little help in deciphering the content of magical writings, proficiency with these supplies can aid in identifying who wrote a script of a magical nature."
+						"Embora a caligrafia seja de pouca ajuda para decifrar o conteúdo de escritos mágicos, a proficiência com esses suprimentos pode ajudar a identificar quem escreveu um manuscrito de natureza mágica."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "History",
+					"name": "História",
 					"entries": [
-						"This tool proficiency can augment the benefit of successful checks made to analyze or investigate ancient writings, scrolls, or other texts, including runes etched in stone or messages in frescoes or other displays."
+						"Essa proficiência em ferramentas pode aumentar o benefício de testes bem-sucedidos feitos para analisar ou investigar escritos antigos, pergaminhos ou outros textos, incluindo runas gravadas em pedra ou mensagens em afrescos ou outras exibições."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Decipher Treasure Map",
+					"name": "Decifrar Mapa do Tesouro",
 					"entries": [
-						"This tool proficiency grants you expertise in examining maps. You can make an Intelligence check to determine a map's age, whether a map includes any hidden messages, or similar facts."
+						"Essa proficiência em ferramentas concede a você especialização em examinar mapas. Você pode fazer um teste de Inteligência para determinar a idade de um mapa, se um mapa inclui mensagens ocultas ou fatos semelhantes."
 					]
 				},
 				{
 					"type": "table",
-					"caption": "Calligrapher's Supplies",
+					"caption": "Suprimentos de Caligrafia",
 					"colLabels": [
-						"Activity",
-						"DC"
+						"Atividade",
+						"CD"
 					],
 					"colStyles": [
 						"col-6",
@@ -862,19 +862,19 @@
 					],
 					"rows": [
 						[
-							"Identify writer of nonmagical script",
+							"Identificar o autor de um manuscrito não mágico",
 							"10"
 						],
 						[
-							"Determine writer's state of mind",
+							"Determinar o estado de espírito do autor",
 							"15"
 						],
 						[
-							"Spot forged text",
+							"Identificar texto falsificado",
 							"15"
 						],
 						[
-							"Forge a signature",
+							"Falsificar uma assinatura",
 							"20"
 						]
 					]
@@ -1092,48 +1092,48 @@
 			"weight": 6,
 			"value": 1500,
 			"additionalEntries": [
-				"Using cartographer's tools, you can create accurate maps to make travel easier for yourself and those who come after you. These maps can range from large-scale depictions of mountain ranges to diagrams that show the layout of a dungeon level.",
+				"Usando as ferramentas de cartografia, você pode criar mapas precisos para facilitar a viagem para si mesmo e para aqueles que vierem depois de você. Esses mapas podem variar desde representações em grande escala de cadeias de montanhas até diagramas que mostram a disposição de um nível de masmorras.",
 				{
 					"type": "entries",
-					"name": "Components",
+					"name": "Componentes",
 					"entries": [
-						"Cartographer's tools consist of a quill, ink, parchment, a pair of compasses, calipers, and a ruler."
+						"As ferramentas de cartografia consistem em uma pena, tinta, pergaminho, um par de compasses, calipers e uma régua."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Arcana, History, Religion",
+					"name": "Arcana, História, Religião",
 					"entries": [
-						"You can use your knowledge of maps and locations to unearth more detailed information when you use these skills. For instance, you might spot hidden messages in a map, identify when the map was made to determine if geographical features have changed since then, and so forth."
+						"Você pode usar seu conhecimento sobre mapas e locais para descobrir informações mais detalhadas ao usar essas habilidades. Por exemplo, você pode notar mensagens ocultas em um mapa, identificar quando o mapa foi feito para determinar se características geográficas mudaram desde então, e assim por diante."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Nature",
+					"name": "Natureza",
 					"entries": [
-						"Your familiarity with physical geography makes it easier for you to answer questions or solve issues relating to the terrain around you."
+						"Sua familiaridade com a geografia física torna mais fácil para você responder perguntas ou resolver questões relacionadas ao terreno ao seu redor."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Survival",
+					"name": "Sobrevivência",
 					"entries": [
-						"Your understanding of geography makes it easier to find paths to civilization, to predict areas where villages or towns might be found, and to avoid becoming lost. You have studied so many maps that common patterns, such as how trade routes evolve and where settlements arise in relation to geographic locations, are familiar to you."
+						"Sua compreensão da geografia facilita encontrar caminhos para a civilização, prever áreas onde vilas ou cidades podem ser encontradas e evitar se perder. Você estudou tantos mapas que padrões comuns, como a evolução das rotas comerciais e onde os assentamentos surgem em relação a locais geográficos, são familiares para você."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Craft a Map",
+					"name": "Criar um Mapa",
 					"entries": [
-						"While traveling, you can draw a map as you go in addition to engaging in other activity."
+						"Enquanto viaja, você pode desenhar um mapa à medida que avança, além de se envolver em outras atividades."
 					]
 				},
 				{
 					"type": "table",
-					"caption": "Cartographer's Tools",
+					"caption": "Ferramentas de Cartografia",
 					"colLabels": [
-						"Activity",
-						"DC"
+						"Atividade",
+						"CD"
 					],
 					"colStyles": [
 						"col-10",
@@ -1141,19 +1141,19 @@
 					],
 					"rows": [
 						[
-							"Determine a map's age and origin",
+							"Determinar a idade e a origem de um mapa",
 							"10"
 						],
 						[
-							"Estimate direction and distance to a landmark",
+							"Estimar direção e distância até um marco",
 							"15"
 						],
 						[
-							"Discern that a map is fake",
+							"Discernir que um mapa é falso",
 							"15"
 						],
 						[
-							"Fill in a missing part of a map",
+							"Preencher uma parte faltante de um mapa",
 							"20"
 						]
 					]
@@ -1229,7 +1229,7 @@
 			"armor": true,
 			"stealth": true,
 			"entries": [
-				"Made of interlocking metal rings, chain mail includes a layer of quilted fabric worn underneath the mail to prevent chafing and to cushion the impact of blows. The suit includes gauntlets."
+				"Feita de anéis de metal interligados, a cota de malha inclui uma camada de tecido acolchoado usada por baixo da malha para evitar atrito e para amortecer o impacto dos golpes. A armadura inclui manoplas."
 			]
 		},
 		{
@@ -1272,7 +1272,7 @@
 			"ac": 13,
 			"armor": true,
 			"entries": [
-				"Made of interlocking metal rings, a chain shirt is worn between layers of clothing or leather. This armor offers modest protection to the wearer's upper body and allows the sound of the rings rubbing against one another to be muffled by outer layers."
+				"Feita de anéis de metal interligados, uma camisa de corrente é usada entre camadas de roupas ou couro. Esta armadura oferece proteção modesta para a parte superior do corpo do usuário e permite que o som dos anéis se esfregando uns contra os outros seja abafado por camadas externas."
 			]
 		},
 		{
@@ -1497,48 +1497,48 @@
 			"weight": 8,
 			"value": 100,
 			"additionalEntries": [
-				"Adventuring is a hard life. With a cook along on the journey, your meals will be much better than the typical mix of hardtack and dried fruit.",
+				"Aventurar-se é uma vida difícil. Com um cozinheiro ao longo da jornada, suas refeições serão muito melhores do que a mistura típica de biscoitos duros e frutas secas.",
 				{
 					"type": "entries",
-					"name": "Components",
+					"name": "Componentes",
 					"entries": [
-						"Cook's utensils include a metal pot, knives, forks, a stirring spoon, and a ladle."
+						"Utensílios de cozinheiro incluem uma panela de metal, facas, garfos, uma colher de mexer e uma concha."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "History",
+					"name": "História",
 					"entries": [
-						"Your knowledge of cooking techniques allows you to assess the social patterns involved in a culture's eating habits."
+						"Seu conhecimento de técnicas de culinária permite que você avalie os padrões sociais envolvidos nos hábitos alimentares de uma cultura."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Medicine",
+					"name": "Medicina",
 					"entries": [
-						"When administering treatment, you can transform medicine that is bitter or sour into a pleasing concoction."
+						"Ao administrar tratamento, você pode transformar remédios que são amargos ou azedos em uma mistura agradável."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Survival",
+					"name": "Sobrevivência",
 					"entries": [
-						"When foraging for food, you can make do with ingredients you scavenge that others would be unable to transform into nourishing meals."
+						"Ao forragear por comida, você pode se virar com ingredientes que você encontra e que outros não conseguiriam transformar em refeições nutritivas."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Prepare Meals",
+					"name": "Preparar Refeições",
 					"entries": [
-						"As part of a short rest, you can prepare a tasty meal that helps your companions regain their strength. You and up to five creatures of your choice regain 1 extra hit point per Hit Die spent during a short rest, provided you have access to your cook's utensils and sufficient food."
+						"Como parte de um descanso curto, você pode preparar uma refeição saborosa que ajuda seus companheiros a recuperar suas forças. Você e até cinco criaturas de sua escolha recuperam 1 ponto de vida extra por dado de vida gasto durante um descanso curto, desde que você tenha acesso aos seus utensílios de cozinheiro e comida suficiente."
 					]
 				},
 				{
 					"type": "table",
-					"caption": "Cook's Utensils",
+					"caption": "Utensílios de Cozinheiro",
 					"colLabels": [
-						"Activity",
-						"DC"
+						"Atividade",
+						"CD"
 					],
 					"colStyles": [
 						"col-10",
@@ -1546,19 +1546,19 @@
 					],
 					"rows": [
 						[
-							"Create a typical meal",
+							"Criar uma refeição típica",
 							"10"
 						],
 						[
-							"Duplicate a meal",
+							"Duplicar uma refeição",
 							"10"
 						],
 						[
-							"Spot poison or impurities in food",
+							"Identificar veneno ou impurezas na comida",
 							"15"
 						],
 						[
-							"Create a gourmet meal",
+							"Criar uma refeição gourmet",
 							"15"
 						]
 					]
@@ -2000,7 +2000,7 @@
 			"value": 30,
 			"bulletFirearm": true,
 			"entries": [
-				"Firearm Bullets are destroyed upon use in a modern firearm."
+				"Balas de armas de fogo são destruídas ao serem usadas em uma arma de fogo moderna."
 			],
 			"miscTags": [
 				"CNS"
@@ -2017,7 +2017,7 @@
 			"value": 300,
 			"bulletFirearm": true,
 			"entries": [
-				"Firearm Bullets are destroyed upon use in a modern firearm."
+				"Balas de arma de fogo são destruídas ao serem usadas em uma arma de fogo moderna."
 			],
 			"packContents": [
 				{
@@ -2206,41 +2206,41 @@
 			"weight": 5,
 			"value": 3000,
 			"additionalEntries": [
-				"Someone who is proficient with glassblower's tools has not only the ability to shape glass, but also specialized knowledge of the methods used to produce glass objects.",
+				"Alguém que é proficiente com ferramentas de vidraceiro não apenas tem a habilidade de moldar vidro, mas também conhecimento especializado dos métodos usados para produzir objetos de vidro.",
 				{
 					"type": "entries",
-					"name": "Components",
+					"name": "Componentes",
 					"entries": [
-						"The tools include a blowpipe, a small marver, blocks, and tweezers. You need a source of heat to work glass."
+						"As ferramentas incluem um canudo, um pequeno marver, blocos e pinças. Você precisa de uma fonte de calor para trabalhar com vidro."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Arcana, History",
+					"name": "Arcana, História",
 					"entries": [
-						"Your knowledge of glassmaking techniques aids you when you examine glass objects, such as potion bottles or glass items found in a treasure hoard. For instance, you can study how a glass potion bottle has been changed by its contents to help determine a potion's effects. (A potion might leave behind a residue, deform the glass, or stain it.)"
+						"Seu conhecimento das técnicas de fabricação de vidro ajuda você quando examina objetos de vidro, como frascos de poção ou itens de vidro encontrados em um tesouro. Por exemplo, você pode estudar como um frasco de poção de vidro foi alterado por seu conteúdo para ajudar a determinar os efeitos de uma poção. (Uma poção pode deixar um resíduo, deformar o vidro ou manchá-lo.)"
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Investigation",
+					"name": "Investigação",
 					"entries": [
-						"When you study an area, your knowledge can aid you if the clues include broken glass or glass objects."
+						"Quando você estuda uma área, seu conhecimento pode ajudar se as pistas incluírem vidro quebrado ou objetos de vidro."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Identify Weakness",
+					"name": "Identificar Fraquezas",
 					"entries": [
-						"With 1 minute of study, you can identify the weak points in a glass object. Any damage dealt to the object by striking a weak spot is doubled."
+						"Com 1 minuto de estudo, você pode identificar os pontos fracos em um objeto de vidro. Qualquer dano causado ao objeto ao atingir um ponto fraco é dobrado."
 					]
 				},
 				{
 					"type": "table",
-					"caption": "Glassblower's Tools",
+					"caption": "Ferramentas de Vidraceiro",
 					"colLabels": [
-						"Activity",
-						"DC"
+						"Atividade",
+						"CD"
 					],
 					"colStyles": [
 						"col-10",
@@ -2248,11 +2248,11 @@
 					],
 					"rows": [
 						[
-							"Identify source of glass",
+							"Identificar a fonte do vidro",
 							"10"
 						],
 						[
-							"Determine what a glass object once held",
+							"Determinar o que um objeto de vidro continha",
 							"20"
 						]
 					]
@@ -2309,7 +2309,7 @@
 			"type": "INS",
 			"rarity": "none",
 			"entries": [
-				"Short, curved horns like a cornucopia. Played with valves, glaur sound like trumpets, while those without valves, known as gloon, have a more mournful sound."
+				"Chifres curtos e curvados como uma cornucópia. Tocados com válvulas, os glaur soam como trompetes, enquanto aqueles sem válvulas, conhecidos como gloon, têm um som mais triste."
 			]
 		},
 		{
@@ -2549,7 +2549,7 @@
 			"armor": true,
 			"stealth": true,
 			"entries": [
-				"Half plate consists of shaped metal plates that cover most of the wearer's body. It does not include leg protection beyond simple greaves that are attached with leather straps."
+				"A meia-armadura consiste em placas de metal moldadas que cobrem a maior parte do corpo do usuário. Ela não inclui proteção para as pernas além de simples grevas que são presas com tiras de couro."
 			]
 		},
 		{
@@ -2638,7 +2638,7 @@
 			"type": "INS",
 			"rarity": "none",
 			"entries": [
-				"A double-headed skin drum fitted with handles along its side."
+				"Um tambor de pele de duas cabeças equipado com alças ao longo de seu lado."
 			]
 		},
 		{
@@ -2781,7 +2781,7 @@
 			"ac": 12,
 			"armor": true,
 			"entries": [
-				"This crude armor consists of thick furs and pelts. It is commonly worn by barbarian tribes, evil humanoids, and other folk who lack access to the tools and materials needed to create better armor."
+				"Esta armadura rudimentar consiste em peles e pelagens grossas. É comumente usada por tribos bárbaras, humanoides malignos e outros povos que não têm acesso às ferramentas e materiais necessários para criar armaduras melhores."
 			]
 		},
 		{
@@ -3156,9 +3156,9 @@
 			"entries": [
 				{
 					"type": "entries",
-					"name": "Special",
+					"name": "Especial",
 					"entries": [
-						"You have disadvantage when you use a lance to attack a target within 5 feet of you. Also, a lance requires two hands to wield when you aren't mounted."
+						"Você tem desvantagem ao usar uma lança para atacar um alvo a até 1,5 metros de você. Além disso, uma lança requer duas mãos para ser empunhada quando você não está montado."
 					]
 				}
 			]
@@ -3328,7 +3328,7 @@
 			"ac": 11,
 			"armor": true,
 			"entries": [
-				"The breastplate and shoulder protectors of this armor are made of leather that has been stiffened by being boiled in oil. The rest of the armor is made of softer and more flexible materials."
+				"A couraça e os protetores de ombro desta armadura são feitos de couro que foi endurecido por ter sido fervido em óleo. O restante da armadura é feito de materiais mais macios e flexíveis."
 			]
 		},
 		{
@@ -3371,41 +3371,41 @@
 			"weight": 5,
 			"value": 500,
 			"additionalEntries": [
-				"Knowledge of leatherworking extends to lore concerning animal hides and their properties. It also confers knowledge of leather armor and similar goods.",
+				"O conhecimento sobre marcenaria de couro se estende à lore relacionada a peles de animais e suas propriedades. Ele também confere conhecimento sobre armaduras de couro e bens similares.",
 				{
 					"type": "entries",
-					"name": "Components",
+					"name": "Componentes",
 					"entries": [
-						"Leatherworker's tools include a knife, a small mallet, an edger, a hole punch, thread, and leather scraps."
+						"As ferramentas de marcenaria de couro incluem uma faca, um pequeno martelo, um cortador, um perfurador, linha e retalhos de couro."
 					]
 				},
 				{
 					"type": "entries",
 					"name": "Arcana",
 					"entries": [
-						"Your expertise in working with leather grants you added insight when you inspect magic items crafted from leather, such as boots and some cloaks."
+						"Sua especialização em trabalhar com couro lhe concede uma percepção adicional ao inspecionar itens mágicos feitos de couro, como botas e algumas capas."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Investigation",
+					"name": "Investigação",
 					"entries": [
-						"You gain added insight when studying leather items or clues related to them, as you draw on your knowledge of leather to pick out details that others would overlook."
+						"Você ganha uma percepção adicional ao estudar itens de couro ou pistas relacionadas a eles, pois utiliza seu conhecimento sobre couro para identificar detalhes que outros poderiam ignorar."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Identify Hides",
+					"name": "Identificar Peles",
 					"entries": [
-						"When looking at a hide or a leather item, you can determine the source of the leather and any special techniques used to treat it. For example, you can spot the difference between leather crafted using dwarven methods and leather crafted using halfling methods."
+						"Ao olhar para uma pele ou um item de couro, você pode determinar a origem do couro e quaisquer técnicas especiais usadas para tratá-lo. Por exemplo, você pode notar a diferença entre couro feito usando métodos anões e couro feito usando métodos halflings."
 					]
 				},
 				{
 					"type": "table",
-					"caption": "Leatherworker's Tools",
+					"caption": "Ferramentas de Marcenaria de Couro",
 					"colLabels": [
-						"Activity",
-						"DC"
+						"Atividade",
+						"CD"
 					],
 					"colStyles": [
 						"col-10",
@@ -3413,11 +3413,11 @@
 					],
 					"rows": [
 						[
-							"Modify a leather item's appearance",
+							"Modificar a aparência de um item de couro",
 							"10"
 						],
 						[
-							"Determine a leather item's history",
+							"Determinar a história de um item de couro",
 							"20"
 						]
 					]
@@ -3600,7 +3600,7 @@
 			"crossbow": true,
 			"weapon": true,
 			"entries": [
-				"This crossbow is fitted with a cartridge that can hold up to six crossbow bolts. It automatically reloads after firing until the cartridge runs out of ammunition. Reloading the cartridge takes an action."
+				"Esta besta é equipada com um cartucho que pode conter até seis virotes de besta. Ela recarrega automaticamente após disparar até que o cartucho fique sem munição. Recarregar o cartucho leva uma ação."
 			],
 			"ammoType": "crossbow bolt|phb"
 		},
@@ -3672,7 +3672,7 @@
 			"type": "INS",
 			"rarity": "none",
 			"entries": [
-				"A Faerûnian flute of sophisticated make, found only in areas with skilled artisans, as in great cities or elven enclaves."
+				"Uma flauta faeruniana de fabricação sofisticada, encontrada apenas em áreas com artesãos habilidosos, como em grandes cidades ou enclaves élficos."
 			]
 		},
 		{
@@ -3935,48 +3935,48 @@
 			"weight": 8,
 			"value": 1000,
 			"additionalEntries": [
-				"Mason's tools allow you to craft stone structures, including walls and buildings crafted from brick.",
+				"As ferramentas de pedreiro permitem que você crie estruturas de pedra, incluindo paredes e edifícios feitos de tijolos.",
 				{
 					"type": "entries",
-					"name": "Components",
+					"name": "Componentes",
 					"entries": [
-						"Mason's tools consist of a trowel, a hammer, a chisel, brushes, and a square."
+						"As ferramentas de pedreiro consistem em uma colher de pedreiro, um martelo, um cinzel, pincéis e um esquadro."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "History",
+					"name": "História",
 					"entries": [
-						"Your expertise aids you in identifying a stone building's date of construction and purpose, along with insight into who might have built it."
+						"Sua experiência ajuda você a identificar a data de construção e o propósito de um edifício de pedra, além de fornecer informações sobre quem pode tê-lo construído."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Investigation",
+					"name": "Investigação",
 					"entries": [
-						"You gain additional insight when inspecting areas within stone structures."
+						"Você ganha uma percepção adicional ao inspecionar áreas dentro de estruturas de pedra."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Perception",
+					"name": "Percepção",
 					"entries": [
-						"You can spot irregularities in stone walls or floors, making it easier to find trap doors and secret passages."
+						"Você pode notar irregularidades em paredes ou pisos de pedra, facilitando a localização de portas ocultas e passagens secretas."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Demolition",
+					"name": "Demolição",
 					"entries": [
-						"Your knowledge of masonry allows you to spot weak points in brick walls. You deal double damage to such structures with your weapon attacks."
+						"Seu conhecimento de alvenaria permite que você identifique pontos fracos em paredes de tijolos. Você causa o dobro de dano a essas estruturas com seus ataques de arma."
 					]
 				},
 				{
 					"type": "table",
-					"caption": "Mason's Tools",
+					"caption": "Ferramentas de Pedreiro",
 					"colLabels": [
-						"Activity",
-						"DC"
+						"Atividade",
+						"CD"
 					],
 					"colStyles": [
 						"col-10",
@@ -3984,11 +3984,11 @@
 					],
 					"rows": [
 						[
-							"Chisel a small hole in a stone wall",
+							"Cincelar um pequeno buraco em uma parede de pedra",
 							"10"
 						],
 						[
-							"Find a weak point in a stone wall",
+							"Encontrar um ponto fraco em uma parede de pedra",
 							"15"
 						]
 					]
@@ -4368,7 +4368,7 @@
 			"armor": true,
 			"stealth": true,
 			"entries": [
-				"Padded armor consists of quilted layers of cloth and batting."
+				"A armadura acolchoada consiste em camadas acolchoadas de tecido e enchimento."
 			]
 		},
 		{
@@ -4410,41 +4410,41 @@
 			"weight": 5,
 			"value": 1000,
 			"additionalEntries": [
-				"Proficiency with painter's supplies represents your ability to paint and draw. You also acquire an understanding of art history, which can aid you in examining works of art.",
+				"A proficiência com materiais de pintura representa sua habilidade de pintar e desenhar. Você também adquire um entendimento da história da arte, o que pode ajudá-lo a examinar obras de arte.",
 				{
 					"type": "entries",
-					"name": "Components",
+					"name": "Componentes",
 					"entries": [
-						"Painter's supplies include an easel, canvas, paints, brushes, charcoal sticks, and a palette."
+						"Os materiais de pintura incluem um cavalete, tela, tintas, pincéis, bastões de carvão e uma paleta."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Arcana, History, Religion",
+					"name": "Arcana, História, Religião",
 					"entries": [
-						"Your expertise aids you in uncovering lore of any sort that is attached to a work of art, such as the magical properties of a painting or the origins of a strange mural found in a dungeon."
+						"Sua especialização ajuda você a descobrir conhecimentos de qualquer tipo que estejam ligados a uma obra de arte, como as propriedades mágicas de uma pintura ou as origens de um estranho mural encontrado em uma masmorra."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Investigation, Perception",
+					"name": "Investigação, Percepção",
 					"entries": [
-						"When you inspect a painting or a similar work of visual art, your knowledge of the practices behind creating it can grant you additional insight."
+						"Quando você inspeciona uma pintura ou uma obra de arte visual semelhante, seu conhecimento das práticas por trás de sua criação pode lhe conceder uma visão adicional."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Painting and Drawing",
+					"name": "Pintura e Desenho",
 					"entries": [
-						"As part of a short or long rest, you can produce a simple work of art. Although your work might lack precision, you can capture an image or a scene, or make a quick copy of a piece of art you saw."
+						"Como parte de um descanso curto ou longo, você pode produzir uma obra de arte simples. Embora seu trabalho possa carecer de precisão, você pode capturar uma imagem ou uma cena, ou fazer uma cópia rápida de uma obra de arte que viu."
 					]
 				},
 				{
 					"type": "table",
-					"caption": "Painter's Supplies",
+					"caption": "Materiais de Pintura",
 					"colLabels": [
-						"Activity",
-						"DC"
+						"Atividade",
+						"CD"
 					],
 					"colStyles": [
 						"col-10",
@@ -4452,11 +4452,11 @@
 					],
 					"rows": [
 						[
-							"Paint an accurate portrait",
+							"Pintar um retrato preciso",
 							"10"
 						],
 						[
-							"Create a painting with a hidden message",
+							"Criar uma pintura com uma mensagem oculta",
 							"20"
 						]
 					]
@@ -4691,7 +4691,7 @@
 			"armor": true,
 			"stealth": true,
 			"entries": [
-				"Plate consists of shaped, interlocking metal plates to cover the entire body. A suit of plate includes gauntlets, heavy leather boots, a visored helmet, and thick layers of padding underneath the armor. Buckles and straps distribute the weight over the body."
+				"A armadura pesada consiste em placas de metal moldadas e interligadas para cobrir todo o corpo. Um conjunto de armadura pesada inclui manoplas, botas de couro pesado, um capacete com visor e camadas espessas de acolchoamento sob a armadura. Fivelas e tiras distribuem o peso pelo corpo."
 			]
 		},
 		{
@@ -4731,41 +4731,41 @@
 			"weight": 3,
 			"value": 1000,
 			"additionalEntries": [
-				"Potter's tools are used to create a variety of ceramic objects, most typically pots and similar vessels.",
+				"Ferramentas de oleiro são usadas para criar uma variedade de objetos cerâmicos, tipicamente potes e recipientes semelhantes.",
 				{
 					"type": "entries",
-					"name": "Components",
+					"name": "Componentes",
 					"entries": [
-						"Potter's tools include potter's needles, ribs, scrapers, a knife, and calipers."
+						"As ferramentas de oleiro incluem agulhas de oleiro, costelas, raspadores, uma faca e paquímetros."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "History",
+					"name": "História",
 					"entries": [
-						"Your expertise aids you in identifying ceramic objects, including when they were created and their likely place or culture of origin."
+						"Sua experiência ajuda a identificar objetos cerâmicos, incluindo quando foram criados e seu provável lugar ou cultura de origem."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Investigation, Perception",
+					"name": "Investigação, Percepção",
 					"entries": [
-						"You gain additional insight when inspecting ceramics, uncovering clues others would overlook by spotting minor irregularities."
+						"Você ganha uma visão adicional ao inspecionar cerâmicas, descobrindo pistas que outros poderiam ignorar ao notar pequenas irregularidades."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Reconstruction",
+					"name": "Reconstrução",
 					"entries": [
-						"By examining pottery shards, you can determine an object's original, intact form and its likely purpose."
+						"Ao examinar fragmentos de cerâmica, você pode determinar a forma original e intacta de um objeto e seu provável propósito."
 					]
 				},
 				{
 					"type": "table",
-					"caption": "Potter's Tools",
+					"caption": "Ferramentas de Oleiro",
 					"colLabels": [
-						"Activity",
-						"DC"
+						"Atividade",
+						"CD"
 					],
 					"colStyles": [
 						"col-10",
@@ -4773,15 +4773,15 @@
 					],
 					"rows": [
 						[
-							"Determine what a vessel once held",
+							"Determinar o que um recipiente continha",
 							"10"
 						],
 						[
-							"Create a serviceable pot",
+							"Criar um pote utilizável",
 							"15"
 						],
 						[
-							"Find a weak point in a ceramic object",
+							"Encontrar um ponto fraco em um objeto cerâmico",
 							"20"
 						]
 					]
@@ -5060,7 +5060,7 @@
 			"armor": true,
 			"stealth": true,
 			"entries": [
-				"This armor is leather armor with heavy rings sewn into it. The rings help reinforce the armor against blows from swords and axes. Ring mail is inferior to chain mail, and it's usually worn only by those who can't afford better armor."
+				"Esta armadura é uma armadura de couro com anéis pesados costurados nela. Os anéis ajudam a reforçar a armadura contra golpes de espadas e machados. A cota de anéis é inferior à cota de malha, e geralmente é usada apenas por aqueles que não podem pagar por uma armadura melhor."
 			]
 		},
 		{
@@ -5137,7 +5137,7 @@
 			"armor": true,
 			"stealth": true,
 			"entries": [
-				"This armor consists of a coat and leggings (and perhaps a separate skirt) of leather covered with overlapping pieces of metal, much like the scales of a fish. The suit includes gauntlets."
+				"Esta armadura consiste em uma jaqueta e calças (e talvez uma saia separada) de couro cobertas com peças de metal sobrepostas, muito semelhantes às escamas de um peixe. O traje inclui manoplas."
 			]
 		},
 		{
@@ -5268,7 +5268,7 @@
 			"type": "INS",
 			"rarity": "none",
 			"entries": [
-				"A double-reed instrument similar to an oboe or a bassoon, popular with gnomes, who have developed some bellows-powered versions."
+				"Um instrumento de palheta dupla semelhante a um oboé ou um fagote, popular entre os gnomos, que desenvolveram algumas versões movidas a fole."
 			]
 		},
 		{
@@ -5334,7 +5334,7 @@
 			"value": 1000,
 			"ac": 2,
 			"entries": [
-				"A shield is made from wood or metal and is carried in one hand. Wielding a shield increases your Armor Class by 2. You can benefit from only one shield at a time."
+				"Um escudo é feito de madeira ou metal e é carregado em uma mão. Usar um escudo aumenta sua Classe de Armadura em 2. Você pode se beneficiar de apenas um escudo por vez."
 			]
 		},
 		{
@@ -5733,41 +5733,41 @@
 			"weight": 8,
 			"value": 2000,
 			"additionalEntries": [
-				"Smith's tools allow you to work metal, heating it to alter its shape, repair damage, or work raw ingots into useful items.",
+				"As ferramentas de ferreiro permitem que você trabalhe com metal, aquecendo-o para alterar sua forma, reparar danos ou transformar lingotes brutos em itens úteis.",
 				{
 					"type": "entries",
-					"name": "Components",
+					"name": "Componentes",
 					"entries": [
-						"Smith's tools include hammers, tongs, charcoal, rags, and a whetstone."
+						"As ferramentas de ferreiro incluem martelos, tenazes, carvão, panos e uma pedra de amolar."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Arcana and History",
+					"name": "Arcana e História",
 					"entries": [
-						"Your expertise lends you additional insight when examining metal objects, such as weapons."
+						"Sua experiência lhe confere uma percepção adicional ao examinar objetos de metal, como armas."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Investigation",
+					"name": "Investigação",
 					"entries": [
-						"You can spot clues and make deductions that others might overlook when an investigation involves armor, weapons, or other metalwork."
+						"Você pode identificar pistas e fazer deduções que outros podem ignorar quando uma investigação envolve armaduras, armas ou outras obras em metal."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Repair",
+					"name": "Reparar",
 					"entries": [
-						"With access to your tools and an open flame hot enough to make metal pliable, you can restore 10 hit points to a damaged metal object for each hour of work."
+						"Com acesso às suas ferramentas e uma chama aberta quente o suficiente para tornar o metal maleável, você pode restaurar 10 pontos de vida a um objeto de metal danificado para cada hora de trabalho."
 					]
 				},
 				{
 					"type": "table",
-					"caption": "Smith's Tools",
+					"caption": "Ferramentas de Ferreiro",
 					"colLabels": [
-						"Activity",
-						"DC"
+						"Atividade",
+						"CD"
 					],
 					"colStyles": [
 						"col-10",
@@ -5775,15 +5775,15 @@
 					],
 					"rows": [
 						[
-							"Sharpen a dull blade",
+							"Afiar uma lâmina cega",
 							"10"
 						],
 						[
-							"Repair a suit of armor",
+							"Reparar uma armadura",
 							"15"
 						],
 						[
-							"Sunder a nonmagical metal object",
+							"Destruir um objeto de metal não mágico",
 							"15"
 						]
 					]
@@ -5920,7 +5920,7 @@
 			"armor": true,
 			"stealth": true,
 			"entries": [
-				"Spiked armor is a rare type of medium armor made by dwarves. It consists of a leather coat and leggings covered with spikes that are usually made of metal."
+				"A armadura espinhosa é um tipo raro de armadura média feita por anões. Ela consiste em um casaco de couro e calças cobertas com espinhos que geralmente são feitos de metal."
 			]
 		},
 		{
@@ -5948,7 +5948,7 @@
 			"armor": true,
 			"stealth": true,
 			"entries": [
-				"This armor is made of narrow vertical strips of metal riveted to a backing of leather that is worn over cloth padding. Flexible chain mail protects the joints."
+				"Esta armadura é feita de tiras verticais estreitas de metal rebitadas a um suporte de couro que é usado sobre um acolchoado de tecido. Uma cota de malha flexível protege as articulações."
 			]
 		},
 		{
@@ -6050,7 +6050,7 @@
 			"ac": 12,
 			"armor": true,
 			"entries": [
-				"Made from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes."
+				"Feita de couro resistente, mas flexível, a armadura de couro com rebites é reforçada com rebites ou espinhos próximos uns dos outros."
 			]
 		},
 		{
@@ -6078,7 +6078,7 @@
 			"type": "INS",
 			"rarity": "none",
 			"entries": [
-				"A tambourine, a popular instrument with halflings and humans south of the Dalelands."
+				"Um pandeiro, um instrumento popular entre halflings e humanos ao sul das Terras dos Lagos."
 			]
 		},
 		{
@@ -6091,7 +6091,7 @@
 			"type": "INS",
 			"rarity": "none",
 			"entries": [
-				"Also known as a whistlecane, a simple and easy-to-make wind instrument cut from a reed. They are so simple, in fact, that skilled bards frequently make and give them away to children\u2014to the parents' delight or regret."
+				"Também conhecido como flautacano, um instrumento de sopro simples e fácil de fazer, cortado de uma junco. Eles são tão simples, na verdade, que bards habilidosos frequentemente os fazem e os dão para crianças—para a alegria ou arrependimento dos pais."
 			]
 		},
 		{
@@ -6127,41 +6127,41 @@
 			"weight": 10,
 			"value": 5000,
 			"additionalEntries": [
-				"A set of tinker's tools is designed to enable you to repair many mundane objects. Though you can't manufacture much with tinker's tools, you can mend torn clothes, sharpen a worn sword, and patch a tattered suit of chain mail.",
+				"Um conjunto de ferramentas de artífice é projetado para permitir que você repare muitos objetos mundanos. Embora você não consiga fabricar muito com ferramentas de artífice, pode consertar roupas rasgadas, afiar uma espada gasta e remendar uma armadura de malha desgastada.",
 				{
 					"type": "entries",
-					"name": "Components",
+					"name": "Componentes",
 					"entries": [
-						"Tinker's tools include a variety of hand tools, thread, needles, a whetstone, scraps of cloth and leather, and a small pot of glue."
+						"As ferramentas de artífice incluem uma variedade de ferramentas manuais, linha, agulhas, uma pedra de amolar, pedaços de tecido e couro, e um pequeno pote de cola."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "History",
+					"name": "História",
 					"entries": [
-						"You can determine the age and origin of objects, even if you have only a few pieces remaining from the original."
+						"Você pode determinar a idade e a origem de objetos, mesmo que tenha apenas algumas peças restantes do original."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Investigation",
+					"name": "Investigação",
 					"entries": [
-						"When you inspect a damaged object, you gain knowledge of how it was damaged and how long ago."
+						"Quando você inspeciona um objeto danificado, você ganha conhecimento de como ele foi danificado e há quanto tempo."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Repair",
+					"name": "Reparação",
 					"entries": [
-						"You can restore 10 hit points to a damaged object for each hour of work. For any object, you need access to the raw materials required to repair it. For metal objects, you need access to an open flame hot enough to make the metal pliable."
+						"Você pode restaurar 10 pontos de vida a um objeto danificado para cada hora de trabalho. Para qualquer objeto, você precisa de acesso aos materiais brutos necessários para repará-lo. Para objetos de metal, você precisa de acesso a uma chama aberta quente o suficiente para tornar o metal maleável."
 					]
 				},
 				{
 					"type": "table",
-					"caption": "Tinker's Tools",
+					"caption": "Ferramentas de Artífice",
 					"colLabels": [
-						"Activity",
-						"DC"
+						"Atividade",
+						"CD"
 					],
 					"colStyles": [
 						"col-10",
@@ -6169,15 +6169,15 @@
 					],
 					"rows": [
 						[
-							"Temporarily repair a disabled device",
+							"Reparar temporariamente um dispositivo desativado",
 							"10"
 						],
 						[
-							"Repair an item in half the time",
+							"Reparar um item na metade do tempo",
 							"15"
 						],
 						[
-							"Improvise a temporary item using scraps",
+							"Improvisar um item temporário usando sobras",
 							"20"
 						]
 					]
@@ -6435,7 +6435,7 @@
 			"type": "INS",
 			"rarity": "none",
 			"entries": [
-				"A metal gong, traditionally made from a shield, particularly the shield of an enemy. Both goblins and dwarves make and play wargongs, their sound echoing through tunnels in the Underdark."
+				"Um gongo de metal, tradicionalmente feito a partir de um escudo, particularmente o escudo de um inimigo. Tanto goblins quanto anões fabricam e tocam wargongs, cujo som ecoa pelos túneis no Subterrâneo."
 			]
 		},
 		{
@@ -6513,48 +6513,48 @@
 			"weight": 5,
 			"value": 100,
 			"additionalEntries": [
-				"Weaver's tools allow you to create cloth and tailor it into articles of clothing.",
+				"Ferramentas de tecelão permitem que você crie tecido e o transforme em peças de vestuário.",
 				{
 					"type": "entries",
-					"name": "Components",
+					"name": "Componentes",
 					"entries": [
-						"Weaver's tools include thread, needles, and scraps of cloth. You know how to work a loom, but such equipment is too large to transport."
+						"Ferramentas de tecelão incluem linha, agulhas e retalhos de tecido. Você sabe como operar um tear, mas esse equipamento é grande demais para ser transportado."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Arcana, History",
+					"name": "Arcana, História",
 					"entries": [
-						"Your expertise lends you additional insight when examining cloth objects, including cloaks and robes."
+						"Sua especialização lhe confere uma percepção adicional ao examinar objetos de tecido, incluindo capas e robes."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Investigation",
+					"name": "Investigação",
 					"entries": [
-						"Using your knowledge of the process of creating cloth objects, you can spot clues and make deductions that others would overlook when you examine tapestries, upholstery, clothing, and other woven items."
+						"Usando seu conhecimento do processo de criação de objetos de tecido, você pode identificar pistas e fazer deduções que outros poderiam ignorar ao examinar tapeçarias, estofados, roupas e outros itens tecidos."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Repair",
+					"name": "Reparar",
 					"entries": [
-						"As part of a short rest, you can repair a single damaged cloth object."
+						"Como parte de um descanso curto, você pode reparar um único objeto de tecido danificado."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Craft Clothing",
+					"name": "Criar Roupas",
 					"entries": [
-						"Assuming you have access to sufficient cloth and thread, you can create an outfit for a creature as part of a long rest."
+						"Supondo que você tenha acesso a tecido e linha suficientes, você pode criar um traje para uma criatura como parte de um descanso longo."
 					]
 				},
 				{
 					"type": "table",
-					"caption": "Weaver's Tools",
+					"caption": "Ferramentas de Tecelão",
 					"colLabels": [
-						"Activity",
-						"DC"
+						"Atividade",
+						"CD"
 					],
 					"colStyles": [
 						"col-10",
@@ -6562,15 +6562,15 @@
 					],
 					"rows": [
 						[
-							"Repurpose cloth",
+							"Reutilizar tecido",
 							"10"
 						],
 						[
-							"Mend a hole in a piece of cloth",
+							"Remendar um buraco em um pedaço de tecido",
 							"10"
 						],
 						[
-							"Tailor an outfit",
+							"Fazer um traje",
 							"15"
 						]
 					]
@@ -6692,48 +6692,48 @@
 			"weight": 5,
 			"value": 100,
 			"additionalEntries": [
-				"Woodcarver's tools allow you to craft intricate objects from wood, such as wooden tokens or arrows.",
+				"Ferramentas de entalhador permitem que você crie objetos intrincados de madeira, como fichas de madeira ou flechas.",
 				{
 					"type": "entries",
-					"name": "Components",
+					"name": "Componentes",
 					"entries": [
-						"Woodcarver's tools consist of a knife, a gouge, and a small saw."
+						"Ferramentas de entalhador consistem em uma faca, um goivador e uma serra pequena."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Arcana, History",
+					"name": "Arcana, História",
 					"entries": [
-						"Your expertise lends you additional insight when you examine wooden objects, such as figurines or arrows."
+						"Sua especialização lhe confere uma visão adicional ao examinar objetos de madeira, como estatuetas ou flechas."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Nature",
+					"name": "Natureza",
 					"entries": [
-						"Your knowledge of wooden objects gives you some added insight when you examine trees."
+						"Seu conhecimento sobre objetos de madeira lhe dá uma visão adicional ao examinar árvores."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Repair",
+					"name": "Reparar",
 					"entries": [
-						"As part of a short rest, you can repair a single damaged wooden object."
+						"Como parte de um descanso curto, você pode reparar um único objeto de madeira danificado."
 					]
 				},
 				{
 					"type": "entries",
-					"name": "Craft Arrows",
+					"name": "Criar Flechas",
 					"entries": [
-						"As part of a short rest, you can craft up to five arrows. As part of a long rest, you can craft up to twenty. You must have enough wood on hand to produce them."
+						"Como parte de um descanso curto, você pode criar até cinco flechas. Como parte de um descanso longo, você pode criar até vinte. Você deve ter madeira suficiente em mãos para produzi-las."
 					]
 				},
 				{
 					"type": "table",
-					"caption": "Woodcarver's Tools",
+					"caption": "Ferramentas de Entalhador",
 					"colLabels": [
-						"Activity",
-						"DC"
+						"Atividade",
+						"CD"
 					],
 					"colStyles": [
 						"col-10",
@@ -6741,11 +6741,11 @@
 					],
 					"rows": [
 						[
-							"Craft a small wooden figurine",
+							"Criar uma pequena estatueta de madeira",
 							"10"
 						],
 						[
-							"Carve an intricate pattern in wood",
+							"Entalhar um padrão intrincado na madeira",
 							"15"
 						]
 					]
@@ -6867,7 +6867,7 @@
 			"type": "INS",
 			"rarity": "none",
 			"entries": [
-				"A southern instrument from Amn and Calimshan that is a Faerûnian analog to the guitar. Numerous variations have spread across the continent."
+				"Um instrumento do sul de Amn e Calimshan que é um análogo faeruniano da guitarra. Várias variações se espalharam pelo continente."
 			]
 		},
 		{
@@ -6887,7 +6887,7 @@
 			"dmgType": "P",
 			"weapon": true,
 			"entries": [
-				"A yklwa (pronounced YICK-ul-wah) is a simple melee weapon that is the traditional weapon of Chultan warriors. A yklwa consists of a 3-foot wooden shaft with a steel or stone blade up to 18 inches long. Although it has the thrown weapon property, the yklwa is not well balanced for throwing."
+				"Uma yklwa (pronunciada YICK-ul-wah) é uma arma de combate corpo a corpo simples que é a arma tradicional dos guerreiros Chultan. Uma yklwa consiste em um cabo de madeira de 3 pés com uma lâmina de aço ou pedra de até 18 polegadas de comprimento. Embora tenha a propriedade de arma arremessada, a yklwa não é bem equilibrada para arremesso."
 			]
 		},
 		{
@@ -6897,7 +6897,7 @@
 			"type": "INS",
 			"rarity": "none",
 			"entries": [
-				"A complex pump organ that originated with the zulkirs of Thay, who use it in the casting of their spells. It is considered to have a dramatic, but sinister, sound."
+				"Um complexo órgão de tubos que se originou com os zulkirs de Thay, que o utilizam na conjuração de seus feitiços. É considerado ter um som dramático, mas sinistro."
 			]
 		}
 	],
@@ -6943,7 +6943,7 @@
 			"reprintedAs": [
 				"A|XPHB"
 			],
-			"template": "{{prop_name_lower}} ({{item.range}}\u00A0ft.)",
+			"template": "{{prop_name_lower}} ({{item.range}} ft.)",
 			"entries": [
 				{
 					"type": "entries",
@@ -6960,7 +6960,7 @@
 			"source": "XPHB",
 			"page": 213,
 			"basicRules2024": true,
-			"template": "{{prop_name}} (Range {{item.range}}\u00A0ft.; {{item.ammoType}})",
+			"template": "{{prop_name}} (Range {{item.range}} ft.; {{item.ammoType}})",
 			"entries": [
 				{
 					"type": "entries",
@@ -6978,7 +6978,7 @@
 			"reprintedAs": [
 				"AF|XDMG"
 			],
-			"template": "{{prop_name_lower}} ({{item.range}}\u00A0ft.)",
+			"template": "{{prop_name_lower}} ({{item.range}} ft.)",
 			"entries": [
 				{
 					"type": "entries",
@@ -6994,7 +6994,7 @@
 			"abbreviation": "AF",
 			"source": "XDMG",
 			"page": 72,
-			"template": "{{prop_name}} ({{item.range}}\u00A0ft.; {{item.ammoType}})",
+			"template": "{{prop_name}} ({{item.range}} ft.; {{item.ammoType}})",
 			"entries": [
 				{
 					"type": "entries",
@@ -7255,7 +7255,7 @@
 			"reprintedAs": [
 				"T|XPHB"
 			],
-			"template": "{{prop_name_lower}} ({{item.range}}\u00A0ft.)",
+			"template": "{{prop_name_lower}} ({{item.range}} ft.)",
 			"entries": [
 				{
 					"type": "entries",
@@ -7271,7 +7271,7 @@
 			"source": "XPHB",
 			"page": 214,
 			"basicRules2024": true,
-			"template": "{{prop_name}} ({{item.range}}\u00A0ft.)",
+			"template": "{{prop_name}} ({{item.range}} ft.)",
 			"entries": [
 				{
 					"type": "entries",
@@ -7295,7 +7295,7 @@
 					"type": "entries",
 					"name": "Versatile",
 					"entries": [
-						"This weapon can be used with one or two hands. A damage value in parentheses appears with the property\u2014the damage when the weapon is used with two hands to make a melee attack."
+						"This weapon can be used with one or two hands. A damage value in parentheses appears with the property—the damage when the weapon is used with two hands to make a melee attack."
 					]
 				}
 			]
@@ -7359,7 +7359,7 @@
 					"type": "entries",
 					"name": "Treasure (Art Object)",
 					"entries": [
-						"Idols cast of solid gold, necklaces studded with precious stones, paintings of ancient kings, bejeweled dishes\u2014art objects include all these and more."
+						"Idols cast of solid gold, necklaces studded with precious stones, paintings of ancient kings, bejeweled dishes—art objects include all these and more."
 					]
 				}
 			]
@@ -8001,7 +8001,7 @@
 					"type": "entries",
 					"name": "Trade Bar",
 					"entries": [
-						"Because large numbers of coins can be difficult to transport and account for, many merchants prefer to use trade bars\u2014ingots of precious metals and alloys (usually silver). These bars are valued by weight."
+						"Because large numbers of coins can be difficult to transport and account for, many merchants prefer to use trade bars—ingots of precious metals and alloys (usually silver). These bars are valued by weight."
 					]
 				}
 			]

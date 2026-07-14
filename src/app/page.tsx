@@ -8,6 +8,7 @@ type ShopRule = {
   count: number;
   rarity: string;
   category: string;
+  classFilter: string;
 };
 
 type ShopDef = {
@@ -372,7 +373,7 @@ export default function Home() {
       id: 'shop_1',
       name: generateShopName(),
       dmgOnly: true,
-      rules: [ { id: 'r1', count: 3, rarity: 'any', category: 'any' } ]
+      rules: [ { id: 'r1', count: 3, rarity: 'any', category: 'any', classFilter: 'any' } ]
     }
   ]);
   
@@ -388,7 +389,7 @@ export default function Home() {
       id: newId,
       name: generateShopName(),
       dmgOnly: true,
-      rules: [ { id: `r_${Date.now()}`, count: 3, rarity: 'any', category: 'any' } ]
+      rules: [ { id: `r_${Date.now()}`, count: 3, rarity: 'any', category: 'any', classFilter: 'any' } ]
     }]);
   };
 
@@ -411,7 +412,7 @@ export default function Home() {
   const addRule = (shopId: string) => {
     setShopsConfig(prev => prev.map(s => {
       if (s.id === shopId) {
-        return { ...s, rules: [...s.rules, { id: `r_${Date.now()}`, count: 1, rarity: 'any', category: 'any' }] };
+        return { ...s, rules: [...s.rules, { id: `r_${Date.now()}`, count: 1, rarity: 'any', category: 'any', classFilter: 'any' }] };
       }
       return s;
     }));
@@ -531,8 +532,32 @@ export default function Home() {
                       <label className="block text-[10px] font-bold text-neutral-500 uppercase mb-1">Raridade</label>
                       <CustomRaritySelect value={rule.rarity} onChange={(v) => updateRule(shop.id, rule.id, 'rarity', v)} />
                     </div>
+                    
+                    <div className="flex-1 min-w-[120px]">
+                      <label className="block text-[10px] font-bold text-neutral-500 uppercase mb-1">Classe Foco</label>
+                      <select 
+                        className="w-full bg-neutral-950 border border-neutral-700 rounded-xl h-12 p-3 text-sm text-neutral-200 focus:border-amber-500 outline-none"
+                        value={rule.classFilter}
+                        onChange={(e) => updateRule(shop.id, rule.id, 'classFilter', e.target.value)}
+                      >
+                        <option value="any">🎲 Qualquer</option>
+                        <option value="artificer">Artífice</option>
+                        <option value="barbarian">Bárbaro</option>
+                        <option value="bard">Bardo</option>
+                        <option value="cleric">Clérigo</option>
+                        <option value="druid">Druida</option>
+                        <option value="fighter">Guerreiro</option>
+                        <option value="rogue">Ladino</option>
+                        <option value="wizard">Mago</option>
+                        <option value="monk">Monge</option>
+                        <option value="paladin">Paladino</option>
+                        <option value="ranger">Patrulheiro</option>
+                        <option value="warlock">Bruxo</option>
+                        <option value="sorcerer">Feiticeiro</option>
+                      </select>
+                    </div>
 
-                    <div className="flex-grow min-w-[140px]">
+                    <div className="flex-1 min-w-[140px]">
                       <label className="block text-[10px] font-bold text-neutral-500 uppercase mb-1">Categoria</label>
                       <CustomCategorySelect value={rule.category} onChange={(v) => updateRule(shop.id, rule.id, 'category', v)} />
                     </div>

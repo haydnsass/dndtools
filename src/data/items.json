@@ -1067,7 +1067,7 @@
 					"type": "entries",
 					"name": "Negotiation Tactics",
 					"entries": [
-						"The tome is capable of providing some assistance to all negotiations, not just those made for souls. You gain a passive +5 to Charisma ({@skill Persuasion}) checks made to barter. Additionally, as an action, you can surrender your consciousness to the tome, allowing it to take over. For 1 minute, the Accounting and Valuation of All Things speaks for you, using a +12 Charisma ({@skill Persuasion}) skill and gaining advantage on your rolls. Using the book in this manner has a corrupting influence, and each use compels you to become increasingly greedy, vain, and evil\u2014much like its original owner, Mammon. When the duration ends, if your alignment is non-evil, you suffer {@damage 6d6} necrotic damage."
+						"The tome is capable of providing some assistance to all negotiations, not just those made for souls. You gain a passive +5 to Charisma ({@skill Persuasion}) checks made to barter. Additionally, as an action, you can surrender your consciousness to the tome, allowing it to take over. For 1 minute, the Accounting and Valuation of All Things speaks for you, using a +12 Charisma ({@skill Persuasion}) skill and gaining advantage on your rolls. Using the book in this manner has a corrupting influence, and each use compels you to become increasingly greedy, vain, and evil—much like its original owner, Mammon. When the duration ends, if your alignment is non-evil, you suffer {@damage 6d6} necrotic damage."
 					]
 				},
 				{
@@ -4433,7 +4433,7 @@
 			"wondrous": true,
 			"weight": 5,
 			"entries": [
-				"This bag has an interior space considerably larger than its outside dimensions\u2014roughly 2 feet square and 4 feet deep on the inside. The bag can hold up to 500 pounds, not exceeding a volume of 64 cubic feet. The bag weighs 5 pounds, regardless of its contents. Retrieving an item from the bag requires a {@action Utilize|XPHB} action.",
+				"This bag has an interior space considerably larger than its outside dimensions—roughly 2 feet square and 4 feet deep on the inside. The bag can hold up to 500 pounds, not exceeding a volume of 64 cubic feet. The bag weighs 5 pounds, regardless of its contents. Retrieving an item from the bag requires a {@action Utilize|XPHB} action.",
 				"If the bag is overloaded, pierced, or torn, it is destroyed, and its contents are scattered in the Astral Plane. If the bag is turned inside out, its contents spill forth unharmed, but the bag must be put right before it can be used again. The bag holds enough air for 10 minutes of breathing, divided by the number of breathing creatures inside.",
 				"Placing a Bag of Holding inside an extradimensional space created by a {@item Heward's Handy Haversack|XDMG}, Portable Hole, or similar item instantly destroys both items and opens a gate to the Astral Plane. The gate originates where the one item was placed inside the other. Any creature within a 10-foot-radius {@variantrule Sphere [Area of Effect]|XPHB|Sphere} centered on the gate is sucked through it to a random location on the Astral Plane. The gate then closes. The gate is one-way and can't be reopened."
 			],
@@ -5133,203 +5133,203 @@
 					],
 					"rows": [
 						[
-							"01\u201302",
+							"01–02",
 							"A handheld device containing a glowing green gem that darkens when no oxygen is present"
 						],
 						[
-							"03\u201304",
+							"03–04",
 							"A foot-long, egg-shaped object made from stitched leather"
 						],
 						[
-							"05\u201306",
+							"05–06",
 							"A black metal cylinder that dictates the history of an unknown plant or animal species when held"
 						],
 						[
-							"07\u201308",
+							"07–08",
 							"A cylindrical jar containing a pickled crustacean of unknown origin"
 						],
 						[
-							"09\u201310",
+							"09–10",
 							"A small thumb-button storage cylinder that releases a useless iron key when pressed"
 						],
 						[
-							"11\u201312",
+							"11–12",
 							"An unusual heraldic cloak pin that emits a short musical fanfare when tapped"
 						],
 						[
-							"13\u201314",
+							"13–14",
 							"A handheld tube that sucks in dust when squeezed and captures it in a detachable compartment"
 						],
 						[
-							"15\u201316",
+							"15–16",
 							"A scintillating disk of unknown material"
 						],
 						[
-							"17\u201318",
+							"17–18",
 							"A dial that can be twisted to slowly click back to its origin, whereupon it emits a loud ringing noise"
 						],
 						[
-							"19\u201320",
+							"19–20",
 							"A hovering, apple-sized orb of metal that follows you around"
 						],
 						[
-							"21\u201322",
+							"21–22",
 							"The {@condition petrified} cocoon of an unknown insect"
 						],
 						[
-							"23\u201324",
+							"23–24",
 							"A bronze gauntlet set with many slots, and which violently expels any object pressed into those slots"
 						],
 						[
-							"25\u201326",
+							"25–26",
 							"A box that plays an illusory message in an unknown language when opened"
 						],
 						[
-							"27\u201328",
+							"27–28",
 							"A rod that causes you to forget the last five minutes when you press a button near its tip"
 						],
 						[
-							"29\u201330",
+							"29–30",
 							"A palm-sized cylinder that emits a harmless ray of glowing blue light when squeezed"
 						],
 						[
-							"31\u201332",
+							"31–32",
 							"A bead that suppresses your hearing when secreted inside either ear, causing you to be {@condition deafened}"
 						],
 						[
-							"33\u201334",
+							"33–34",
 							"An amulet that displays your current health as a green bar above your head, with the bar retracting as your hit point total decreases"
 						],
 						[
-							"35\u201336",
+							"35–36",
 							"A casket containing one hundred tasteless blue pills that produce no discernible effect when swallowed"
 						],
 						[
-							"37\u201338",
+							"37–38",
 							"A metal mechanical puzzle with no apparent solution"
 						],
 						[
-							"39\u201340",
+							"39–40",
 							"A metal spinning top that never tips over when spun"
 						],
 						[
-							"41\u201342",
+							"41–42",
 							"Two strips of cloth-like material, each coated with a soft, hair-like fuzz on one side"
 						],
 						[
-							"43\u201344",
+							"43–44",
 							"A simple wire pyramid that preserves any foodstuffs it is placed over"
 						],
 						[
-							"45\u201346",
+							"45–46",
 							"A star chart labeled in an unknown script"
 						],
 						[
-							"47\u201348",
+							"47–48",
 							"A rectangle of black glass that displays indecipherable arcane runes when you swipe your finger across it"
 						],
 						[
-							"49\u201350",
+							"49–50",
 							"A schematic that shows the inner workings of an impossibly complex device"
 						],
 						[
-							"51\u201352",
+							"51–52",
 							"An odd pair of comfortable shoes made from supple, multicolored material"
 						],
 						[
-							"53\u201354",
+							"53–54",
 							"A mirror that makes you appear more beautiful when you tap your reflection"
 						],
 						[
-							"55\u201356",
+							"55–56",
 							"A mechanical metal puppy that playfully follows you around when activated"
 						],
 						[
-							"57\u201358",
+							"57–58",
 							"A talking bracelet that speaks only to correct your grammar"
 						],
 						[
-							"59\u201360",
+							"59–60",
 							"A bar of soap that can remove any stain"
 						],
 						[
-							"61\u201362",
+							"61–62",
 							"A journal in Common, written by someone in a world similar to but not quite the same as your own"
 						],
 						[
-							"63\u201364",
+							"63–64",
 							"A tub containing one serving of disgusting but nutritious goop that refills itself slowly over the course of one week"
 						],
 						[
-							"65\u201366",
+							"65–66",
 							"An instruction manual for activating a mysterious, world-destroying device"
 						],
 						[
-							"67\u201368",
+							"67–68",
 							"A small supple disk that displays weird moving symbols when placed over either eye"
 						],
 						[
-							"69\u201370",
+							"69–70",
 							"A tiny desk set with large, colorful buttons, each of which plays a discordant musical fanfare when pressed"
 						],
 						[
-							"71\u201372",
+							"71–72",
 							"A pair of tinted spectacles that reduce the glare of the sun when worn"
 						],
 						[
-							"73\u201374",
+							"73–74",
 							"An inflatable bedroll made from an unknown material, and which slowly deflates when used"
 						],
 						[
-							"75\u201376",
+							"75–76",
 							"A rod tipped with a blunt metal pincer whose grip can be adjusted by turning a screw"
 						],
 						[
-							"77\u201378",
+							"77–78",
 							"A battered helmet with a transparent orange visor that flips into place when donned"
 						],
 						[
-							"79\u201380",
+							"79–80",
 							"An animated map of a mysterious city that appears to be tracking the movements of five creatures"
 						],
 						[
-							"81\u201382",
+							"81–82",
 							"A cylinder of mist that holds your hair perfectly in shape when sprayed onto your head"
 						],
 						[
-							"83\u201384",
+							"83–84",
 							"A talking wand that tells you the name of any plant you point it at"
 						],
 						[
-							"85\u201386",
+							"85–86",
 							"A metal bracelet that displays the number of steps you've taken since your last long rest"
 						],
 						[
-							"87\u201388",
+							"87–88",
 							"A tiny handheld device that projects a glowing dot onto whatever you point it at"
 						],
 						[
-							"89\u201390",
+							"89–90",
 							"A rectangular piece of glass that displays a twelve-digit countdown on its surface"
 						],
 						[
-							"91\u201392",
+							"91–92",
 							"A wall chart of mysterious formulae arranged into a color-coded grid"
 						],
 						[
-							"93\u201394",
+							"93–94",
 							"A handheld device that solves any math problem you input using its buttons"
 						],
 						[
-							"95\u201396",
+							"95–96",
 							"A ball of speckled brown fur that appears to be alive"
 						],
 						[
-							"97\u201398",
+							"97–98",
 							"A complicated crystal board game that you don't know how to play"
 						],
 						[
-							"99\u201300",
+							"99–00",
 							"A large glass rectangle that displays a storm of black and white patterns when you press a button on its underside"
 						]
 					]
@@ -5443,15 +5443,15 @@
 					],
 					"rows": [
 						[
-							"1\u20132",
+							"1–2",
 							"Tiny, inedible fish (a creature that consumes it is poisoned for 1 hour)"
 						],
 						[
-							"3\u20135",
+							"3–5",
 							"Tiny, edible fish (feeds one person)"
 						],
 						[
-							"6\u20138",
+							"6–8",
 							"Small, edible fish (feeds up to four people)"
 						],
 						[
@@ -5673,7 +5673,7 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"This spongy, flavorless, gelatinous bead dissolves on your tongue and provides as much nourishment as 1 day of rations."
+				"Esta pérola esponjosa, sem sabor e gelatinosa se dissolve na sua língua e fornece tanta nutrição quanto 1 dia de rações."
 			],
 			"miscTags": [
 				"CF/W",
@@ -5690,7 +5690,7 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"This flavorless, gelatinous bead dissolves in liquid, transforming up to a pint of the liquid into fresh, cold drinking water. The bead has no effect on magical liquids or harmful substances such as poison."
+				"Esta pérola sem sabor e gelatinosa se dissolve em líquido, transformando até um litro do líquido em água potável fresca e fria. A pérola não tem efeito sobre líquidos mágicos ou substâncias nocivas, como veneno."
 			],
 			"lootTables": [
 				"Arcana - Common|XDMG",
@@ -5711,7 +5711,7 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"This spongy, flavorless, gelatinous bead dissolves in liquid, transforming up to a pint of the liquid into fresh, cold drinking water. The bead has no effect on magical liquids or harmful substances such as poison."
+				"Esta pérola esponjosa, sem sabor e gelatinosa se dissolve em líquido, transformando até um litro do líquido em água potável fresca e fria. A pérola não tem efeito sobre líquidos mágicos ou substâncias nocivas, como veneno."
 			],
 			"miscTags": [
 				"CNS"
@@ -6639,7 +6639,7 @@
 			"value": 30000,
 			"entries": [
 				"This tarry substance harvested from the dark boughs of the death's head willow is a powerful intoxicant. It can be smoked as a concentrate or injected directly into the bloodstream. A creature subjected to a dose of black sap cannot be {@condition charmed} or {@condition frightened} for {@dice 1d6} hours.",
-				"For each dose of black sap consumed, a creature must succeed on a {@dc 15} Constitution saving throw or become {@condition poisoned} for {@dice 2d4} hours\u2014an effect that is cumulative with multiple doses."
+				"For each dose of black sap consumed, a creature must succeed on a {@dc 15} Constitution saving throw or become {@condition poisoned} for {@dice 2d4} hours—an effect that is cumulative with multiple doses."
 			],
 			"miscTags": [
 				"CNS"
@@ -6967,7 +6967,7 @@
 					"name": "Personality",
 					"entries": [
 						"The staff has the spirits of all previous Blackstaffs trapped within it. Its creator, Khelben Arunsun, is the dominant personality among them. Like Khelben, the staff is extremely devious and manipulative. It prefers to counsel its owner without exerting outright control. The staff's primary goal is to protect Waterdeep and its Open Lord, currently Laeral Silverhand. Its secondary goal is to help its wielder become more powerful.",
-						"In the event that the holder of the office of the Blackstaff no longer serves the staff's wishes, the staff ceases to function until it finds a worthy inheritor\u2014someone whose loyalty to Waterdeep is beyond reproach."
+						"In the event that the holder of the office of the Blackstaff no longer serves the staff's wishes, the staff ceases to function until it finds a worthy inheritor—someone whose loyalty to Waterdeep is beyond reproach."
 					]
 				},
 				{
@@ -7355,7 +7355,7 @@
 			"reqAttune": true,
 			"wondrous": true,
 			"entries": [
-				"This diamond contains the blood of a creature\u2014blood that appears in the form of the blod (blood) rune. While the item is on your person, you can use your action to divine the location of the creature nearest to you that is related to the blood in the item and that isn't undead. You sense the distance and direction of the creature relative to your location. The creature is either the one whose blood is in the item or a blood relative.",
+				"This diamond contains the blood of a creature—blood that appears in the form of the blod (blood) rune. While the item is on your person, you can use your action to divine the location of the creature nearest to you that is related to the blood in the item and that isn't undead. You sense the distance and direction of the creature relative to your location. The creature is either the one whose blood is in the item or a blood relative.",
 				"This item is made from a large diamond worth at least 5,000 gp. When the blood of a creature is poured onto it during the creation process, the blood seeps into the heart of the gem. If the gem is destroyed, the blood evaporates and is gone forever. A vengeful being might use a blod stone to hunt down an entire bloodline. Such stones are sometimes given as gifts to siblings or handed down from parent to child."
 			]
 		},
@@ -8460,7 +8460,7 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"While wearing these boots, you can have them leave tracks like those of any kind of Humanoid of your size."
+				"Enquanto estiver usando estas botas, você pode fazê-las deixar pegadas como as de qualquer tipo de Humanoide do seu tamanho."
 			],
 			"lootTables": [
 				"Implements - Common|XDMG"
@@ -8480,7 +8480,7 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"Only humanoids can wear these boots. While wearing the boots, you can choose to have them leave tracks like those of another kind of humanoid of your size."
+				"Somente humanoides podem usar estas botas. Enquanto estiver usando as botas, você pode escolher fazer com que elas deixem pegadas como as de outro tipo de humanoide do seu tamanho."
 			]
 		},
 		{
@@ -9317,8 +9317,8 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"This translucent, bubble-like sphere has a slightly tacky outer surface, and you gain the item's benefits only while wearing it over your head like a helmet.",
-				"The bubble contains 1 hour of breathable air. The bubble regains all its expended air daily at dawn."
+				"Esta esfera translúcida, semelhante a uma bolha, possui uma superfície externa ligeiramente pegajosa, e você ganha os benefícios do item apenas enquanto a estiver usando sobre a cabeça como um capacete.",
+				"A bolha contém 1 hora de ar respirável. A bolha recupera todo o ar gasto diariamente ao amanhecer."
 			]
 		},
 		{
@@ -10315,7 +10315,7 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"The flame of this candle isn't extinguished when immersed in water. It gives off light and heat like a normal candle."
+				"A chama desta vela não se apaga quando imersa em água. Ela emite luz e calor como uma vela normal."
 			],
 			"lootTables": [
 				"Arcana - Common|XDMG",
@@ -10336,7 +10336,7 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"The flame of this candle is not extinguished when immersed in water. It gives off light and heat like a normal candle."
+				"A chama desta vela não se apaga quando imersa na água. Ela emite luz e calor como uma vela normal."
 			]
 		},
 		{
@@ -10495,7 +10495,7 @@
 				{
 					"type": "list",
 					"items": [
-						"Your size increases by one category\u2014from Medium to Large, for example. If there isn't enough room for your size to increase by one category, you instead become the maximum possible size in the space available.",
+						"Your size increases by one category—from Medium to Large, for example. If there isn't enough room for your size to increase by one category, you instead become the maximum possible size in the space available.",
 						"You have advantage on Strength checks and Strength saving throws.",
 						"When you hit with an attack roll using a weapon or an unarmed strike, you can add your proficiency bonus to the attack's damage."
 					]
@@ -11560,7 +11560,7 @@
 					"type": "entries",
 					"name": "Time Bandit",
 					"entries": [
-						"At the start of your turn, roll a {@dice d6} (no action required). On a 1\u20133, you slow down time, gaining an additional action on your turn and doubling your speed until the end of the turn. On a 4\u20136, you go forward in time to warn yourself of what is to come. The next time you fail a saving throw, attack roll, or ability check, you can reroll the check and take either result. Once you use this feature of the chronolometer, it cannot be used again until the next dawn."
+						"At the start of your turn, roll a {@dice d6} (no action required). On a 1–3, you slow down time, gaining an additional action on your turn and doubling your speed until the end of the turn. On a 4–6, you go forward in time to warn yourself of what is to come. The next time you fail a saving throw, attack roll, or ability check, you can reroll the check and take either result. Once you use this feature of the chronolometer, it cannot be used again until the next dawn."
 					]
 				},
 				{
@@ -11833,8 +11833,8 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"A cleansing stone is a sphere 1 foot in diameter, engraved with mystic sigils. When touching the stone, you can use an action to activate it and remove dirt and grime from your garments and your person.",
-				"Such stones are often embedded in pedestals in public squares in Aundair or in high-end Ghallanda inns."
+				"Uma pedra de purificação é uma esfera com 1 pé de diâmetro, gravada com sigilos místicos. Ao tocar a pedra, você pode usar uma ação para ativá-la e remover sujeira e manchas de suas vestes e de sua pessoa.",
+				"Essas pedras são frequentemente embutidas em pedestais em praças públicas em Aundair ou em pousadas de alto padrão de Ghallanda."
 			]
 		},
 		{
@@ -12218,7 +12218,7 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"While wearing this cloak, you can use a bonus action to change the style, color, and apparent quality of the garment. The cloak's weight doesn't change. Regardless of its appearance, the cloak can't be anything but a cloak. Although it can duplicate the appearance of other magic cloaks, it doesn't gain their magical properties."
+				"Enquanto estiver usando esta capa, você pode usar uma ação bônus para mudar o estilo, a cor e a qualidade aparente da vestimenta. O peso da capa não muda. Independentemente de sua aparência, a capa não pode ser nada além de uma capa. Embora possa duplicar a aparência de outras capas mágicas, ela não ganha suas propriedades mágicas."
 			],
 			"hasFluffImages": true
 		},
@@ -12494,7 +12494,7 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"This elegant outfit magically mends itself to counteract daily wear and tear. Pieces of the outfit that are destroyed can't be repaired in this way."
+				"Este elegante traje se repara magicamente para contrabalançar o desgaste diário. Peças do traje que forem destruídas não podem ser consertadas dessa forma."
 			],
 			"lootTables": [
 				"Arcana - Common|XDMG"
@@ -12511,7 +12511,7 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"This elegant outfit of traveler's clothes magically mends itself to counteract daily wear and tear. Pieces of the outfit that are destroyed can't be repaired in this way."
+				"Este elegante traje de roupas de viajante se repara magicamente para contrabalançar o desgaste diário. Peças do traje que forem destruídas não podem ser consertadas dessa forma."
 			]
 		},
 		{
@@ -12633,7 +12633,7 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"This scintillating copper coin sheds dim light in a 5-foot radius. If dropped a distance greater than 5 feet, the coin issues a melodious ringing sound when it hits a surface. Any creature that can hear the chime can determine the distance the coin dropped based on the tone."
+				"Esta cintilante moeda de cobre emite uma luz fraca em um raio de 1,5 metros. Se solta de uma altura maior que 1,5 metros, a moeda emite um som melodioso ao atingir uma superfície. Qualquer criatura que puder ouvir o sino pode determinar a distância que a moeda caiu com base no tom."
 			],
 			"light": [
 				{
@@ -12704,7 +12704,7 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"Glamerweave is clothing imbued with harmless illusory magic. While wearing the common version of these clothes, you can use a bonus action to create a moving illusory pattern within the cloth."
+				"Glamerweave é uma vestimenta imbuída com magia ilusória inofensiva. Enquanto estiver vestindo a versão comum dessas roupas, você pode usar uma ação bônus para criar um padrão ilusório em movimento dentro do tecido."
 			]
 		},
 		{
@@ -12871,7 +12871,7 @@
 					"type": "entries",
 					"name": "Wealth of Information",
 					"entries": [
-						"The painting's primary purpose is to observe and recall conversations. Over the past few decades, Constantori's Portrait has quietly observed countless conversations and now possesses an unquantifiable amount of lore\u2014everything from criminal conspiracies to secret passwords. The DM decides what the painting knows and what it doesn't.",
+						"The painting's primary purpose is to observe and recall conversations. Over the past few decades, Constantori's Portrait has quietly observed countless conversations and now possesses an unquantifiable amount of lore—everything from criminal conspiracies to secret passwords. The DM decides what the painting knows and what it doesn't.",
 						"While attuned to the painting, you can take an action to telepathically contact it over any distance, provided you and the painting are on the same plane of existence. The painting can't telepathically contact you, however. Maintaining telepathic contact with the painting requires your {@status concentration} (as if {@status concentration||concentrating} on a spell)."
 					]
 				},
@@ -15928,7 +15928,7 @@
 							"{@card Well|Deck of Many More Things|BMT}"
 						],
 						[
-							"67\u201300",
+							"67–00",
 							"Roll again"
 						]
 					],
@@ -15947,7 +15947,7 @@
 					"type": "entries",
 					"name": "Beast",
 					"entries": [
-						"You immediately transform into a {@filter random Beast with a CR of 5 or lower|bestiary|source=|Challenge Rating=[&0;&5]|type=beast}. Your game statistics\u2014including your ability scores, hit points, and possible actions\u2014are replaced by the Beast's game statistics, and any nonmagical equipment you're wearing or carrying melds into your new form and can't be used. Any magic items you're carrying drop in an unoccupied space within 5 feet of your new form.",
+						"You immediately transform into a {@filter random Beast with a CR of 5 or lower|bestiary|source=|Challenge Rating=[&0;&5]|type=beast}. Your game statistics—including your ability scores, hit points, and possible actions—are replaced by the Beast's game statistics, and any nonmagical equipment you're wearing or carrying melds into your new form and can't be used. Any magic items you're carrying drop in an unoccupied space within 5 feet of your new form.",
 						"You remain transformed in this way for {@dice 2d12} days; nothing can alter your form while you're under the effects of this card, but the {@spell Wish} spell can end the transformation early. When you revert to your normal form, you return to the same state you were in when you initially transformed."
 					]
 				},
@@ -16704,7 +16704,7 @@
 					"type": "entries",
 					"name": "Skull",
 					"entries": [
-						"You summon an {@creature avatar of death|DMG}\u2014a ghostly humanoid skeleton clad in a tattered black robe and carrying a spectral scythe. It appears in a space of the DM's choice within 10 feet of you and attacks you, warning all others that you must win the battle alone. The avatar fights until you die or it drops to 0 hit points, whereupon it disappears. If anyone tries to help you, the helper summons its own {@creature avatar of death|DMG}. A creature slain by an {@creature avatar of death|DMG} can't be restored to life."
+						"You summon an {@creature avatar of death|DMG}—a ghostly humanoid skeleton clad in a tattered black robe and carrying a spectral scythe. It appears in a space of the DM's choice within 10 feet of you and attacks you, warning all others that you must win the battle alone. The avatar fights until you die or it drops to 0 hit points, whereupon it disappears. If anyone tries to help you, the helper summons its own {@creature avatar of death|DMG}. A creature slain by an {@creature avatar of death|DMG} can't be restored to life."
 					]
 				},
 				{
@@ -16732,7 +16732,7 @@
 					"type": "entries",
 					"name": "Euryale",
 					"entries": [
-						"The card's {@creature medusa}-like visage curses you. You take a \u22122 penalty on saving throws while cursed in this way. Only a god or the magic of {@card The Fates|Deck of Many Things} card can end this curse."
+						"The card's {@creature medusa}-like visage curses you. You take a −2 penalty on saving throws while cursed in this way. Only a god or the magic of {@card The Fates|Deck of Many Things} card can end this curse."
 					]
 				},
 				{
@@ -16816,17 +16816,17 @@
 					],
 					"rows": [
 						[
-							"\u2014",
+							"—",
 							"01-05",
 							"Balance"
 						],
 						[
-							"\u2014",
+							"—",
 							"06-10",
 							"Comet"
 						],
 						[
-							"\u2014",
+							"—",
 							"11-14",
 							"Donjon"
 						],
@@ -16836,7 +16836,7 @@
 							"Euryale"
 						],
 						[
-							"\u2014",
+							"—",
 							"19-23",
 							"Fates"
 						],
@@ -16846,12 +16846,12 @@
 							"Flames"
 						],
 						[
-							"\u2014",
+							"—",
 							"28-31",
 							"Fool"
 						],
 						[
-							"\u2014",
+							"—",
 							"32-36",
 							"Gem"
 						],
@@ -16876,7 +16876,7 @@
 							"Moon"
 						],
 						[
-							"\u2014",
+							"—",
 							"57-60",
 							"Puzzle"
 						],
@@ -16891,7 +16891,7 @@
 							"Ruin"
 						],
 						[
-							"\u2014",
+							"—",
 							"69-73",
 							"Sage"
 						],
@@ -16911,7 +16911,7 @@
 							"Sun"
 						],
 						[
-							"\u2014",
+							"—",
 							"88-91",
 							"Talons"
 						],
@@ -17129,7 +17129,7 @@
 								"roll": {
 									"exact": 1
 								},
-								"entry": "\u20073 {@color ♦|#ff0000}"
+								"entry": " 3 {@color ♦|#ff0000}"
 							},
 							"Wooden {@item abacus|PHB}"
 						],
@@ -17139,7 +17139,7 @@
 								"roll": {
 									"exact": 2
 								},
-								"entry": "\u20074 {@color ♦|#ff0000}"
+								"entry": " 4 {@color ♦|#ff0000}"
 							},
 							"Four {@item Perfume (vial)|PHB|vials of perfume}"
 						],
@@ -17149,7 +17149,7 @@
 								"roll": {
 									"exact": 3
 								},
-								"entry": "\u20075 {@color ♦|#ff0000}"
+								"entry": " 5 {@color ♦|#ff0000}"
 							},
 							"5 days' worth of {@item Rations (1 day)|PHB|rations}"
 						],
@@ -17159,7 +17159,7 @@
 								"roll": {
 									"exact": 4
 								},
-								"entry": "\u20076 {@color ♦|#ff0000}"
+								"entry": " 6 {@color ♦|#ff0000}"
 							},
 							"{@item Iron pot|PHB}"
 						],
@@ -17169,7 +17169,7 @@
 								"roll": {
 									"exact": 5
 								},
-								"entry": "\u20077 {@color ♦|#ff0000}"
+								"entry": " 7 {@color ♦|#ff0000}"
 							},
 							"{@item Disguise kit|PHB}"
 						],
@@ -17179,7 +17179,7 @@
 								"roll": {
 									"exact": 6
 								},
-								"entry": "\u20078 {@color ♦|#ff0000}"
+								"entry": " 8 {@color ♦|#ff0000}"
 							},
 							"Window (up to 5 feet wide and 5 feet high), which you can place on a vertical surface up to 5 feet thick and which allows you to look through the surface"
 						],
@@ -17189,7 +17189,7 @@
 								"roll": {
 									"exact": 7
 								},
-								"entry": "\u20079 {@color ♦|#ff0000}"
+								"entry": " 9 {@color ♦|#ff0000}"
 							},
 							"{@item Manacles|PHB}"
 						],
@@ -17209,7 +17209,7 @@
 								"roll": {
 									"exact": 9
 								},
-								"entry": "\u20073 {@color ♥|#ff0000}"
+								"entry": " 3 {@color ♥|#ff0000}"
 							},
 							"Three {@item dagger|PHB|daggers}"
 						],
@@ -17219,7 +17219,7 @@
 								"roll": {
 									"exact": 10
 								},
-								"entry": "\u20074 {@color ♥|#ff0000}"
+								"entry": " 4 {@color ♥|#ff0000}"
 							},
 							"Four {@item Oil (flask)|PHB|flasks of oil}"
 						],
@@ -17229,7 +17229,7 @@
 								"roll": {
 									"exact": 11
 								},
-								"entry": "\u20075 {@color ♥|#ff0000}"
+								"entry": " 5 {@color ♥|#ff0000}"
 							},
 							"Five silk {@item robes|PHB}"
 						],
@@ -17239,7 +17239,7 @@
 								"roll": {
 									"exact": 12
 								},
-								"entry": "\u20076 {@color ♥|#ff0000}"
+								"entry": " 6 {@color ♥|#ff0000}"
 							},
 							"{@item Forgery kit|PHB}"
 						],
@@ -17249,7 +17249,7 @@
 								"roll": {
 									"exact": 13
 								},
-								"entry": "\u20077 {@color ♥|#ff0000}"
+								"entry": " 7 {@color ♥|#ff0000}"
 							},
 							"{@item Quarterstaff|PHB}"
 						],
@@ -17259,7 +17259,7 @@
 								"roll": {
 									"exact": 14
 								},
-								"entry": "\u20078 {@color ♥|#ff0000}"
+								"entry": " 8 {@color ♥|#ff0000}"
 							},
 							"{@item Fishing tackle|PHB}"
 						],
@@ -17269,7 +17269,7 @@
 								"roll": {
 									"exact": 15
 								},
-								"entry": "\u20079 {@color ♥|#ff0000}"
+								"entry": " 9 {@color ♥|#ff0000}"
 							},
 							"Leather {@item pouch|PHB} containing 18 gp"
 						],
@@ -17289,7 +17289,7 @@
 								"roll": {
 									"exact": 17
 								},
-								"entry": "\u20073 ♣"
+								"entry": " 3 ♣"
 							},
 							"Three {@item book|PHB|books}, written in {@language Common}, about random historical events"
 						],
@@ -17299,7 +17299,7 @@
 								"roll": {
 									"exact": 18
 								},
-								"entry": "\u20074 ♣"
+								"entry": " 4 ♣"
 							},
 							"Canvas {@item Two-Person Tent|PHB|tent}"
 						],
@@ -17309,7 +17309,7 @@
 								"roll": {
 									"exact": 19
 								},
-								"entry": "\u20075 ♣"
+								"entry": " 5 ♣"
 							},
 							"{@item Silk Rope (50 feet)|PHB|50 feet of coiled silk rope}"
 						],
@@ -17319,7 +17319,7 @@
 								"roll": {
 									"exact": 20
 								},
-								"entry": "\u20076 ♣"
+								"entry": " 6 ♣"
 							},
 							"Two {@item crowbar|PHB|crowbars}"
 						],
@@ -17329,7 +17329,7 @@
 								"roll": {
 									"exact": 21
 								},
-								"entry": "\u20077 ♣"
+								"entry": " 7 ♣"
 							},
 							"{@item Healer's kit|PHB}"
 						],
@@ -17339,7 +17339,7 @@
 								"roll": {
 									"exact": 22
 								},
-								"entry": "\u20078 ♣"
+								"entry": " 8 ♣"
 							},
 							"Eight gems worth 5 gp each"
 						],
@@ -17349,7 +17349,7 @@
 								"roll": {
 									"exact": 23
 								},
-								"entry": "\u20079 ♣"
+								"entry": " 9 ♣"
 							},
 							"{@item Lamp|PHB}"
 						],
@@ -17369,7 +17369,7 @@
 								"roll": {
 									"exact": 25
 								},
-								"entry": "\u20073 ♠"
+								"entry": " 3 ♠"
 							},
 							"Three {@item spear|PHB|spears}"
 						],
@@ -17379,7 +17379,7 @@
 								"roll": {
 									"exact": 26
 								},
-								"entry": "\u20074 ♠"
+								"entry": " 4 ♠"
 							},
 							"{@item Steel mirror|PHB}"
 						],
@@ -17389,7 +17389,7 @@
 								"roll": {
 									"exact": 27
 								},
-								"entry": "\u20075 ♠"
+								"entry": " 5 ♠"
 							},
 							"15-foot wooden pole"
 						],
@@ -17399,7 +17399,7 @@
 								"roll": {
 									"exact": 28
 								},
-								"entry": "\u20076 ♠"
+								"entry": " 6 ♠"
 							},
 							"Burlap {@item sack|PHB}"
 						],
@@ -17409,7 +17409,7 @@
 								"roll": {
 									"exact": 29
 								},
-								"entry": "\u20077 ♠"
+								"entry": " 7 ♠"
 							},
 							"Two sets of {@item fine clothes|PHB}"
 						],
@@ -17419,7 +17419,7 @@
 								"roll": {
 									"exact": 30
 								},
-								"entry": "\u20078 ♠"
+								"entry": " 8 ♠"
 							},
 							"{@item Shovel|PHB}"
 						],
@@ -17429,7 +17429,7 @@
 								"roll": {
 									"exact": 31
 								},
-								"entry": "\u20079 ♠"
+								"entry": " 9 ♠"
 							},
 							"{@item Light hammer|PHB}"
 						],
@@ -17750,7 +17750,7 @@
 					"type": "entries",
 					"name": "Euryale",
 					"entries": [
-						"The card's medusa-like visage curses you. You take a \u22121 penalty on saving throws for the duration of the adventure."
+						"The card's medusa-like visage curses you. You take a −1 penalty on saving throws for the duration of the adventure."
 					]
 				},
 				{
@@ -17764,7 +17764,7 @@
 					"type": "entries",
 					"name": "Flames",
 					"entries": [
-						"The Grand Master of the Monastery of the Distressed Body becomes your enemy. The bone devil seeks your ruin, savoring your suffering before attempting to slay you. If the Grand Master has already been defeated, you gain the enmity of {@creature Garret Levistusson|LLK|Garret Levistusson's} patron\u2014a similarly powerful devil."
+						"The Grand Master of the Monastery of the Distressed Body becomes your enemy. The bone devil seeks your ruin, savoring your suffering before attempting to slay you. If the Grand Master has already been defeated, you gain the enmity of {@creature Garret Levistusson|LLK|Garret Levistusson's} patron—a similarly powerful devil."
 					]
 				},
 				{
@@ -17834,7 +17834,7 @@
 					"type": "entries",
 					"name": "Skull",
 					"entries": [
-						"You summon an avatar of death\u2014a mechanical skeleton (use bone naga statistics) clad in a tattered black robe. It appears in a space of the DM's choice within 10 feet of you and attacks you, warning all others that you must win the battle alone. The avatar fights until you die or it drops to 0 hit points, whereupon it disappears. If anyone tries to help you, the helper summons its own avatar of death. A creature slain by an avatar of death can't be restored to life."
+						"You summon an avatar of death—a mechanical skeleton (use bone naga statistics) clad in a tattered black robe. It appears in a space of the DM's choice within 10 feet of you and attacks you, warning all others that you must win the battle alone. The avatar fights until you die or it drops to 0 hit points, whereupon it disappears. If anyone tries to help you, the helper summons its own avatar of death. A creature slain by an avatar of death can't be restored to life."
 					]
 				},
 				{
@@ -18647,7 +18647,7 @@
 					"entries": [
 						"The first ten pages of the Demonomicon are blank. As a {@action Magic|XPHB} action while holding the book, you can target a Fiend that you can see that is trapped within the area of a {@spell Magic Circle|XPHB} spell. The Fiend must succeed on a {@dc 20} Charisma saving throw with {@variantrule Disadvantage|XPHB} or become trapped within one of the Demonomicon's blank pages, which fills with writing detailing the trapped creature's widely known name and depravities. Once used, this action can't be used again until the next dawn.",
 						"When you finish a {@variantrule Long Rest|XPHB}, if you and the Demonomicon are on the same plane of existence, one trapped creature within the book can attempt to possess you. You make a {@dc 20} Charisma saving throw. On a failed save, you are possessed by the creature, which controls you like a puppet. As a {@action Magic|XPHB} action, the possessing creature can release you and appear in the closest unoccupied space to you. On a successful save, the Fiend can't try to possess you again for 7 days (but another Fiend trapped in the book can certainly try).",
-						"When the tome is discovered, it has {@dice 1d4} Fiends occupying its pages\u2014typically an assortment of demons."
+						"When the tome is discovered, it has {@dice 1d4} Fiends occupying its pages—typically an assortment of demons."
 					]
 				},
 				{
@@ -19120,7 +19120,7 @@
 			],
 			"wondrous": true,
 			"entries": [
-				"This keyrune, carved from black stone accented with steel, resembles a stylized horror. On command, it transforms into an {@creature intellect devourer} that resembles the Dimir guild symbol, with six bladelike legs. The creature exists for up to 24 hours. During that time, it pursues only a single mission you give it\u2014usually an assignment to take over someone's body, either to impersonate that person for a brief time or to extract secrets from their mind. When the mission is complete, the creature returns to you, reports its success, and reverts to its keyrune form.",
+				"This keyrune, carved from black stone accented with steel, resembles a stylized horror. On command, it transforms into an {@creature intellect devourer} that resembles the Dimir guild symbol, with six bladelike legs. The creature exists for up to 24 hours. During that time, it pursues only a single mission you give it—usually an assignment to take over someone's body, either to impersonate that person for a brief time or to extract secrets from their mind. When the mission is complete, the creature returns to you, reports its success, and reverts to its keyrune form.",
 				"When you use an action to speak the item's command word and place the keyrune on the ground in an unoccupied space within 5 feet of you, the keyrune transforms into a {@creature intellect devourer}. If there isn't enough space for the creature, the keyrune doesn't transform.",
 				"The creature is friendly to you, your companions, and other members of your guild (unless those guild members are hostile to you). It understands your languages and obeys your spoken commands. If you issue no commands, the creature takes the {@action Dodge} action and moves to avoid danger.",
 				"At the end of the duration, the creature reverts to its keyrune form. It reverts early if it drops to 0 hit points or if you use an action to speak the command word again while touching it. When the creature reverts to its keyrune form, it can't transform again until 36 hours have passed."
@@ -19421,7 +19421,7 @@
 						"A docent has the following properties:",
 						"{@b Languages}. The docent knows Common, Giant, and {@dice 1d4} additional languages chosen by the DM. If a docent knows fewer than six languages, it can learn a new language after it hears or reads the language through your senses.",
 						"{@b Skills}. The docent has a +7 bonus to one of the following skills (roll a {@dice d4}): (1) {@skill Arcana}, (2) {@skill History}, (3) {@skill Investigation}, or (4) {@skill Nature}.",
-						"{@b Spells}. The docent knows one of the following spells and can cast it at will, requiring no components (roll a {@dice d6}): (1\u20132) {@spell detect evil and good} or (3\u20136) {@spell detect magic}. The docent decides when to cast the spell."
+						"{@b Spells}. The docent knows one of the following spells and can cast it at will, requiring no components (roll a {@dice d6}): (1–2) {@spell detect evil and good} or (3–6) {@spell detect magic}. The docent decides when to cast the spell."
 					]
 				},
 				{
@@ -19497,27 +19497,27 @@
 					],
 					"rows": [
 						[
-							"1\u20132",
+							"1–2",
 							"The dodecahedron explodes and is destroyed. Each creature within 20 feet of the exploding die must make a {@dc 13} Dexterity saving throw, taking 40 ({@damage 9d8}) force damage on a failed save, or half as much damage on a successful one."
 						],
 						[
-							"3\u20134",
+							"3–4",
 							"The dodecahedron casts {@spell light} on itself. The effect lasts until a creature touches the die."
 						],
 						[
-							"5\u20136",
+							"5–6",
 							"The dodecahedron casts {@spell ray of frost} ({@hit 5} to hit), targeting a random creature within 60 feet of it that doesn't have {@quickref Cover||3||total cover} against the attack."
 						],
 						[
-							"7\u20138",
+							"7–8",
 							"The dodecahedron casts {@spell shocking grasp} ({@hit 5} to hit) on the next creature that touches it."
 						],
 						[
-							"9\u201310",
+							"9–10",
 							"The dodecahedron casts {@spell darkness} on itself. The effect has a duration of 10 minutes."
 						],
 						[
-							"11\u201312",
+							"11–12",
 							"The next creature to touch the dodecahedron gains {@dice 1d10} temporary hit points that last for 1 hour."
 						]
 					]
@@ -19629,9 +19629,9 @@
 			"entries": [
 				"The Draakhorn was a gift from {@creature Tiamat|RoT} in the war between dragons and giants. It was once the horn of her {@creature ancient red dragon} consort, Ephelomon, that she gave to dragonkind to help them in their war against the giants. The Draakhorn is a signaling device, and it is so large that it requires two Medium creatures (or one Large or larger) to hold it while a third creature sounds it, making the earth resonate to its call. The horn has been blasted with fire into a dark ebony hue and is wrapped in bands of bronze with draconic runes that glow with purple eldritch fire.",
 				"The low, moaning drone of the Draakhorn discomfits normal animals within a few miles, and it alerts all dragons within two thousand miles to rise and be wary, for great danger is at hand. Coded blasts were once used to signal specific messages. Knowledge of those codes has been lost to the ages.",
-				"Those with knowledge of the Draakhorn's history know that it was first built to signal danger to chromatic dragons\u2014a purpose the Cult of the Dragon has corrupted to call chromatic dragons to the Well of Dragons from across the North.",
+				"Those with knowledge of the Draakhorn's history know that it was first built to signal danger to chromatic dragons—a purpose the Cult of the Dragon has corrupted to call chromatic dragons to the Well of Dragons from across the North.",
 				"Within 50 feet of any enclosed space where the horn is blown, the air begins to shimmer from the sound. Any character within 20 feet of the entry to the enclosed space must succeed on a {@dc 12} Strength check to continue pushing against the pressure of the sound. A failure indicates the character can advance no farther toward the entry.",
-				"For any character entering the enclosed space, the sound fades to silence\u2014because any creature that enters the enclosed space is temporarily {@condition deafened} and must make a {@dc 12} Constitution saving throw. Success indicates the deafness ends 2 minutes after the Draakhorn ceases to sound. Failure indicates the character remains {@condition deafened} for 1 hour after the Draakhorn ceases to sound.",
+				"For any character entering the enclosed space, the sound fades to silence—because any creature that enters the enclosed space is temporarily {@condition deafened} and must make a {@dc 12} Constitution saving throw. Success indicates the deafness ends 2 minutes after the Draakhorn ceases to sound. Failure indicates the character remains {@condition deafened} for 1 hour after the Draakhorn ceases to sound.",
 				"While the horn is sounding, a creature must make a {@dc 15} Constitution saving throw the first time on a turn the creature enters a 150-foot cone in front of the horn or starts its turn there. On a failed save, the creature takes 27 ({@damage 6d8}) thunder damage and is knocked {@condition prone}. On a successful save, the creature takes half damage and isn't knocked {@condition prone}."
 			],
 			"hasFluffImages": true
@@ -19963,7 +19963,7 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"While you're wearing this fearsome steel helm, your eyes glow red and the rest of your face is hidden in shadow."
+				"Enquanto você estiver usando este temível elmo de aço, seus olhos brilham em vermelho e o restante do seu rosto fica escondido na sombra."
 			],
 			"lootTables": [
 				"Armaments - Common|XDMG"
@@ -19986,7 +19986,7 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"This fearsome steel helm makes your eyes glow red while you wear it."
+				"Este temível elmo de aço faz seus olhos brilharem em vermelho enquanto você o usa."
 			],
 			"hasFluffImages": true
 		},
@@ -21856,7 +21856,7 @@
 				"_mod": {
 					"entries": {
 						"mode": "appendArr",
-						"items": "One card in this deck is enchanted to appear as whatever specific card its owner commands. This magic works only 25 percent of the time, but the deck is worth 500 gp to any serious gambler who doesn't mind the risk\u2014or who isn't told about it."
+						"items": "One card in this deck is enchanted to appear as whatever specific card its owner commands. This magic works only 25 percent of the time, but the deck is worth 500 gp to any serious gambler who doesn't mind the risk—or who isn't told about it."
 					}
 				}
 			},
@@ -21872,7 +21872,7 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"This spellbook, along with anything written on its pages, can't be damaged by fire or water. In addition, the spellbook doesn't deteriorate with age."
+				"Este grimório, juntamente com qualquer coisa escrita em suas páginas, não pode ser danificado por fogo ou água. Além disso, o grimório não se deteriora com a idade."
 			],
 			"lootTables": [
 				"Arcana - Common|XDMG"
@@ -21889,7 +21889,7 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"This spellbook, along with anything written on its pages, can't be damaged by fire or immersion in water. In addition, the spellbook doesn't deteriorate with age."
+				"Este grimório, juntamente com qualquer coisa escrita em suas páginas, não pode ser danificado por fogo ou imersão em água. Além disso, o grimório não se deteriora com a idade."
 			]
 		},
 		{
@@ -22328,7 +22328,7 @@
 					"type": "entries",
 					"name": "Arrows of the Seasons",
 					"entries": [
-						"The four arrows\u2014each associated with a season\u2014that accompany this bow can be fired only from it. Each arrow disappears immediately after it's used, and it reappears in the quiver at the next dusk. The save DC against spells cast with the arrows is 18. Each arrow has a unique property:",
+						"The four arrows—each associated with a season—that accompany this bow can be fired only from it. Each arrow disappears immediately after it's used, and it reappears in the quiver at the next dusk. The save DC against spells cast with the arrows is 18. Each arrow has a unique property:",
 						{
 							"type": "list",
 							"style": "list-hang",
@@ -22418,7 +22418,7 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"This artificial eye replaces a real one that was lost or removed. While the ersatz eye is embedded in your eye socket, it can't be removed by anyone other than you, and you can see through the tiny orb as though it were a normal eye."
+				"Este olho artificial substitui um olho real que foi perdido ou removido. Enquanto o olho substituto estiver embutido em sua órbita ocular, ele não pode ser removido por ninguém além de você, e você pode ver através da pequena esfera como se fosse um olho normal."
 			]
 		},
 		{
@@ -23511,7 +23511,7 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"This small metal disk is inscribed with the image of a feather. When you fall at least 20 feet while the token is on your person, you descend 60 feet per round and take no damage from falling. The token's magic is expended after you land, whereupon the disk becomes nonmagical."
+				"Este pequeno disco de metal está inscrito com a imagem de uma pena. Quando você cai pelo menos 6 metros enquanto o token está em sua posse, você desce 18 metros por rodada e não sofre dano de queda. A magia do token é gasta após você aterrissar, momento em que o disco se torna não mágico."
 			]
 		},
 		{
@@ -23937,7 +23937,7 @@
 						],
 						[
 							"87",
-							"Paintbrush made entirely of ceramic\u2014even the bristles"
+							"Paintbrush made entirely of ceramic—even the bristles"
 						],
 						[
 							"88",
@@ -24830,7 +24830,7 @@
 			"wondrous": true,
 			"recharge": "dawn",
 			"entries": [
-				"You can use this card to summon a devil. The card is attuned to {@filter a specific devil with a challenge rating of 8 or lower|bestiary|source=|Challenge Rating=[&0;&8]|tag=devil|miscellaneous=}. As an action, you can hold this card aloft and summon that devil, which appears in an unoccupied space you can see within 30 feet of you. The devil is initially unfriendly toward you and your companions. Roll initiative for the devil, which has its own turns. The DM has the creature's stat block. On each of your turns, you can issue a verbal command to the devil (no action required by you), and as long as you are holding this card, the devil obeys your commands. Otherwise, it is under the DM's control and acts according to its nature\u2014it might attack you if it thinks it can prevail or try to tempt you to undertake an evil act in exchange for further service. After 1 minute or when the devil's hit points drop to 0, the devil returns to the Lower Planes. Once this property is used, it can't be used again until the next dawn."
+				"You can use this card to summon a devil. The card is attuned to {@filter a specific devil with a challenge rating of 8 or lower|bestiary|source=|Challenge Rating=[&0;&8]|tag=devil|miscellaneous=}. As an action, you can hold this card aloft and summon that devil, which appears in an unoccupied space you can see within 30 feet of you. The devil is initially unfriendly toward you and your companions. Roll initiative for the devil, which has its own turns. The DM has the creature's stat block. On each of your turns, you can issue a verbal command to the devil (no action required by you), and as long as you are holding this card, the devil obeys your commands. Otherwise, it is under the DM's control and acts according to its nature—it might attack you if it thinks it can prevail or try to tempt you to undertake an evil act in exchange for further service. After 1 minute or when the devil's hit points drop to 0, the devil returns to the Lower Planes. Once this property is used, it can't be used again until the next dawn."
 			],
 			"hasFluffImages": true
 		},
@@ -26140,7 +26140,7 @@
 			"ac": 12,
 			"bonusAc": "+1",
 			"entries": [
-				"While wearing this armor, you gain a +1 bonus to {@variantrule Armor Class|XPHB}. You can also take a {@variantrule Bonus Action|XPHB} to cause the armor to assume the appearance of a normal set of clothing or some other kind of armor. You decide what it looks like\u2014including color, style, and accessories\u2014but the armor retains its normal bulk and weight. The illusory appearance lasts until you use this property again or doff the armor."
+				"While wearing this armor, you gain a +1 bonus to {@variantrule Armor Class|XPHB}. You can also take a {@variantrule Bonus Action|XPHB} to cause the armor to assume the appearance of a normal set of clothing or some other kind of armor. You decide what it looks like—including color, style, and accessories—but the armor retains its normal bulk and weight. The illusory appearance lasts until you use this property again or doff the armor."
 			],
 			"lootTables": [
 				"Implements - Rare|XDMG"
@@ -26999,7 +26999,7 @@
 							"The egg contains a {@item Figurine of Wondrous Power, Silver Raven||figurine of wondrous power (silver raven)} that activates automatically as the egg is opened, releasing what appears to be a living bird."
 						],
 						[
-							"8\u201312",
+							"8–12",
 							"The egg is empty."
 						]
 					]
@@ -27732,7 +27732,7 @@
 			"dmgType": "S",
 			"bonusWeapon": "+1",
 			"entries": [
-				"In the Year of the Icy Axe (123 DR), the {@creature frost giant} Lord Gurt fell to Uthgar Gardolfsson\u2014leader of the folk who would become the Uthgardt barbarians\u2014in a battle that marked the ascendance of humankind over the giants in the Dessarin Valley. Gurt's greataxe was buried in Morgur's Mound until it was unearthed and brought back to Waterdeep. After laying in the city's vaults for decades, the axe was given to Harshnag, a {@creature frost giant} adventurer, in recognition of his service to Waterdeep. Uthgardt barbarians recognize the weapon on sight and attack any giant that wields it.",
+				"In the Year of the Icy Axe (123 DR), the {@creature frost giant} Lord Gurt fell to Uthgar Gardolfsson—leader of the folk who would become the Uthgardt barbarians—in a battle that marked the ascendance of humankind over the giants in the Dessarin Valley. Gurt's greataxe was buried in Morgur's Mound until it was unearthed and brought back to Waterdeep. After laying in the city's vaults for decades, the axe was given to Harshnag, a {@creature frost giant} adventurer, in recognition of his service to Waterdeep. Uthgardt barbarians recognize the weapon on sight and attack any giant that wields it.",
 				"You gain a +1 bonus to attack and damage rolls made with this magic weapon. It is sized for a giant, weighs 325 pounds, and deals {@damage 3d12} slashing damage on a hit, plus an extra {@damage 2d12} slashing damage if the target is human.",
 				"The axe sheds light as a torch when the temperature around it drops below 0 degrees Fahrenheit. The light can't be shut off in these conditions.",
 				"As an action, you can cast a version of the {@spell heat metal} spell (save {@dc 13}) that deals cold damage instead of fire damage. Once this power is used, it can't be used again until the next dawn."
@@ -28658,7 +28658,7 @@
 				"Wizard"
 			],
 			"entries": [
-				"This antiquated, cone\u2014shaped hat is adorned with gold crescent moons and stars. While you are wearing it, you gain the following benefits:",
+				"This antiquated, cone—shaped hat is adorned with gold crescent moons and stars. While you are wearing it, you gain the following benefits:",
 				{
 					"type": "list",
 					"items": [
@@ -29305,7 +29305,7 @@
 			"reqAttune": true,
 			"wondrous": true,
 			"entries": [
-				"While wearing this helm, you can use an action to cast the {@spell detect thoughts} spell (save {@dc 13}) from it. As long as you maintain {@status concentration} on the spell, you can use a bonus action to send a telepathic message to a creature you are focused on. It can reply\u2014using a bonus action to do so\u2014while your focus on it continues.",
+				"While wearing this helm, you can use an action to cast the {@spell detect thoughts} spell (save {@dc 13}) from it. As long as you maintain {@status concentration} on the spell, you can use a bonus action to send a telepathic message to a creature you are focused on. It can reply—using a bonus action to do so—while your focus on it continues.",
 				"While focusing on a creature with {@spell detect thoughts}, you can use an action to cast the {@spell suggestion} spell (save {@dc 13}) from the helm on that creature. Once used, the suggestion property can't be used again until the next dawn."
 			],
 			"optionalfeatures": [
@@ -30197,7 +30197,7 @@
 			"rechargeAmount": "{@dice 1d6 + 4}",
 			"charges": 10,
 			"entries": [
-				"The Holy Symbol of Ravenkind is a unique holy symbol sacred to the good-hearted faithful of Barovia. It predates the establishment of any church in Barovia. According to legend, it was delivered to a paladin named Lugdana by a giant raven\u2014or an angel in the form of a giant raven. Lugdana used the holy symbol to root out and destroy nests of vampires until her death. The high priests of Ravenloft kept and wore the holy symbol after Lugdana's passing.",
+				"The Holy Symbol of Ravenkind is a unique holy symbol sacred to the good-hearted faithful of Barovia. It predates the establishment of any church in Barovia. According to legend, it was delivered to a paladin named Lugdana by a giant raven—or an angel in the form of a giant raven. Lugdana used the holy symbol to root out and destroy nests of vampires until her death. The high priests of Ravenloft kept and wore the holy symbol after Lugdana's passing.",
 				"The holy symbol is a platinum amulet shaped like the sun, with a large crystal embedded in its center.",
 				"The holy symbol has 10 charges for the following properties. It regains {@dice 1d6 + 4} charges daily at dawn.",
 				{
@@ -31357,103 +31357,103 @@
 					],
 					"rows": [
 						[
-							"01\u201304",
+							"01–04",
 							"A small wooden figurine of a yawning walrus, painted in red and black"
 						],
 						[
-							"05\u201308",
+							"05–08",
 							"A pair of scrimshaw cufflinks with an image of a fisherman on a boat engraved on them"
 						],
 						[
-							"09\u201312",
+							"09–12",
 							"A small iron key with a frayed blue and gold cord tied to it"
 						],
 						[
-							"13\u201316",
+							"13–16",
 							"A small illustrated book of Northlander myths that has pages missing"
 						],
 						[
-							"17\u201320",
+							"17–20",
 							"A damaged scrimshaw cameo depicting a merfolk"
 						],
 						[
-							"21\u201324",
+							"21–24",
 							"A stone from a burial cairn with a tiny Dwarvish rune carved into it"
 						],
 						[
-							"25\u201328",
+							"25–28",
 							"A ripped cloth sail with a symbol you don't recognize"
 						],
 						[
-							"29\u201332",
+							"29–32",
 							"An Ulu knife with a scrimshaw handle"
 						],
 						[
-							"33\u201336",
+							"33–36",
 							"A jar containing an unidentifiable, sweet, sticky substance"
 						],
 						[
-							"37\u201340",
+							"37–40",
 							"A delicate glass ball painted with snowflakes, capped by a metal loop with a tiny hook attached to it"
 						],
 						[
-							"41\u201344",
+							"41–44",
 							"An expedition log with missing pages and a pressed flower used as a bookmark"
 						],
 						[
-							"45\u201348",
+							"45–48",
 							"An owl figurine carved from whalebone"
 						],
 						[
-							"49\u201352",
+							"49–52",
 							"A sewing box that smells of old wood and has three spools of blue thread inside"
 						],
 						[
-							"53\u201356",
+							"53–56",
 							"A scrimshaw-handled ink pen with black runic designs along its length"
 						],
 						[
-							"57\u201360",
+							"57–60",
 							"A brooch made from a small insect encased in amber"
 						],
 						[
-							"61\u201364",
+							"61–64",
 							"A scrimshaw pepper shaker etched with the letter W"
 						],
 						[
-							"65\u201368",
+							"65–68",
 							"An old, wooden-handled ice pick stained with blood that won't wash off"
 						],
 						[
-							"69\u201372",
+							"69–72",
 							"A fabric doll bearing an angry expression"
 						],
 						[
-							"73\u201376",
+							"73–76",
 							"A set of wind chimes made from seashells"
 						],
 						[
-							"77\u201380",
+							"77–80",
 							"A beautiful silver tin that, when opened, emits the smell of rotting fish"
 						],
 						[
-							"81\u201384",
+							"81–84",
 							"A bloodstained dreamcatcher made from fishing line, gold wire, and snowy owlbear feathers"
 						],
 						[
-							"85\u201388",
+							"85–88",
 							"A figurine of a polar bear made of ice that never melts"
 						],
 						[
-							"89\u201392",
+							"89–92",
 							"A snow globe that doesn't need to be shaken"
 						],
 						[
-							"93\u201396",
+							"93–96",
 							"A piece of sea glass shaped like a unicorn's horn"
 						],
 						[
-							"97\u201300",
+							"97–00",
 							"A dark blue scarf that gets lighter in shade the higher the altitude of the wearer"
 						]
 					]
@@ -31532,7 +31532,7 @@
 			"weight": 80,
 			"charges": 3,
 			"entries": [
-				"{@creature Iggwilv the Witch Queen|WBtW|Iggwilv} crafted this wondrous cauldron with the help of her adoptive mother, the archfey Baba Yaga. The cauldron has two forms. Only Iggwilv or Baba Yaga can change the cauldron from one form to another (by using an action to touch it), which either can do without being attuned to the item. In its first form, the cauldron is made of solid gold and embossed on the outside with images of bare-branched trees, falling leaves, and broomsticks. In its second form, the cauldron is made of iron and embossed on the outside with images of bats, toads, cats, lizards, and snakes\u2014eight of each animal. In either form, the cauldron is roughly 3 feet in diameter and has a 2-foot-wide mouth, a round lid with a molded handle at the top, and eight clawed feet for stability. The cauldron weighs 80 pounds when empty, and it can hold up to 100 gallons of liquid.",
+				"{@creature Iggwilv the Witch Queen|WBtW|Iggwilv} crafted this wondrous cauldron with the help of her adoptive mother, the archfey Baba Yaga. The cauldron has two forms. Only Iggwilv or Baba Yaga can change the cauldron from one form to another (by using an action to touch it), which either can do without being attuned to the item. In its first form, the cauldron is made of solid gold and embossed on the outside with images of bare-branched trees, falling leaves, and broomsticks. In its second form, the cauldron is made of iron and embossed on the outside with images of bats, toads, cats, lizards, and snakes—eight of each animal. In either form, the cauldron is roughly 3 feet in diameter and has a 2-foot-wide mouth, a round lid with a molded handle at the top, and eight clawed feet for stability. The cauldron weighs 80 pounds when empty, and it can hold up to 100 gallons of liquid.",
 				{
 					"type": "entries",
 					"name": "Attunement",
@@ -31996,7 +31996,7 @@
 					"name": "Shield Ward",
 					"type": "entries",
 					"entries": [
-						"You can transfer the ingot's magic to a nonmagical item\u2014a shield or a two-handed melee weapon-by tracing the skold rune there with your finger. The transfer takes 8 hours of work that requires the two items to be within 5 feet of each other. At the end, the ingot is destroyed, and the rune appears in silver on the chosen item, which gains a benefit based on its form:",
+						"You can transfer the ingot's magic to a nonmagical item—a shield or a two-handed melee weapon-by tracing the skold rune there with your finger. The transfer takes 8 hours of work that requires the two items to be within 5 feet of each other. At the end, the ingot is destroyed, and the rune appears in silver on the chosen item, which gains a benefit based on its form:",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
@@ -32164,7 +32164,7 @@
 			"reqAttune": true,
 			"wondrous": true,
 			"entries": [
-				"While you are playing this musical instrument, you can create harmless, illusory visual effects within a 5-foot-radius sphere centered on the instrument. If you are a bard, the radius increases to 15 feet. Sample visual effects include luminous musical notes, a spectral dancer, butterflies, and gently falling snow. The magical effects have neither substance nor sound, and they are obviously illusory. The effects end when you stop playing."
+				"Enquanto você estiver tocando este instrumento musical, pode criar efeitos visuais ilusórios inofensivos dentro de uma esfera com raio de 1,5 metro centrada no instrumento. Se você for um bardo, o raio aumenta para 4,5 metros. Exemplos de efeitos visuais incluem notas musicais luminosas, um dançarino espectral, borboletas e neve caindo suavemente. Os efeitos mágicos não têm substância nem som, e são obviamente ilusórios. Os efeitos terminam quando você para de tocar."
 			]
 		},
 		{
@@ -34069,7 +34069,7 @@
 			"rechargeAmount": "{@dice 1d3}",
 			"charges": 3,
 			"entries": [
-				"A {@item war pick|phb} forged from a single piece of iron, Ironfang has a fang-like head inscribed with ancient runes. The pick is heavy in the hand, but when the wielder swings the pick in anger, the weapon seems almost weightless. This weapon is immune to any form of rust, acid, or corrosion\u2014nothing seems to mark it. Ironfang contains a spark of {@creature Ogrémoch|PotA}, the Prince of Evil Earth.",
+				"A {@item war pick|phb} forged from a single piece of iron, Ironfang has a fang-like head inscribed with ancient runes. The pick is heavy in the hand, but when the wielder swings the pick in anger, the weapon seems almost weightless. This weapon is immune to any form of rust, acid, or corrosion—nothing seems to mark it. Ironfang contains a spark of {@creature Ogrémoch|PotA}, the Prince of Evil Earth.",
 				"You gain a +2 bonus to attack and damage rolls made with this magic weapon. When you hit with it, the target takes an extra {@damage 1d8} thunder damage.",
 				{
 					"type": "entries",
@@ -34617,7 +34617,7 @@
 			"rechargeAmount": 3,
 			"charges": 3,
 			"entries": [
-				"The Jewel of Three Prayers is a Vestige of Divergence (see the \"Vestiges of Divergence\" sidebar). In ancient times, Alyxian the Apotheon bore this amulet as a symbol of his covenant with three Prime Deities: Sehanine the Moon Weaver, Avandra the Change Bringer, and Corellon the Arch Heart. When the jewel is found, only Sehanine's power thrums within its dormant heart. The power of the other two deities waits to be reawakened by a hero\u2014or heroes\u2014who can follow in Alyxian's footsteps.",
+				"The Jewel of Three Prayers is a Vestige of Divergence (see the \"Vestiges of Divergence\" sidebar). In ancient times, Alyxian the Apotheon bore this amulet as a symbol of his covenant with three Prime Deities: Sehanine the Moon Weaver, Avandra the Change Bringer, and Corellon the Arch Heart. When the jewel is found, only Sehanine's power thrums within its dormant heart. The power of the other two deities waits to be reawakened by a hero—or heroes—who can follow in Alyxian's footsteps.",
 				{
 					"type": "entries",
 					"name": "Dormant State",
@@ -35601,8 +35601,8 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"This hooded lantern burns for 6 hours on 1 pint of oil, shedding bright light in a 30-foot radius and dim light for an additional 30 feet.",
-				"While the lantern is within 300 feet of the Aberrations type, its flame turns bright green. The lantern doesn't pinpoint the creature's exact location, however."
+				"Esta lanterna com capuz queima por 6 horas com 1 litro de óleo, emitindo luz intensa em um raio de 30 pés e luz fraca por mais 30 pés.",
+				"Enquanto a lanterna estiver a até 300 pés de um tipo de Aberração, sua chama se torna verde brilhante. No entanto, a lanterna não indica a localização exata da criatura."
 			],
 			"light": [
 				{
@@ -35618,8 +35618,8 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"This hooded lantern burns for 6 hours on 1 pint of oil, shedding bright light in a 30-foot radius and dim light for an additional 30 feet.",
-				"While the lantern is within 300 feet of the Celestials type, its flame turns bright green. The lantern doesn't pinpoint the creature's exact location, however."
+				"Esta lanterna com capuz queima por 6 horas com 1 litro de óleo, emitindo luz intensa em um raio de 30 pés e luz fraca por mais 30 pés.",
+				"Enquanto a lanterna estiver a até 300 pés de um tipo de Celestial, sua chama se torna verde brilhante. No entanto, a lanterna não indica a localização exata da criatura."
 			],
 			"light": [
 				{
@@ -35635,8 +35635,8 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"This hooded lantern burns for 6 hours on 1 pint of oil, shedding bright light in a 30-foot radius and dim light for an additional 30 feet.",
-				"While the lantern is within 300 feet of the Constructs type, its flame turns bright green. The lantern doesn't pinpoint the creature's exact location, however."
+				"Esta lanterna com capuz queima por 6 horas com 1 pinta de óleo, emitindo luz intensa em um raio de 30 pés e luz fraca por mais 30 pés.",
+				"Enquanto a lanterna estiver a até 300 pés de um tipo de Constructs, sua chama se torna verde brilhante. No entanto, a lanterna não indica a localização exata da criatura."
 			],
 			"light": [
 				{
@@ -35652,8 +35652,8 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"This hooded lantern burns for 6 hours on 1 pint of oil, shedding bright light in a 30-foot radius and dim light for an additional 30 feet.",
-				"While the lantern is within 300 feet of the Dragons type, its flame turns bright green. The lantern doesn't pinpoint the creature's exact location, however."
+				"Esta lanterna com capuz queima por 6 horas com 1 litro de óleo, emitindo luz intensa em um raio de 30 pés e luz fraca por mais 30 pés.",
+				"Enquanto a lanterna estiver a até 300 pés de um Dragão, sua chama se torna verde brilhante. No entanto, a lanterna não indica a localização exata da criatura."
 			],
 			"light": [
 				{
@@ -35669,8 +35669,8 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"This hooded lantern burns for 6 hours on 1 pint of oil, shedding bright light in a 30-foot radius and dim light for an additional 30 feet.",
-				"While the lantern is within 300 feet of the Elementals type, its flame turns bright green. The lantern doesn't pinpoint the creature's exact location, however."
+				"Esta lanterna com capuz queima por 6 horas com 1 pinta de óleo, emitindo luz intensa em um raio de 30 pés e luz fraca por mais 30 pés.",
+				"Enquanto a lanterna estiver a até 300 pés de um tipo de Elemental, sua chama se torna verde brilhante. No entanto, a lanterna não indica a localização exata da criatura."
 			],
 			"light": [
 				{
@@ -35686,8 +35686,8 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"This hooded lantern burns for 6 hours on 1 pint of oil, shedding bright light in a 30-foot radius and dim light for an additional 30 feet.",
-				"While the lantern is within 300 feet of the Fey type, its flame turns bright green. The lantern doesn't pinpoint the creature's exact location, however."
+				"Esta lanterna com capuz queima por 6 horas com 1 litro de óleo, emitindo luz intensa em um raio de 30 pés e luz fraca por mais 30 pés.",
+				"Enquanto a lanterna estiver a até 300 pés de um Fey, sua chama se torna verde brilhante. No entanto, a lanterna não indica a localização exata da criatura."
 			],
 			"light": [
 				{
@@ -35703,8 +35703,8 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"This hooded lantern burns for 6 hours on 1 pint of oil, shedding bright light in a 30-foot radius and dim light for an additional 30 feet.",
-				"While the lantern is within 300 feet of the Fiends type, its flame turns bright green. The lantern doesn't pinpoint the creature's exact location, however."
+				"Esta lanterna com capuz queima por 6 horas com 1 pinta de óleo, emitindo luz intensa em um raio de 30 pés e luz fraca por mais 30 pés.",
+				"Enquanto a lanterna estiver a até 300 pés de um tipo de Fiend, sua chama se torna verde brilhante. No entanto, a lanterna não indica a localização exata da criatura."
 			],
 			"light": [
 				{
@@ -35720,8 +35720,8 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"This hooded lantern burns for 6 hours on 1 pint of oil, shedding bright light in a 30-foot radius and dim light for an additional 30 feet.",
-				"While the lantern is within 300 feet of the Giants type, its flame turns bright green. The lantern doesn't pinpoint the creature's exact location, however."
+				"Esta lanterna com capuz queima por 6 horas com 1 litro de óleo, emitindo luz intensa em um raio de 30 pés e luz fraca por mais 30 pés.",
+				"Enquanto a lanterna estiver a até 300 pés de um tipo de Gigante, sua chama se torna verde brilhante. No entanto, a lanterna não indica a localização exata da criatura."
 			],
 			"light": [
 				{
@@ -35737,8 +35737,8 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"This hooded lantern burns for 6 hours on 1 pint of oil, shedding bright light in a 30-foot radius and dim light for an additional 30 feet.",
-				"While the lantern is within 300 feet of the Monstrosities type, its flame turns bright green. The lantern doesn't pinpoint the creature's exact location, however."
+				"Esta lanterna com capuz queima por 6 horas com 1 litro de óleo, emitindo luz intensa em um raio de 30 pés e luz fraca por mais 30 pés.",
+				"Enquanto a lanterna estiver a até 300 pés do tipo Monstrosities, sua chama se torna verde brilhante. No entanto, a lanterna não indica a localização exata da criatura."
 			],
 			"light": [
 				{
@@ -35754,8 +35754,8 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"This hooded lantern burns for 6 hours on 1 pint of oil, shedding bright light in a 30-foot radius and dim light for an additional 30 feet.",
-				"While the lantern is within 300 feet of the Undead type, its flame turns bright green. The lantern doesn't pinpoint the creature's exact location, however."
+				"Esta lanterna com capuz queima por 6 horas com 1 litro de óleo, emitindo luz intensa em um raio de 30 pés e luz fraca por mais 30 pés.",
+				"Enquanto a lanterna estiver a até 300 pés de um tipo de Morto-vivo, sua chama se torna verde brilhante. No entanto, a lanterna não indica a localização exata da criatura."
 			],
 			"light": [
 				{
@@ -36252,7 +36252,7 @@
 			"wondrous": true,
 			"grantsProficiency": true,
 			"entries": [
-				"These symbiotic gloves\u2014made of thin chitin and sinew\u2014pulse with a life of their own. To attune to them, you must wear them for the entire attunement period, during which the gloves bond with your skin.",
+				"These symbiotic gloves—made of thin chitin and sinew—pulse with a life of their own. To attune to them, you must wear them for the entire attunement period, during which the gloves bond with your skin.",
 				"While attuned to these gloves, you gain one of the following proficiencies (your choice when you attune to the gloves):",
 				{
 					"type": "list",
@@ -36347,7 +36347,7 @@
 					"type": "entries",
 					"name": "Secret Satchel",
 					"entries": [
-						"As a rank 3 hoardsperson, your living loot satchel gets an upgrade to function as the replica chest used for the {@spell Leomund's secret chest} spell, becoming a rare magic item. You can open the secret chest through your living loot satchel to deposit or withdraw items\u2014even items that wouldn't normally fit in your satchel, but which fit within the chest. Thanks to Head Office striking deals you don't want to know about with extraplanar creatures you really don't want to know about, there is no chance for the spell to end."
+						"As a rank 3 hoardsperson, your living loot satchel gets an upgrade to function as the replica chest used for the {@spell Leomund's secret chest} spell, becoming a rare magic item. You can open the secret chest through your living loot satchel to deposit or withdraw items—even items that wouldn't normally fit in your satchel, but which fit within the chest. Thanks to Head Office striking deals you don't want to know about with extraplanar creatures you really don't want to know about, there is no chance for the spell to end."
 					]
 				},
 				{
@@ -36361,7 +36361,7 @@
 					"type": "entries",
 					"name": "Portable Hole Satchel",
 					"entries": [
-						"At rank 4, your living loot satchel receives another upgrade, becoming a very rare magic item. The secret chest accessed by your satchel now has the storage capacity of a {@item portable hole}\u20146 feet in diameter and 10 feet deep. As before, you can place any appropriately sized object into the portable-hole-sized chest, even if it wouldn't normally fit into your satchel."
+						"At rank 4, your living loot satchel receives another upgrade, becoming a very rare magic item. The secret chest accessed by your satchel now has the storage capacity of a {@item portable hole}—6 feet in diameter and 10 feet deep. As before, you can place any appropriately sized object into the portable-hole-sized chest, even if it wouldn't normally fit into your satchel."
 					]
 				},
 				{
@@ -36506,7 +36506,7 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"This lock appears to be an ordinary lock (of the type described in chapter 5 of the Player's Handbook) and comes with a single key. The tumblers in this lock magically adjust to thwart burglars. Dexterity checks made to pick the lock have disadvantage."
+				"Esta fechadura parece ser uma fechadura comum (do tipo descrito no capítulo 5 do Livro do Jogador) e vem com uma única chave. Os pinos desta fechadura se ajustam magicamente para frustrar ladrões. Testes de Destreza feitos para arrombar a fechadura têm desvantagem."
 			]
 		},
 		{
@@ -36655,7 +36655,7 @@
 			],
 			"wondrous": true,
 			"entries": [
-				"The Masked Lords of Waterdeep don this ensemble when meeting with one another. This raiment renders each lord indistinguishable from the others. The ensemble consists of three pieces\u2014a helm, an amulet, and a robe\u2014that function as a single magic item when worn together, but only within the city of Waterdeep and its sewers. You become attuned to the ensemble as a single item.",
+				"The Masked Lords of Waterdeep don this ensemble when meeting with one another. This raiment renders each lord indistinguishable from the others. The ensemble consists of three pieces—a helm, an amulet, and a robe—that function as a single magic item when worn together, but only within the city of Waterdeep and its sewers. You become attuned to the ensemble as a single item.",
 				{
 					"type": "entries",
 					"name": "Lord's Helm",
@@ -36838,7 +36838,7 @@
 			"wondrous": true,
 			"entries": [
 				"Not all lingering spirits are tragic souls, lost on their way to the hereafter. Some languish as prisoners, souls so wicked mortals dare not free them upon an unsuspecting afterlife.",
-				"Created by a figure of Vistani legend, Luba's Tarokka of Souls shaped the destiny of countless heroes. The prophecies of this deck of cards also revealed great evils and guided its creator into the path of nefarious forces. Untold times the deck's creator, Mother Luba, narrowly escaped doom, spared only by her keen insights. But even for her, not all wickedness could be escaped. In the most dire cases, Mother Luba managed to ensnare beings of pure evil amid the strands of fate, imprisoning them within her {@deck tarokka deck|CoS}. There these foul spirits dwell still, trapped within a nether-realm hidden amid shuffling cards, waiting for fate to turn foul\u2014as it inevitably will.",
+				"Created by a figure of Vistani legend, Luba's Tarokka of Souls shaped the destiny of countless heroes. The prophecies of this deck of cards also revealed great evils and guided its creator into the path of nefarious forces. Untold times the deck's creator, Mother Luba, narrowly escaped doom, spared only by her keen insights. But even for her, not all wickedness could be escaped. In the most dire cases, Mother Luba managed to ensnare beings of pure evil amid the strands of fate, imprisoning them within her {@deck tarokka deck|CoS}. There these foul spirits dwell still, trapped within a nether-realm hidden amid shuffling cards, waiting for fate to turn foul—as it inevitably will.",
 				"Like all {@deck Tarokka Deck|CoS|tarokka decks}, the {@i Tarokka of Souls} is a lavishly illustrated collection of fifty-four cards, comprising the fourteen cards of the high deck and forty other cards divided into four suits: coins, glyphs, stars, and swords.",
 				{
 					"type": "entries",
@@ -36983,8 +36983,8 @@
 								],
 								[
 									"15-100",
-									"\u2014",
-									"\u2014"
+									"—",
+									"—"
 								]
 							]
 						},
@@ -38381,7 +38381,7 @@
 								{
 									"type": "item",
 									"name": "Piety 1+",
-									"entry": "The whip has 1 randomly determined {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental} property\u2014a burden Erebos imposes to test his faithful."
+									"entry": "The whip has 1 randomly determined {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental} property—a burden Erebos imposes to test his faithful."
 								},
 								{
 									"type": "item",
@@ -38521,7 +38521,7 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"You can squeeze this medal tightly in the palm of your hand as an action. Doing so gives you advantage on Strength checks and Strength saving throws for 1 hour. Once this property has been used, it can't be used again, and the medal becomes nonmagical."
+				"Você pode apertar esta medalha firmemente na palma da sua mão como uma ação. Fazer isso lhe concede vantagem em testes de Força e em salvamentos de Força por 1 hora. Uma vez que essa propriedade tenha sido utilizada, ela não pode ser usada novamente, e a medalha se torna não mágica."
 			]
 		},
 		{
@@ -38536,7 +38536,7 @@
 				}
 			},
 			"entries": [
-				"When you use an action to rub this medal, you gain a swimming speed equal to your walking speed for 1 hour. Once this property has been used, it can't be used again, and the medal becomes nonmagical."
+				"Quando você usa uma ação para esfregar esta medalha, você ganha uma velocidade de natação igual à sua velocidade de caminhada por 1 hora. Uma vez que esta propriedade tenha sido usada, ela não pode ser usada novamente, e a medalha se torna não mágica."
 			]
 		},
 		{
@@ -38546,7 +38546,7 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"When you would be hit by an attack, you can use your reaction to increase your AC by 5 until the start of your next turn, including against the triggering attack. You must be wearing the medal and able to see the creature that made the triggering attack to use this property. Once this property has been used, it can't be used again, and the medal becomes nonmagical."
+				"Quando você seria atingido por um ataque, pode usar sua reação para aumentar sua CA em 5 até o início do seu próximo turno, incluindo contra o ataque que acionou essa habilidade. Você deve estar usando a medalha e ser capaz de ver a criatura que fez o ataque que acionou essa habilidade para usar essa propriedade. Uma vez que essa propriedade tenha sido usada, ela não pode ser usada novamente, e a medalha se torna não mágica."
 			]
 		},
 		{
@@ -38556,7 +38556,7 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"When you use an action to trace the maze inscribed on this medal, you gain advantage on Wisdom checks and know the quickest route to the end of any nonmagical path or maze for 1 hour. Once this property has been used, it can't be used again, and the medal becomes nonmagical."
+				"Quando você usa uma ação para traçar o labirinto inscrito nesta medalha, você ganha vantagem em testes de Sabedoria e conhece o caminho mais rápido para o final de qualquer caminho ou labirinto não mágico por 1 hora. Uma vez que essa propriedade tenha sido usada, ela não pode ser usada novamente, e a medalha se torna não mágica."
 			],
 			"hasFluffImages": true
 		},
@@ -38588,7 +38588,7 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"You can press this medal to your temple as an action. Doing so gives you advantage on Intelligence checks and Intelligence saving throws for 1 hour. Once this property has been used, it can't be used again, and the medal becomes nonmagical."
+				"Você pode pressionar esta medalha contra sua têmpora como uma ação. Fazer isso lhe concede vantagem em testes de Inteligência e em salvamentos de Inteligência por 1 hora. Uma vez que essa propriedade tenha sido utilizada, ela não pode ser usada novamente, e a medalha se torna não mágica."
 			]
 		},
 		{
@@ -38808,7 +38808,7 @@
 					"entries": [
 						"By inputting a specific series of lever pulls and button presses, the servant's two crew members can cause it to explode. The self-destruct code is not revealed to crew members when they attune to the artifact. If the code is discovered (the DM determines how), it requires two attuned crew members to be inside the servant and spend their actions on 3 consecutive rounds performing the command. Should the crew members begin the process of entering the code, though, the servant uses its Ghost in the Machine property and turns the crew members against each other.",
 						"If the crew members successfully implement the code, at the end of the third round, the servant explodes. Every creature in a 100-foot-radius sphere centered on the servant must make a {@dc 25} Dexterity saving throw. On a failed save, a creature takes 87 ({@damage 25d6}) force damage, 87 ({@damage 25d6}) lightning damage, and 87 ({@damage 25d6}) thunder damage. On a successful save, a creature takes half as much damage. Objects and structures in the area take triple damage. Creatures inside the servant are slain instantly and leave behind no remains.",
-						"This does not destroy the servant permanently. Rather, {@dice 2d6} days later, its parts\u2014left arm, left leg, right arm, right leg, lower torso, and upper torso\u2014drop from the sky in random places within 1,000 miles of the explosion. If brought within 5 feet of one another, the pieces reconnect and reform the servant."
+						"This does not destroy the servant permanently. Rather, {@dice 2d6} days later, its parts—left arm, left leg, right arm, right leg, lower torso, and upper torso—drop from the sky in random places within 1,000 miles of the explosion. If brought within 5 feet of one another, the pieces reconnect and reform the servant."
 					]
 				},
 				{
@@ -39012,13 +39012,13 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"This gemstone contains a crystallized bit of spellcasting magic.",
-				"When you cast a spell that has a casting time of 1 action while holding the mind crystal, you can modify the spell in the way described below. You can use only a single mind crystal to modify the spell, and you can't use a mind crystal and a Metamagic option on the same spell. Once you use the mind crystal, it becomes a nonmagical gem worth 50 gp.",
+				"Esta gema contém um fragmento cristalizado de magia de conjuração.",
+				"Quando você conjura um feitiço que tem um tempo de conjuração de 1 ação enquanto segura o cristal mental, você pode modificar o feitiço da maneira descrita abaixo. Você pode usar apenas um único cristal mental para modificar o feitiço, e não pode usar um cristal mental e uma opção de Metamagia no mesmo feitiço. Uma vez que você usa o cristal mental, ele se torna uma gema não mágica no valor de 50 po.",
 				{
 					"type": "entries",
-					"name": "Modify Spell",
+					"name": "Modificar Feitiço",
 					"entries": [
-						"You cast the spell without any somatic or verbal components for this casting."
+						"Você conjura o feitiço sem quaisquer componentes somáticos ou verbais para esta conjuração."
 					]
 				}
 			],
@@ -40142,7 +40142,7 @@
 			"capCargo": 17,
 			"entries": [
 				"Built and used by mind flayers, nautiloids are designed exclusively for space travel. They can't float on water, nor can they land safely on the ground.",
-				"As an action, a creature attuned to a nautiloid's spelljamming helm and in physical contact with the ship can transport the nautiloid and all creatures and objects aboard it to a different plane of existence, at or near a destination envisioned by the spelljammer (or to a random location on the plane if no destination is envisioned). This property is a feature of the ship, not the spelljamming helm. Each time this property is used, roll a {@dice d6}. On a 5\u20136, the property recharges after 1 minute; otherwise, it can't be used again for 24 hours."
+				"As an action, a creature attuned to a nautiloid's spelljamming helm and in physical contact with the ship can transport the nautiloid and all creatures and objects aboard it to a different plane of existence, at or near a destination envisioned by the spelljammer (or to a random location on the plane if no destination is envisioned). This property is a feature of the ship, not the spelljamming helm. Each time this property is used, roll a {@dice d6}. On a 5–6, the property recharges after 1 minute; otherwise, it can't be used again for 24 hours."
 			],
 			"seeAlsoVehicle": [
 				"Nautiloid|AAG"
@@ -40746,7 +40746,7 @@
 			"type": "SC|DMG",
 			"rarity": "legendary",
 			"entries": [
-				"Unlike most scrolls, a Nether Scroll of Azumar is not a consumable magic item. It takes 30 days of concentrated study\u2014at least 8 hours per day\u2014to attempt to understand this scroll. After completing this study, you must make a {@dc 25} Intelligence ({@skill Arcana}) check. If this check fails, you take {@damage 16d10} psychic damage, and you can attempt the check again after another 30 days of concentrated study.",
+				"Unlike most scrolls, a Nether Scroll of Azumar is not a consumable magic item. It takes 30 days of concentrated study—at least 8 hours per day—to attempt to understand this scroll. After completing this study, you must make a {@dc 25} Intelligence ({@skill Arcana}) check. If this check fails, you take {@damage 16d10} psychic damage, and you can attempt the check again after another 30 days of concentrated study.",
 				"When you succeed on the check, you gain the following benefits:",
 				{
 					"type": "list",
@@ -40996,7 +40996,7 @@
 			"weight": 1,
 			"entries": [
 				"Typically found in {@dice 1d4} pots inside a fine wooden box with a brush (weighing 1 pound in total), these pigments allow you to create three-dimensional objects by painting them in two dimensions. The paint flows from the brush to form the desired object as you concentrate on its image.",
-				"Each pot of paint is sufficient to cover 1,000 square feet of a surface, which lets you create inanimate objects or terrain features\u2014such as a door, a pit, flowers, trees, cells, rooms, or weapons\u2014that are up to 10,000 cubic feet. It takes 10 minutes to cover 100 square feet.",
+				"Each pot of paint is sufficient to cover 1,000 square feet of a surface, which lets you create inanimate objects or terrain features—such as a door, a pit, flowers, trees, cells, rooms, or weapons—that are up to 10,000 cubic feet. It takes 10 minutes to cover 100 square feet.",
 				"When you complete the painting, the object or terrain feature depicted becomes a real, nonmagical object. Thus, painting a door on a wall creates an actual door that can be opened to whatever is beyond. Painting a pit on a floor creates a real pit, and its depth counts against the total area of objects you create.",
 				"Nothing created by the pigments can have a value greater than 25 gp. If you paint an object of greater value (such as a diamond or a pile of gold), the object looks authentic, but close inspection reveals it is made from paste, bone, or some other worthless material.",
 				"If you paint a form of energy such as fire or lightning, the energy appears but dissipates as soon as you complete the painting, doing no harm to anything."
@@ -41658,7 +41658,7 @@
 					"name": "Gift of Flame",
 					"type": "entries",
 					"entries": [
-						"You can transfer the opal's magic to a nonmagical item\u2014a weapon or a suit of armor\u2014by tracing the ild rune there with your finger. The transfer takes 8 hours of work that requires the two items to be within 5 feet of each other. At the end, the opal is destroyed, and the rune appears in red on the chosen item, which gains a benefit based on its form:",
+						"You can transfer the opal's magic to a nonmagical item—a weapon or a suit of armor—by tracing the ild rune there with your finger. The transfer takes 8 hours of work that requires the two items to be within 5 feet of each other. At the end, the opal is destroyed, and the rune appears in red on the chosen item, which gains a benefit based on its form:",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
@@ -41848,7 +41848,7 @@
 			"wondrous": true,
 			"weight": 3,
 			"entries": [
-				"While holding this orb, you can use an action to determine which way is north. This property functions only on the Material Plane."
+				"Enquanto estiver segurando esta orbe, você pode usar uma ação para determinar qual direção é o norte. Esta propriedade funciona apenas no Plano Material."
 			],
 			"hasFluffImages": true
 		},
@@ -42054,7 +42054,7 @@
 			"wondrous": true,
 			"weight": 5,
 			"entries": [
-				"This common wondrous item is a hollow, 5-inch-diameter orb that weighs 5 pounds. Its outer shell is composed of notched bronze rings, which can be turned so that the notches line up. Aligning the notches requires an action, and doing so causes the orb to gong loudly until the notches are no longer aligned. The sounds are spaced 6 seconds apart and can be heard out to a range of 600 feet."
+				"Este item maravilhoso comum é um orbe oco com 12,7 centímetros de diâmetro que pesa 2,3 quilos. Sua casca externa é composta por anéis de bronze entalhados, que podem ser girados para que os entalhes fiquem alinhados. Alinhar os entalhes requer uma ação, e ao fazê-lo, o orbe emite um gong alto até que os entalhes não estejam mais alinhados. Os sons são espaçados a cada 6 segundos e podem ser ouvidos a uma distância de até 182 metros."
 			]
 		},
 		{
@@ -42138,7 +42138,7 @@
 					"type": "entries",
 					"name": "Gift of Stone",
 					"entries": [
-						"You can transfer the orb's magic to a nonmagical item\u2014a shield or a pair of boots\u2014by tracing the stein rune there with your finger. The transfer takes 8 hours of work that requires the two items to be within 5 feet of each other. At the end, the orb is destroyed, and the rune appears in silver on the chosen item, which gains a benefit based on its form:",
+						"You can transfer the orb's magic to a nonmagical item—a shield or a pair of boots—by tracing the stein rune there with your finger. The transfer takes 8 hours of work that requires the two items to be within 5 feet of each other. At the end, the orb is destroyed, and the rune appears in silver on the chosen item, which gains a benefit based on its form:",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
@@ -42230,7 +42230,7 @@
 			"wondrous": true,
 			"weight": 3,
 			"entries": [
-				"While holding this orb, you can use an action to determine whether it is morning, afternoon, evening, or nighttime outside. This property functions only on the Material Plane."
+				"Enquanto estiver segurando esta orbe, você pode usar uma ação para determinar se é manhã, tarde, noite ou madrugada lá fora. Esta propriedade funciona apenas no Plano Material."
 			]
 		},
 		{
@@ -42305,7 +42305,7 @@
 					"name": "Personality",
 					"type": "entries",
 					"entries": [
-						"Orcsplitter is grim, taciturn, and inflexible. It knows little more than the desire to face {@creature orc||orcs} in battle and serve a courageous, just wielder. It disdains cowards and any form of duplicity, deception, or disloyalty. The weapon's purpose is to defend dwarves and to serve as a symbol of dwarven resolve. It hates the traditional foes of dwarves\u2014giants, goblins, and, most of all, {@creature orc||orcs}\u2014and silently urges its possessor to meet such creatures in battle."
+						"Orcsplitter is grim, taciturn, and inflexible. It knows little more than the desire to face {@creature orc||orcs} in battle and serve a courageous, just wielder. It disdains cowards and any form of duplicity, deception, or disloyalty. The weapon's purpose is to defend dwarves and to serve as a symbol of dwarven resolve. It hates the traditional foes of dwarves—giants, goblins, and, most of all, {@creature orc||orcs}—and silently urges its possessor to meet such creatures in battle."
 					]
 				}
 			]
@@ -42411,7 +42411,7 @@
 			"entries": [
 				"This delicate and exquisitely crafted clockwork orrery features multiple geared components whose sweeping hands and dials represent the complex interplay of planar and magical realms. Standing two feet high, the orrery housing is a wondrous device imbued with magic of its own, but the power of its six clockwork components makes the artifact even more potent.",
 				"The Orrery of the Wanderer was created by a renowned clockwork mage known only as Lottie. She crafted the relic as a means of tapping into the power of the planes, and to channel the divination and foretelling powers of the stars. But Lottie soon realized that her creation was far more powerful than she had intended. As it tapped into planar magic, the orrery began to manifest the darkness and malevolence inherent to some of the planes. Eventually, it would impress upon its owner a desire to open portals into the most cursed and dangerous worlds, including the Far Realm.",
-				"To prevent the orrery from ever being so used, Lottie scattered the components that powered it, secreting them across the world. But the orrery's instinct for survival is strong, and its components have a way of inexorably coming together over decades or centuries, found by treasure hunters, stolen by monsters, found and stolen again\u2014and moving closer to each other all the time.",
+				"To prevent the orrery from ever being so used, Lottie scattered the components that powered it, secreting them across the world. But the orrery's instinct for survival is strong, and its components have a way of inexorably coming together over decades or centuries, found by treasure hunters, stolen by monsters, found and stolen again—and moving closer to each other all the time.",
 				"Random Properties. The orrery has the following randomly determined properties:",
 				{
 					"type": "list",
@@ -42902,7 +42902,7 @@
 			"wondrous": true,
 			"entries": [
 				"After you write a message of fifty words or fewer on this magic sheet of parchment and speak a creature's name, the parchment magically folds into a Tiny paper bird and flies to the recipient whose name you uttered. The recipient must be on the same plane of existence as you, otherwise the bird turns into ash as it takes flight.",
-				"The bird is an object that has 1 hit point, an Armor Class of 13, a flying speed of 60 feet, a Dexterity of 16 (+3), and a score of 1 (\u22125) in all other abilities, and it is immune to poison and psychic damage.",
+				"The bird is an object that has 1 hit point, an Armor Class of 13, a flying speed of 60 feet, a Dexterity of 16 (+3), and a score of 1 (−5) in all other abilities, and it is immune to poison and psychic damage.",
 				"It travels to within 5 feet of its intended recipient by the most direct route, whereupon it turns into a nonmagical and inanimate sheet of parchment that can be unfolded only by the intended recipient. If the bird's hit points or speed is reduced to 0 or if it is otherwise immobilized, it turns into ash.",
 				"Paper birds usually come in small, flat boxes containing {@dice 1d6 + 3} sheets of the parchment."
 			],
@@ -43143,7 +43143,7 @@
 					"type": "entries",
 					"name": "Gift of Wind",
 					"entries": [
-						"You can transfer the pennant's magic to a nonmagical item\u2014a suit of armor, a pair of boots, or a cloak\u2014by tracing the vind rune there with your finger. The transfer takes 8 hours of work that requires the two items to be within 5 feet of each other. At the end, the pennant is destroyed, and the rune appears in silver on the chosen item, which gains a benefit based on its form:",
+						"You can transfer the pennant's magic to a nonmagical item—a suit of armor, a pair of boots, or a cloak—by tracing the vind rune there with your finger. The transfer takes 8 hours of work that requires the two items to be within 5 feet of each other. At the end, the pennant is destroyed, and the rune appears in silver on the chosen item, which gains a benefit based on its form:",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
@@ -43276,7 +43276,7 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"This tiny vial contains magic perfume, enough for one use. You can use an action to apply the perfume to yourself, and its effect lasts 1 hour. For the duration, you have advantage on all Charisma checks directed at humanoids of challenge rating 1 or lower. Those subjected to the perfume's effect are not aware that they've been influenced by magic."
+				"Este pequeno frasco contém um perfume mágico, suficiente para uma utilização. Você pode usar uma ação para aplicar o perfume em si mesmo, e seu efeito dura 1 hora. Durante a duração, você tem vantagem em todos os testes de Carisma direcionados a humanoides de nível de desafio 1 ou inferior. Aqueles que são submetidos ao efeito do perfume não estão cientes de que foram influenciados por magia."
 			],
 			"miscTags": [
 				"CNS"
@@ -43603,7 +43603,7 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"This long, delicate wooden pipe features a bowl made from smooth river stone. When the pipe is lit, smoke exhaled from it does not dissipate, instead lingering around the bearer. After 10 minutes, the smoke forms moving shapes that reenact the bearer's most impressive and heroic achievements for 5 minutes. When this realistic performance is complete, the smoke dissipates. The pipe can't be used this way again until the next dawn."
+				"Este longo e delicado cachimbo de madeira possui uma tigela feita de pedra de rio lisa. Quando o cachimbo é aceso, a fumaça exalada não se dissipa, permanecendo ao redor do portador. Após 10 minutos, a fumaça forma formas em movimento que reencenam as conquistas mais impressionantes e heroicas do portador por 5 minutos. Quando essa performance realista é concluída, a fumaça se dissipa. O cachimbo não pode ser usado dessa forma novamente até o próximo amanhecer."
 			]
 		},
 		{
@@ -43636,7 +43636,7 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"While smoking this pipe, you can use an action to exhale a puff of smoke that takes the form of a single creature, such as a dragon, a flumph, or a froghemoth. The form must be small enough to fit in a 1-foot cube and loses its shape after a few seconds, becoming an ordinary puff of smoke."
+				"Enquanto fuma este cachimbo, você pode usar uma ação para exalar uma nuvem de fumaça que assume a forma de uma única criatura, como um dragão, um flumph ou um froghemoth. A forma deve ser pequena o suficiente para caber em um cubo de 1 pé e perde sua forma após alguns segundos, tornando-se uma nuvem de fumaça comum."
 			],
 			"hasFluffImages": true
 		},
@@ -44433,7 +44433,7 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"While holding this 10-foot pole, you can speak a command word and transform it into a fishing pole with a hook, a line, and a reel. Speaking the command word again changes the fishing pole back into a normal 10-foot pole."
+				"Enquanto segura este bastão de 3 metros, você pode pronunciar uma palavra de comando e transformá-lo em uma vara de pescar com um anzol, uma linha e um carretel. Pronunciar a palavra de comando novamente transforma a vara de pescar de volta em um bastão normal de 3 metros."
 			]
 		},
 		{
@@ -44468,7 +44468,7 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"While holding this 10-foot pole, you can use an action to speak a command word and cause it to collapse into a 1-foot-long rod, for ease of storage. The pole's weight doesn't change. You can use an action to speak a different command word and cause the rod to revert to a pole; however, the rod will elongate only as far as the surrounding space allows."
+				"Enquanto segura este bastão de 3 metros, você pode usar uma ação para pronunciar uma palavra de comando e fazê-lo colapsar em uma vara de 30 centímetros, para facilitar o armazenamento. O peso do bastão não muda. Você pode usar uma ação para pronunciar uma palavra de comando diferente e fazer a vara voltar a ser um bastão; no entanto, a vara se alongará apenas até onde o espaço ao redor permitir."
 			],
 			"hasFluffImages": true
 		},
@@ -47084,7 +47084,7 @@
 			"type": "P",
 			"rarity": "common",
 			"entries": [
-				"When you drink this potion, you gain the following benefits for the next 8 hours: magic can't put you to sleep, and you can remain awake during a long rest and still gain its benefits. This sweet, amber-colored brew has no effect on creatures that don't require sleep, such as elves."
+				"Ao beber esta poção, você ganha os seguintes benefícios pelas próximas 8 horas: magia não pode te colocar para dormir, e você pode permanecer acordado durante um descanso longo e ainda assim obter seus benefícios. Esta bebida doce, de cor âmbar, não tem efeito sobre criaturas que não necessitam de sono, como elfos."
 			],
 			"miscTags": [
 				"CNS"
@@ -47234,7 +47234,7 @@
 			},
 			"bonusAc": "+1",
 			"entries": [
-				"Powered armor resembles a suit of unusual plate armor, with finely articulated joints connected by an oily, black, leather-like material. The armor has been worked to create the appearance of a heavily muscled warrior, and its great helm is unusual in that it has no openings\u2014only a broad glass plate in the front with a second piece of glass above it. Strange plates, tubing, and large metal bosses adorn the armor in seemingly random fashion. On the back of the armor's left gauntlet is a rectangular metal box, from which projects a short rod tipped with a cone-shaped red crystal.",
+				"Powered armor resembles a suit of unusual plate armor, with finely articulated joints connected by an oily, black, leather-like material. The armor has been worked to create the appearance of a heavily muscled warrior, and its great helm is unusual in that it has no openings—only a broad glass plate in the front with a second piece of glass above it. Strange plates, tubing, and large metal bosses adorn the armor in seemingly random fashion. On the back of the armor's left gauntlet is a rectangular metal box, from which projects a short rod tipped with a cone-shaped red crystal.",
 				"While wearing this armor, you gain the following benefits:",
 				{
 					"type": "list",
@@ -47774,7 +47774,7 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"This item replaces a lost limb-a hand, an arm, a foot, a leg, or a similar body part. While the prosthetic is attached, it functions identically to the part it replaces. You can detach or reattach it as an action, and it can't be removed against your will. It detaches if you die."
+				"Este item substitui um membro perdido - uma mão, um braço, um pé, uma perna ou uma parte do corpo semelhante. Enquanto a prótese estiver anexada, ela funciona de forma idêntica à parte que substitui. Você pode desanexá-la ou reanexá-la como uma ação, e ela não pode ser removida contra a sua vontade. Ela se desanexa se você morrer."
 			],
 			"hasFluffImages": true
 		},
@@ -47790,7 +47790,7 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"This magic item replaces a lost limb\u2014a hand, an arm, a foot, a leg, or a similar body part. While the prosthetic is attached, it functions identically to the part it replaces. You can detach or reattach it as a {@action Magic|XPHB} action, and it can't be removed against your will while you are alive."
+				"This magic item replaces a lost limb—a hand, an arm, a foot, a leg, or a similar body part. While the prosthetic is attached, it functions identically to the part it replaces. You can detach or reattach it as a {@action Magic|XPHB} action, and it can't be removed against your will while you are alive."
 			],
 			"lootTables": [
 				"Arcana - Common|XDMG",
@@ -52535,7 +52535,7 @@
 			"reqAttune": true,
 			"weight": 2,
 			"entries": [
-				"While holding this rod, you can use your reaction to absorb a spell that is targeting only you and not with an area of effect. The absorbed spell's effect is canceled, and the spell's energy\u2014not the spell itself\u2014is stored in the rod. The energy has the same level as the spell when it was cast. The rod can absorb and store up to 50 levels of energy over the course of its existence. Once the rod absorbs 50 levels of energy, it can't absorb more. If you are targeted by a spell that the rod can't store, the rod has no effect on that spell.",
+				"While holding this rod, you can use your reaction to absorb a spell that is targeting only you and not with an area of effect. The absorbed spell's effect is canceled, and the spell's energy—not the spell itself—is stored in the rod. The energy has the same level as the spell when it was cast. The rod can absorb and store up to 50 levels of energy over the course of its existence. Once the rod absorbs 50 levels of energy, it can't absorb more. If you are targeted by a spell that the rod can't store, the rod has no effect on that spell.",
 				"When you become attuned to the rod, you know how many levels of energy the rod has absorbed over the course of its existence, and how many levels of spell energy it currently has stored.",
 				"If you are a spellcaster holding the rod, you can convert energy stored in it into spell slots to cast spells you have prepared or know. You can create spell slots only of a level equal to or lower than your own spell slots, up to a maximum of 5th level. You use the stored levels in place of your slots, but otherwise cast the spell as normal. For example, you can use 3 levels stored in the rod as a 3rd-level spell slot.",
 				"A newly found rod has {@dice 1d10} levels of spell energy stored in it already. A rod that can no longer absorb spell energy and has no energy remaining becomes nonmagical."
@@ -52556,7 +52556,7 @@
 			"reqAttune": true,
 			"weight": 2,
 			"entries": [
-				"While holding this rod, you can take a {@variantrule Reaction|XPHB} to absorb a spell that is targeting only you and doesn't create an area of effect. The absorbed spell's effect is canceled, and the spell's energy\u2014not the spell itself\u2014is stored in the rod. The energy has the same level as the spell when it was cast. A canceled spell dissipates with no effect, and any resources used to cast it are wasted. The rod can absorb and store up to 50 levels of energy over the course of its existence. Once the rod absorbs 50 levels of energy, it can't absorb more. If you are targeted by a spell that the rod can't store, the rod has no effect on that spell.",
+				"While holding this rod, you can take a {@variantrule Reaction|XPHB} to absorb a spell that is targeting only you and doesn't create an area of effect. The absorbed spell's effect is canceled, and the spell's energy—not the spell itself—is stored in the rod. The energy has the same level as the spell when it was cast. A canceled spell dissipates with no effect, and any resources used to cast it are wasted. The rod can absorb and store up to 50 levels of energy over the course of its existence. Once the rod absorbs 50 levels of energy, it can't absorb more. If you are targeted by a spell that the rod can't store, the rod has no effect on that spell.",
 				"When you become attuned to the rod, you know how many levels of energy the rod has absorbed over the course of its existence and how many levels of spell energy it currently has stored.",
 				"If you are a spellcaster holding the rod, you can convert energy stored in it into spell slots to cast spells you have prepared or know. You can create spell slots only of a level equal to or lower than your own spell slots, up to a maximum of level 5. You use the stored levels in place of your slots but otherwise cast the spell as normal. For example, you can use 3 levels stored in the rod as a level 3 spell slot.",
 				"A newly found rod typically has {@dice 1d10} levels of spell energy stored in it. A rod that can no longer absorb spell energy and has no energy remaining becomes nonmagical."
@@ -53449,7 +53449,7 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"You can cut this 50-foot coil of hempen rope into any number of smaller pieces, and then use an action to speak a command word and cause the pieces to knit back together. The pieces must be in contact with each other and not otherwise in use. A rope of mending is forever shortened if a section of it is lost or destroyed."
+				"Você pode cortar esta corda de cânhamo de 15 metros em qualquer número de pedaços menores e, em seguida, usar uma ação para pronunciar uma palavra de comando e fazer os pedaços se unirem novamente. Os pedaços devem estar em contato uns com os outros e não podem estar em uso de outra forma. Uma corda de conserto é permanentemente encurtada se uma seção dela for perdida ou destruída."
 			]
 		},
 		{
@@ -55604,7 +55604,7 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"Skillfully carved from sandstone, this 1-foot-tall statuette depicts a shark twisting through the water with its mouth open. If any Tiny sea-dwelling animal is within 1 inch of the statuette's mouth, the shark flashes to life and deals 1 piercing damage to it. The shark can deal damage in this way no more than once per hour."
+				"Habilidosamente esculpida em arenito, esta estatueta de 30 centímetros de altura retrata um tubarão se contorcendo na água com a boca aberta. Se qualquer animal marinho diminuto estiver a até 2,5 centímetros da boca da estatueta, o tubarão ganha vida e causa 1 ponto de dano perfurante a ele. O tubarão pode causar dano dessa forma no máximo uma vez por hora."
 			]
 		},
 		{
@@ -56080,7 +56080,7 @@
 					"name": "Gift of Frost",
 					"type": "entries",
 					"entries": [
-						"You can transfer the shard's magic to a nonmagical item\u2014a cloak or a pair of boots-by tracing the ise rune there with your finger. The transfer takes 8 hours of work that requires the two items to be within 5 feet of each other. At the end, the shard is destroyed, and the rune appears in blue on the chosen item, which gains a benefit based on its form:",
+						"You can transfer the shard's magic to a nonmagical item—a cloak or a pair of boots-by tracing the ise rune there with your finger. The transfer takes 8 hours of work that requires the two items to be within 5 feet of each other. At the end, the shard is destroyed, and the rune appears in blue on the chosen item, which gains a benefit based on its form:",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
@@ -56161,7 +56161,7 @@
 						],
 						[
 							"2",
-							"You experience a vision of an ancient calamity\u2014a beautiful city threatened by crumbling mountains and erupting volcanoes\u2014and are {@condition stunned} until the end of your next turn."
+							"You experience a vision of an ancient calamity—a beautiful city threatened by crumbling mountains and erupting volcanoes—and are {@condition stunned} until the end of your next turn."
 						],
 						[
 							"3",
@@ -56527,7 +56527,7 @@
 			"weight": 6,
 			"ac": 2,
 			"entries": [
-				"The front of this shield is shaped in the likeness of a face. While bearing the shield, you can use a bonus action to alter the face's expression."
+				"A frente deste escudo é moldada na semelhança de um rosto. Enquanto estiver portando o escudo, você pode usar uma ação bônus para alterar a expressão do rosto."
 			]
 		},
 		{
@@ -56866,7 +56866,7 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"When a suit of shiftweave is created, up to five different outfits can be embedded into the cloth. While wearing the clothing, you can speak its command word as a bonus action to transform your outfit into your choice of one of the other designs contained within it. Regardless of its appearance, the outfit can't be anything but clothing. Although it can duplicate the look of other magical clothing, it doesn't gain their magical properties."
+				"Quando uma vestimenta de shiftweave é criada, até cinco trajes diferentes podem ser incorporados ao tecido. Enquanto estiver usando a roupa, você pode pronunciar a palavra de comando como uma ação bônus para transformar seu traje em uma das outras opções contidas nela. Independentemente de sua aparência, o traje não pode ser nada além de roupa. Embora possa duplicar a aparência de outras roupas mágicas, não adquire suas propriedades mágicas."
 			]
 		},
 		{
@@ -56946,7 +56946,7 @@
 			"capCargo": 20,
 			"entries": [
 				"This swift vessel is a relatively recent design, quickly gaining popularity with merchants and pirates. A shrike ship's legs enable it to land safely on the ground. The ship can float but isn't built for traveling on water and sinks quickly in rough seas.",
-				"Standard weaponry on a shrike ship includes three ballistae\u2014one on the forecastle, one in the middle of the top deck, and one on the sterncastle. In a desperate situation, the ship's reinforced bow can be used as a piercing ram."
+				"Standard weaponry on a shrike ship includes three ballistae—one on the forecastle, one in the middle of the top deck, and one on the sterncastle. In a desperate situation, the ship's reinforced bow can be used as a piercing ram."
 			],
 			"seeAlsoVehicle": [
 				"Shrike Ship|AAG"
@@ -58149,7 +58149,7 @@
 			"value": 15000,
 			"entries": [
 				"Soothsalts are derived from a naturally occurring crystalline substance discovered throughout the wilds of the Miskath Strand. The crimson crystals have been mined from cavernous veins like those in the mouth of the Miskath Pit and found within smaller geode formations near sites ravaged by the Calamity. Soothsalts are consumed orally in lozenge-sized doses, and frequent users can be identified by the telltale crimson stain around their mouths. A creature subjected to a dose of soothsalts gains advantage on all Intelligence checks for {@dice 1d4} hours.",
-				"For each dose of soothsalts consumed, the creature must succeed on a {@dc 15} Constitution saving throw or gain one level of {@condition exhaustion}\u2014an effect which is cumulative with multiple doses."
+				"For each dose of soothsalts consumed, the creature must succeed on a {@dc 15} Constitution saving throw or gain one level of {@condition exhaustion}—an effect which is cumulative with multiple doses."
 			],
 			"miscTags": [
 				"CNS"
@@ -58201,7 +58201,7 @@
 					"type": "entries",
 					"name": "Carrying Soul Coins",
 					"entries": [
-						"To hold a soul coin is to feel the soul bound within it\u2014overcome with rage or fraught with despair.",
+						"To hold a soul coin is to feel the soul bound within it—overcome with rage or fraught with despair.",
 						"An evil creature can carry as many soul coins as it wishes (up to its maximum weight allowance). A non-evil creature can carry a number of soul coins equal to or less than its Constitution modifier without penalty. A non-evil creature carrying a number of soul coins greater than its Constitution modifier has disadvantage on its attack rolls, ability checks, and saving throws."
 					]
 				},
@@ -58338,203 +58338,203 @@
 					],
 					"rows": [
 						[
-							"01\u201302",
+							"01–02",
 							"Disembodied robot arm with a mind of its own"
 						],
 						[
-							"03\u201304",
+							"03–04",
 							"Wearable blanket with sleeves and a hood"
 						],
 						[
-							"05\u201306",
+							"05–06",
 							"Small, rectangular device that can record and play back audio of up to 1 minute in length"
 						],
 						[
-							"07\u201308",
+							"07–08",
 							"Glow-in-the-dark ink pen"
 						],
 						[
-							"09\u201310",
+							"09–10",
 							"Fashionable jumpsuit"
 						],
 						[
-							"11\u201312",
+							"11–12",
 							"Compact scanner that reports whether an object is recyclable in a cheery tone"
 						],
 						[
-							"13\u201314",
+							"13–14",
 							"Wristwatch programmed to beep at a specific time"
 						],
 						[
-							"15\u201316",
+							"15–16",
 							"Handheld cylinder that produces a 15-foot cone of bright light for up to 1 hour every 24 hours"
 						],
 						[
-							"17\u201318",
+							"17–18",
 							"Colorful toy ray gun with lights and sounds"
 						],
 						[
-							"19\u201320",
+							"19–20",
 							"Bottle of fizzy, sweet-tasting liquid"
 						],
 						[
-							"21\u201322",
+							"21–22",
 							"Map of an unexplored star system"
 						],
 						[
-							"23\u201324",
+							"23–24",
 							"Motorized toothbrush that might have been used"
 						],
 						[
-							"25\u201326",
+							"25–26",
 							"Tiny robot that shines boots and shoes"
 						],
 						[
-							"27\u201328",
+							"27–28",
 							"Pressurized red canister with a flexible hose that, when squeezed as an action, sprays a 15-foot cone of foam. The foam extinguishes all nonmagical flames in the cone. The canister can perform this action only once."
 						],
 						[
-							"29\u201330",
+							"29–30",
 							"Loaf of space bread covered in blue-green mold"
 						],
 						[
-							"31\u201332",
+							"31–32",
 							"Handheld screen that plays a children's story about a friendly, three-eyed frog named Swampy"
 						],
 						[
-							"33\u201334",
+							"33–34",
 							"Compact device that displays the current weather"
 						],
 						[
-							"35\u201336",
+							"35–36",
 							"Empty metal bottle that maintains the temperature of liquids stored in it for {@dice 1d4} hours"
 						],
 						[
-							"37\u201338",
+							"37–38",
 							"Tiny disc that emits a high-pitched noise in the presence of smoke or mild cooking fumes"
 						],
 						[
-							"39\u201340",
+							"39–40",
 							"Aerosolized can of metal polish"
 						],
 						[
-							"41\u201342",
+							"41–42",
 							"Identification badge of a deceased crew member"
 						],
 						[
-							"43\u201344",
+							"43–44",
 							"Depleted energy cell"
 						],
 						[
-							"45\u201346",
+							"45–46",
 							"Pocket-sized instrument that clicks rapidly within 10 feet of radiation (see the \"{@adventure Spaceship Features|QftIS|7|Spaceship Features}\" section later in this adventure)"
 						],
 						[
-							"47\u201348",
+							"47–48",
 							"Vacuum-sealed package of shriveled frankfurters"
 						],
 						[
-							"49\u201350",
+							"49–50",
 							"Tin hat that telepathically broadcasts the wearer's surface thoughts to creatures within 10 feet of it"
 						],
 						[
-							"51\u201352",
+							"51–52",
 							"Chalky moon rock"
 						],
 						[
-							"53\u201354",
+							"53–54",
 							"Collar that, when placed on a Medium or smaller Beast, translates its cries into Common"
 						],
 						[
-							"55\u201356",
+							"55–56",
 							"Bottle of expired medicine for treating dizziness"
 						],
 						[
-							"57\u201358",
+							"57–58",
 							"Tiny speaker that plays a catchy tune in an unknown language"
 						],
 						[
-							"59\u201360",
+							"59–60",
 							"Handheld tool for removing bolts and screws"
 						],
 						[
-							"61\u201362",
+							"61–62",
 							"Cautionary pamphlet about the dangers of space"
 						],
 						[
-							"63\u201364",
+							"63–64",
 							"Miniature flying saucer"
 						],
 						[
-							"65\u201366",
+							"65–66",
 							"Tiny, animatronic bunny that hops after the creature that activates it"
 						],
 						[
-							"67\u201368",
+							"67–68",
 							"Stick of deodorant with a surprising scent"
 						],
 						[
-							"69\u201370",
+							"69–70",
 							"Countertop appliance that can transform any fruit into a pulpy juice"
 						],
 						[
-							"71\u201372",
+							"71–72",
 							"Glass pendant filled with stardust"
 						],
 						[
-							"73\u201374",
+							"73–74",
 							"Pot containing an artificially dwarfed tree"
 						],
 						[
-							"75\u201376",
+							"75–76",
 							"Otherworldly insect preserved in amber"
 						],
 						[
-							"77\u201378",
+							"77–78",
 							"Syringe filled with a viscous, yellow serum"
 						],
 						[
-							"79\u201380",
+							"79–80",
 							"Tiny brass orrery"
 						],
 						[
-							"81\u201382",
+							"81–82",
 							"Log of passenger names"
 						],
 						[
-							"83\u201384",
+							"83–84",
 							"Gas mask with a hole in it"
 						],
 						[
-							"85\u201386",
+							"85–86",
 							"Small glass terrarium with an empty cocoon"
 						],
 						[
-							"87\u201388",
+							"87–88",
 							"Dongle that never plugs in correctly on the first try"
 						],
 						[
-							"89\u201390",
+							"89–90",
 							"Holster fashioned from an unknown reptile's hide"
 						],
 						[
-							"91\u201392",
+							"91–92",
 							"Severed bundle of important-looking wires"
 						],
 						[
-							"93\u201394",
+							"93–94",
 							"Prosthetic limb with magnetic attachments"
 						],
 						[
-							"95\u201396",
+							"95–96",
 							"Set of polyhedral dice that buzz and flash when they land on their highest result"
 						],
 						[
-							"97\u201398",
+							"97–98",
 							"Musical instrument that plays electronic tones"
 						],
 						[
-							"99\u201300",
+							"99–00",
 							"Trading card of a beloved fictional hero from a far-off world"
 						]
 					]
@@ -60219,7 +60219,7 @@
 			"dmg2": "1d8",
 			"staff": true,
 			"entries": [
-				"If you place a Tiny object weighing no more than 1 pound (such as a shard of crystal, an egg, or a stone) above the tip of this staff while holding it, the object floats an inch from the staff's tip and remains there until it is removed or until the staff is no longer in your possession. The staff can have up to three such objects floating over its tip at any given time. While holding the staff, you can make one or more of the objects slowly spin or turn in place."
+				"Se você colocar um objeto Minúsculo pesando no máximo 1 libra (como um fragmento de cristal, um ovo ou uma pedra) acima da ponta deste bastão enquanto o segura, o objeto flutua a uma polegada da ponta do bastão e permanece lá até ser removido ou até que o bastão não esteja mais em sua posse. O bastão pode ter até três desses objetos flutuando sobre sua ponta a qualquer momento. Enquanto segura o bastão, você pode fazer um ou mais dos objetos girar lentamente ou girar no lugar."
 			],
 			"lootTables": [
 				"Arcana - Common|XDMG",
@@ -60245,7 +60245,7 @@
 			"dmg2": "1d8",
 			"staff": true,
 			"entries": [
-				"If you place an object weighing no more than 1 pound (such as a shard of crystal, an egg, or a stone) above the tip of the staff while holding it, the object floats an inch from the staff's tip and remains there until it is removed or until the staff is no longer in your possession. The staff can have up to three such objects floating over its tip at any given time. While holding the staff, you can make one or more of the objects slowly spin or turn in place."
+				"Se você colocar um objeto pesando no máximo 1 libra (como um fragmento de cristal, um ovo ou uma pedra) acima da ponta do bastão enquanto o segura, o objeto flutua a uma polegada da ponta do bastão e permanece lá até ser removido ou até que o bastão não esteja mais em sua posse. O bastão pode ter até três desses objetos flutuando sobre sua ponta a qualquer momento. Enquanto segura o bastão, você pode fazer um ou mais dos objetos girar lentamente ou girar no lugar."
 			]
 		},
 		{
@@ -63189,7 +63189,7 @@
 			"reqAttune": true,
 			"wondrous": true,
 			"entries": [
-				"Rare legends and lore that speak of the Stone of Creation claim it fell to the Material Plane like a meteor from some distant edge of the Outer Planes or the Far Realm. Similar legends across various worlds, all describing stones that grow buildings and islands from magic, like a house from a seed, suggest the Stone of Creation is not a unique artifact\u2014or that all the various pieces of it are derived from a single source of stone even larger than sages imagine.",
+				"Rare legends and lore that speak of the Stone of Creation claim it fell to the Material Plane like a meteor from some distant edge of the Outer Planes or the Far Realm. Similar legends across various worlds, all describing stones that grow buildings and islands from magic, like a house from a seed, suggest the Stone of Creation is not a unique artifact—or that all the various pieces of it are derived from a single source of stone even larger than sages imagine.",
 				"The raw, black stone appears flaky like slate but is as hard as granite and marbled with veins of gold and platinum. The original, complete Stone of Creation took the form of a blocky slab like a standing stone, but it may be impossible to know the Stone's true size, or if the concept of a \"whole\" Stone of Creation even applies to the artifact. Perhaps other slabs and boulders made from the Stone have been scattered across the multiverse, being cut down and recombed through interplanar movements and the magic of the artifacts themselves.",
 				{
 					"type": "entries",
@@ -63685,7 +63685,7 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"This magic pennant bears the symbol of Strixhaven or one of its colleges: Lorehold, Prismari, Quandrix, Silverquill, or Witherbloom. While you wave the pennant, the symbol on it glitters, and the pennant sheds bright light in a 10-foot-radius and dim light for an additional 10 feet."
+				"Este estandarte mágico exibe o símbolo de Strixhaven ou de uma de suas faculdades: Lorehold, Prismari, Quandrix, Silverquill ou Witherbloom. Enquanto você agita o estandarte, o símbolo nele brilha, e o estandarte emite luz intensa em um raio de 3 metros e luz fraca por mais 3 metros."
 			],
 			"light": [
 				{
@@ -65129,7 +65129,7 @@
 			"reqAttune": true,
 			"wondrous": true,
 			"entries": [
-				"While this stuffed doll is within 5 feet of you, you can spend a short rest telling it to say up to six phrases, none of which can be more than six words long, and set an observable condition under which the doll speaks each phrase. You can also replace old phrases with new ones. Whatever the condition, it must occur within 5 feet of the doll to make it speak. For example, whenever someone picks up the doll, it might say, \"I want a piece of candy.\" The doll's phrases are lost when your attunement to the doll ends."
+				"Enquanto esta boneca de pelúcia estiver a até 1,5 metros de você, você pode gastar um descanso curto dizendo a ela para falar até seis frases, nenhuma das quais pode ter mais de seis palavras, e definir uma condição observável sob a qual a boneca fala cada frase. Você também pode substituir frases antigas por novas. Qualquer que seja a condição, ela deve ocorrer a até 1,5 metros da boneca para que ela fale. Por exemplo, sempre que alguém pegar a boneca, ela pode dizer: \"Eu quero um doce.\" As frases da boneca são perdidas quando sua sintonização com a boneca termina."
 			],
 			"hasFluffImages": true
 		},
@@ -65189,8 +65189,8 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"This golden stein is decorated with dancing dwarves and grain patterns.",
-				"Speaking the command word (\"Illefarn\") while grasping the handle fills the tankard with three pints of rich dwarven ale. This power can be used up to three times per day."
+				"Este caneco dourado é decorado com anões dançantes e padrões de grãos.",
+				"Falar a palavra de comando (\"Illefarn\") enquanto segura a alça enche o caneco com três pintas de rica cerveja anã. Este poder pode ser usado até três vezes por dia."
 			]
 		},
 		{
@@ -65200,7 +65200,7 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"This tankard has a stern face sculpted into one side. You can drink ale, wine, or any other nonmagical alcoholic beverage poured into it without becoming inebriated. The tankard has no effect on magical liquids or harmful substances such as poison."
+				"Este caneco tem um rosto severo esculpido em um dos lados. Você pode beber cerveja, vinho ou qualquer outra bebida alcoólica não mágica servida nele sem ficar embriagado. O caneco não tem efeito sobre líquidos mágicos ou substâncias nocivas, como veneno."
 			],
 			"lootTables": [
 				"Arcana - Common|XDMG",
@@ -65218,7 +65218,7 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"This tankard has a stern face sculpted into one side. You can drink ale, wine, or any other nonmagical alcoholic beverage poured into it without becoming inebriated. The tankard has no effect on magical liquids or harmful substances such as poison."
+				"Este caneco tem um rosto severo esculpido em um dos lados. Você pode beber cerveja, vinho ou qualquer outra bebida alcoólica não mágica servida nele sem ficar embriagado. O caneco não tem efeito sobre líquidos mágicos ou substâncias nocivas, como veneno."
 			]
 		},
 		{
@@ -65851,7 +65851,7 @@
 			"rarity": "unknown",
 			"weight": 3,
 			"entries": [
-				"The Incantations of Iriolarthas is a weighty spellbook. Its black leather covers have dead, toothy worms glued to them, sheathed in glossy varnish. Set into this morbid display on the front cover is a gold rune that resembles a stylized eye with a pupil shaped like a candle flame\u2014the sigil of Iriolarthas, a Netherese lich.",
+				"The Incantations of Iriolarthas is a weighty spellbook. Its black leather covers have dead, toothy worms glued to them, sheathed in glossy varnish. Set into this morbid display on the front cover is a gold rune that resembles a stylized eye with a pupil shaped like a candle flame—the sigil of Iriolarthas, a Netherese lich.",
 				"The book contains sixty pages of brittle yellow vellum. Written on these pages are the following wizard spells:",
 				{
 					"type": "list",
@@ -65893,7 +65893,7 @@
 					"name": "Silver Wire",
 					"entries": [
 						"The Infernal Machine's great size makes it largely immobile. To make ongoing use of the machine (such as while adventuring), it can be connected to its attuned user by a silver wire, a supply of which can always be produced from the machine's inner workings. This silver wire shares the same general nature as the silvery cord of an {@spell astral projection} spell, connecting to the body of the user and trailing behind them. When so attached, the wire becomes {@condition invisible}, astral, and extends to virtually infinite length.",
-						"As long as the wire remains intact, the attuned user can make full use of the Infernal Machine's powers, with their effects centered around the user. If the wire is cut\u2014something that can happen only when an effect specifically states that it can cut an {@spell astral projection}'s silvery cord\u2014the user suffers a sudden burst of feedback from the machine that kills them instantly.",
+						"As long as the wire remains intact, the attuned user can make full use of the Infernal Machine's powers, with their effects centered around the user. If the wire is cut—something that can happen only when an effect specifically states that it can cut an {@spell astral projection}'s silvery cord—the user suffers a sudden burst of feedback from the machine that kills them instantly.",
 						"Any effect of the Infernal Machine that requires {@status concentration} can be concentrated on by a remote user. The Infernal Machine's effects have a spell save DC of 14 or the attuned user's spell save DC, whichever is higher."
 					]
 				},
@@ -65924,7 +65924,7 @@
 					"type": "entries",
 					"name": "Random Properties",
 					"entries": [
-						"There are far more possible combinations for the Infernal Machine's controls than can ever be known or matrixed\u2014especially as the controls shift position and reset themselves over time. At the end of each long rest of the user attuned to it, the Infernal Machine generates {@dice 1d4 + 1} random beneficial properties and {@dice 1d4 + 1} detrimental properties. Roll for each of these properties on the Infernal Machine Properties table. To keep things interesting, the DM might roll secretly for detrimental properties, revealing those properties only during the course of play.",
+						"There are far more possible combinations for the Infernal Machine's controls than can ever be known or matrixed—especially as the controls shift position and reset themselves over time. At the end of each long rest of the user attuned to it, the Infernal Machine generates {@dice 1d4 + 1} random beneficial properties and {@dice 1d4 + 1} detrimental properties. Roll for each of these properties on the Infernal Machine Properties table. To keep things interesting, the DM might roll secretly for detrimental properties, revealing those properties only during the course of play.",
 						"Once set, these properties last until the end of the attuned user's next long rest.",
 						"(Our thanks to the D&D community for their suggestions for the properties of the Infernal Machine of Lum the Mad!)"
 					]
@@ -65933,7 +65933,7 @@
 					"type": "entries",
 					"name": "Destroying the Machine",
 					"entries": [
-						"The Infernal Machine of Lum the Mad is self-repairing of anything short of catastrophic damage, and how it was disabled in Lum's time remains a mystery. It is rumored that if one specific combination of controls is set, the Infernal Machine will enter a repair mode, allowing unfettered access to its inner workings\u2014and preventing it from restoring itself if it is attacked. Alternatively, other combinations of controls might cause the Infernal Machine to teleport its most critical components to some hiding place deep in space and time, rendering it inoperable until those components are found again."
+						"The Infernal Machine of Lum the Mad is self-repairing of anything short of catastrophic damage, and how it was disabled in Lum's time remains a mystery. It is rumored that if one specific combination of controls is set, the Infernal Machine will enter a repair mode, allowing unfettered access to its inner workings—and preventing it from restoring itself if it is attacked. Alternatively, other combinations of controls might cause the Infernal Machine to teleport its most critical components to some hiding place deep in space and time, rendering it inoperable until those components are found again."
 					]
 				},
 				{
@@ -65973,7 +65973,7 @@
 						[
 							"05",
 							"You emanate a weak magnetic aura. The first time during a combat that a creature attacks you with a metal weapon, that creature has disadvantage on the attack roll.",
-							"Metal rusts in response to your touch\u2014including metal armor you wear and metal weapons you hold\u2014reproducing the effect of the rust monster's Rust Metal trait."
+							"Metal rusts in response to your touch—including metal armor you wear and metal weapons you hold—reproducing the effect of the rust monster's Rust Metal trait."
 						],
 						[
 							"06",
@@ -66123,7 +66123,7 @@
 						[
 							"35",
 							"Your shadow becomes an undead {@creature shadow} that shares your alignment and is under your control.",
-							"Your shadow behaves disapprovingly whenever you're not looking\u2014stealing things, mocking you behind your back, taunting opponents or friends, and so on."
+							"Your shadow behaves disapprovingly whenever you're not looking—stealing things, mocking you behind your back, taunting opponents or friends, and so on."
 						],
 						[
 							"36",
@@ -66153,7 +66153,7 @@
 						[
 							"41",
 							"Your possessions change their state or appearance at the DM's determination, giving you hints of potential future events. For example, your sword might become suddenly bloodstained to warn of an upcoming combat encounter, your clothes might become damp to warn of a water-filled pit trap ahead, and so on.",
-							"You take a \u22125 penalty to initiative rolls."
+							"You take a −5 penalty to initiative rolls."
 						],
 						[
 							"42",
@@ -66516,7 +66516,7 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"This 3-inch cube of solid brimstone generates enough dry heat to keep the temperature within 15 feet of it at 95 degrees Fahrenheit (35 degrees Celsius)."
+				"Este cubo de 3 polegadas de brimstone sólido gera calor seco suficiente para manter a temperatura a até 15 pés dele em 95 graus Fahrenheit (35 graus Celsius)."
 			]
 		},
 		{
@@ -66990,7 +66990,7 @@
 			"weight": 1,
 			"value": 50,
 			"entries": [
-				"This small container holds flint, fire steel, and tinder (usually dry cloth soaked in light oil) used to kindle a fire. Using it to light a torch\u2014or anything else with abundant, exposed fuel\u2014takes an action. Lighting any other fire takes 1 minute."
+				"This small container holds flint, fire steel, and tinder (usually dry cloth soaked in light oil) used to kindle a fire. Using it to light a torch—or anything else with abundant, exposed fuel—takes an action. Lighting any other fire takes 1 minute."
 			]
 		},
 		{
@@ -67008,7 +67008,7 @@
 			"weight": 1,
 			"value": 50,
 			"entries": [
-				"A Tinderbox is a small container holding flint, fire steel, and tinder (usually dry cloth soaked in light oil) used to kindle a fire. Using it to light a {@item Candle|XPHB}, {@item Lamp|XPHB}, {@item Hooded Lantern|XPHB|Lantern}, or {@item Torch|XPHB}\u2014or anything else with exposed fuel\u2014takes a {@variantrule Bonus Action|XPHB}. Lighting any other fire takes 1 minute."
+				"A Tinderbox is a small container holding flint, fire steel, and tinder (usually dry cloth soaked in light oil) used to kindle a fire. Using it to light a {@item Candle|XPHB}, {@item Lamp|XPHB}, {@item Hooded Lantern|XPHB|Lantern}, or {@item Torch|XPHB}—or anything else with exposed fuel—takes a {@variantrule Bonus Action|XPHB}. Lighting any other fire takes 1 minute."
 			]
 		},
 		{
@@ -67571,7 +67571,7 @@
 			"wondrous": true,
 			"grantsProficiency": true,
 			"entries": [
-				"Also at rank 3, Head Office provides you with a travel alchemical kit\u2014an uncommon magic item containing miniaturized versions of both {@item alchemist's supplies|phb} and a {@item poisoner's kit|phb} (glass vials, a mortar and pestle, chemicals, and a glass stirring rod). You gain proficiency with a {@item poisoner's kit|phb} as part of this upgrade.",
+				"Also at rank 3, Head Office provides you with a travel alchemical kit—an uncommon magic item containing miniaturized versions of both {@item alchemist's supplies|phb} and a {@item poisoner's kit|phb} (glass vials, a mortar and pestle, chemicals, and a glass stirring rod). You gain proficiency with a {@item poisoner's kit|phb} as part of this upgrade.",
 				"You can use this magical kit as long as it is on your person, with no need to draw or stow it. If you are ever searched, finding your travel alchemical kit requires a successful {@dc 20} Intelligence ({@skill Investigation}) or Wisdom ({@skill Insight}) check."
 			],
 			"hasFluffImages": true
@@ -69710,7 +69710,7 @@
 					"name": "Mental Command",
 					"entries": [
 						"While attuned to the True-Ice Shards, you can use an action to cast the {@spell Detect Thoughts} spell (save {@dc 20}), targeting any creature you have previously met. If the targeted creature is on a different plane of existence, the spell fails.",
-						"As long as you maintain {@status concentration}, you can use a bonus action to send a telepathic message to the focused creature. It can reply\u2014using a bonus action to do so\u2014as long as the focus and {@status concentration} continue."
+						"As long as you maintain {@status concentration}, you can use a bonus action to send a telepathic message to the focused creature. It can reply—using a bonus action to do so—as long as the focus and {@status concentration} continue."
 					]
 				},
 				{
@@ -69798,7 +69798,7 @@
 					"name": "Mental Command",
 					"entries": [
 						"While attuned to the True-Ice Shards, you can use an action to cast the {@spell Detect Thoughts} spell (save {@dc 20}), targeting any creature you have previously met. If the targeted creature is on a different plane of existence, the spell fails.",
-						"As long as you maintain {@status concentration}, you can use a bonus action to send a telepathic message to the focused creature. It can reply\u2014using a bonus action to do so\u2014as long as the focus and {@status concentration} continue."
+						"As long as you maintain {@status concentration}, you can use a bonus action to send a telepathic message to the focused creature. It can reply—using a bonus action to do so—as long as the focus and {@status concentration} continue."
 					]
 				},
 				{
@@ -70284,7 +70284,7 @@
 			"rarity": "common",
 			"wondrous": true,
 			"entries": [
-				"When you grasp this walking cane and use a bonus action to speak the command word, it transforms into an ordinary longsword and ceases to be magical."
+				"Quando você agarra este bastão e usa uma ação bônus para pronunciar a palavra de comando, ele se transforma em uma espada longa comum e deixa de ser mágica."
 			]
 		},
 		{
@@ -71443,7 +71443,7 @@
 					"name": "Destroying the Wand",
 					"type": "entries",
 					"entries": [
-						"Destroying the Wand of Orcus requires that it be taken to the Positive Energy Plane by the ancient hero whose skull surmounts it. For this to happen, the long-lost hero must first be restored to life\u2014no easy task, given the fact that {@creature Orcus|MTF} has imprisoned the hero's soul and keeps it hidden and well guarded.",
+						"Destroying the Wand of Orcus requires that it be taken to the Positive Energy Plane by the ancient hero whose skull surmounts it. For this to happen, the long-lost hero must first be restored to life—no easy task, given the fact that {@creature Orcus|MTF} has imprisoned the hero's soul and keeps it hidden and well guarded.",
 						"Bathing the wand in positive energy causes it to crack and explode, but unless the above conditions are met, the wand instantly reforms on {@creature Orcus|MTF|Orcus's} layer of the Abyss."
 					]
 				}
@@ -71598,7 +71598,7 @@
 					"type": "entries",
 					"name": "Destroying the Wand",
 					"entries": [
-						"Destroying the Wand of Orcus requires that it be taken to the Positive Energy Plane by the ancient hero whose skull surmounts it. For this to happen, the long-lost hero must first be restored to life\u2014no easy task, given the fact that Orcus has imprisoned the hero's soul and keeps it hidden and well guarded.",
+						"Destroying the Wand of Orcus requires that it be taken to the Positive Energy Plane by the ancient hero whose skull surmounts it. For this to happen, the long-lost hero must first be restored to life—no easy task, given the fact that Orcus has imprisoned the hero's soul and keeps it hidden and well guarded.",
 						"Bathing the wand in positive energy (such as that which permeates the Positive Plane) causes it to crack and explode, but unless the above conditions are met, the wand instantly re-forms on Orcus's layer of the Abyss."
 					]
 				}
@@ -72387,16 +72387,16 @@
 			],
 			"wondrous": true,
 			"entries": [
-				"A wand sheath clamps onto your arm and imparts the following benefits:",
+				"Uma bainha de varinha se prende ao seu braço e confere os seguintes benefícios:",
 				{
 					"type": "list",
 					"items": [
-						"The wand sheath can't be removed from you while you're attuned to it.",
-						"You can insert a wand into the sheath as an action. The sheath can hold only one wand at a time.",
-						"You can retract or extend a wand from the sheath as a bonus action. While the wand is extended, you can use it as if you were holding it, but your hand remains free."
+						"A bainha de varinha não pode ser removida de você enquanto você estiver sintonizado com ela.",
+						"Você pode inserir uma varinha na bainha como uma ação. A bainha pode conter apenas uma varinha por vez.",
+						"Você pode retrair ou estender uma varinha da bainha como uma ação bônus. Enquanto a varinha estiver estendida, você pode usá-la como se estivesse segurando-a, mas sua mão permanece livre."
 					]
 				},
-				"If a sheathed wand requires attunement, you must attune to the wand before you can use it. However, the wand sheath and the attached wand count as a single magic item with regard to the number of magic items you can attune to. If you remove the wand from the sheath, your attunement to the wand ends."
+				"Se uma varinha embainhada exigir sintonia, você deve se sintonizar com a varinha antes de poder usá-la. No entanto, a bainha de varinha e a varinha anexada contam como um único item mágico em relação ao número de itens mágicos com os quais você pode se sintonizar. Se você remover a varinha da bainha, sua sintonia com a varinha termina."
 			]
 		},
 		{
@@ -72667,7 +72667,7 @@
 					"type": "entries",
 					"entries": [
 						"When it grows restless, Wave has a habit of humming tunes that vary from sea chanteys to sacred hymns of the sea gods.",
-						"Wave zealously desires to convert mortals to the worship of one or more sea gods, or else to consign the faithless to death. Conflict arises if the wielder fails to further the weapon's objectives in the world. The trident has a nostalgic attachment to the place where it was forged, a desolate island called Thunderforge. A sea god imprisoned a family of storm giants there, and the giants forged Wave in an act of devotion to\u2014or rebellion against\u2014that god.",
+						"Wave zealously desires to convert mortals to the worship of one or more sea gods, or else to consign the faithless to death. Conflict arises if the wielder fails to further the weapon's objectives in the world. The trident has a nostalgic attachment to the place where it was forged, a desolate island called Thunderforge. A sea god imprisoned a family of storm giants there, and the giants forged Wave in an act of devotion to—or rebellion against—that god.",
 						"Wave harbors a secret doubt about its own nature and purpose. For all its devotion to the sea gods, Wave fears that it was intended to bring about a particular sea god's demise. This destiny is something Wave might not be able to avert."
 					]
 				}
@@ -73191,7 +73191,7 @@
 			"reqAttune": true,
 			"wondrous": true,
 			"entries": [
-				"Also at rank 1, you are the beneficiary of a whisper jar\u2014a common magic item resembling an ether-filled jar with a long tap hose. The jar is used to record others' stories and your own observations, like a verbal notebook with unlimited space. The whisper jar records as fast as a creature can speak into it, and whispers back words at the same pace they were recorded. Activating the playback of a particular recording is an action.",
+				"Also at rank 1, you are the beneficiary of a whisper jar—a common magic item resembling an ether-filled jar with a long tap hose. The jar is used to record others' stories and your own observations, like a verbal notebook with unlimited space. The whisper jar records as fast as a creature can speak into it, and whispers back words at the same pace they were recorded. Activating the playback of a particular recording is an action.",
 				{
 					"type": "table",
 					"caption": "Things Recorded in Your Whisper Jar",
@@ -73545,7 +73545,7 @@
 					"type": "entries",
 					"name": "Personality",
 					"entries": [
-						"A short-tempered {@creature bone devil} named Ashtyrlon lives within Will of the Talon. The weapon is greedy and values strong leadership. It demands that its wielder take decisive action to keep order in high-pressure situations\u2014and to always take a fair share of treasure in return."
+						"A short-tempered {@creature bone devil} named Ashtyrlon lives within Will of the Talon. The weapon is greedy and values strong leadership. It demands that its wielder take decisive action to keep order in high-pressure situations—and to always take a fair share of treasure in return."
 					]
 				},
 				{
@@ -74398,10 +74398,10 @@
 			"rechargeAmount": 9,
 			"charges": 9,
 			"entries": [
-				"Built by dwarven gods and entrusted to the rulers of Shanatar, an ancient dwarven empire. The Wyrmskull Throne was a symbol of dwarven power and pride for ages untold. The throne hovers a foot off the ground and is a massive thing made of polished obsidian with oversized feet\u2014the impaled skulls of four ancient blue dragons. Runes glisten in the carved obsidian winking to life with blue energy when the throne's powers are activated.",
+				"Built by dwarven gods and entrusted to the rulers of Shanatar, an ancient dwarven empire. The Wyrmskull Throne was a symbol of dwarven power and pride for ages untold. The throne hovers a foot off the ground and is a massive thing made of polished obsidian with oversized feet—the impaled skulls of four ancient blue dragons. Runes glisten in the carved obsidian winking to life with blue energy when the throne's powers are activated.",
 				"After the fall of Shanatar, the Wyrmskull Throne fell into the clutches of less honorable creatures. A band of adventurers wrested the throne from the aquatic elf tyrant Gantar Kraok and sold it to the {@creature storm giant} Neri for a considerable fortune. Neri had the throne magically enlarged and gave it to her husband, King Hekaton, as a gift, along with one of the Ruling Scepters of Shanatar, which she had found in a wreck at the bottom of the Trackless Sea. Only a creature attuned to a Ruling Scepter and in possession of it can harness the powers of the Wyrmskull Throne, which has become the centerpiece of King Hekaton's throne room in the undersea citadel of Maelstrom. Fear of the throne's power has helped prevent evil giants from challenging or threatening Hekaton's leadership.",
 				"Any creature not attuned to a Ruling Scepter who sits on the throne is {@condition paralyzed} and encased in a magical force field. While encased, the creature can't be touched or moved from the throne. Touching a Ruling Scepter to the force field dispels the field, though the creature remains {@condition paralyzed} until it is separated from the throne.",
-				"Any creature seated on the throne can hear faint Whispers in Draconic\u2014the whisperings of four blue dragons whose skulls adorn the throne. Although powerless, these spirits try to influence the decisions of the throne's master.",
+				"Any creature seated on the throne can hear faint Whispers in Draconic—the whisperings of four blue dragons whose skulls adorn the throne. Although powerless, these spirits try to influence the decisions of the throne's master.",
 				{
 					"name": "Properties of the Throne",
 					"type": "entries",
@@ -74660,7 +74660,7 @@
 			"wondrous": true,
 			"entries": [
 				"A mythallar looks like an enormous crystal ball held in an ornate cradle. The globe sheds bright light in a 300-foot radius and dim light for an additional 300 feet. The globe draws magic from the Weave that can be harnessed for various purposes. For example, Netherese mages used mythallars to keep their cities aloft and empower their magic items. The bigger the mythallar, the more magic it can hold. The largest mythallars are 150 feet in diameter.",
-				"The Ythryn mythallar is a relatively small device\u2014a mere 50 feet in diameter. To attune to this mythallar, a creature must finish a short rest within 30 feet of it, meditating on the mythallar. Up to eight creatures can be attuned to it at one time; otherwise, the Ythryn mythallar follows the attunement rules in the Dungeon Master's Guide. If a ninth creature tries to attune to the mythallar, nothing happens.",
+				"The Ythryn mythallar is a relatively small device—a mere 50 feet in diameter. To attune to this mythallar, a creature must finish a short rest within 30 feet of it, meditating on the mythallar. Up to eight creatures can be attuned to it at one time; otherwise, the Ythryn mythallar follows the attunement rules in the Dungeon Master's Guide. If a ninth creature tries to attune to the mythallar, nothing happens.",
 				"All creatures attuned to the Ythryn mythallar can sense when the device is being used. A creature attuned to the device can use any of its properties, but only if all other creatures attuned to the device agree to allow it. The Ythryn mythallar's properties are as follows:",
 				{
 					"type": "list",
@@ -77018,7 +77018,7 @@
 			],
 			"recharge": "dawn",
 			"entries": [
-				"The Jewel of Three Prayers is a Vestige of Divergence (see the \"Vestiges of Divergence\" sidebar). In ancient times, Alyxian the Apotheon bore this amulet as a symbol of his covenant with three Prime Deities: Sehanine the Moon Weaver, Avandra the Change Bringer, and Corellon the Arch Heart. When the jewel is found, only Sehanine's power thrums within its dormant heart. The power of the other two deities waits to be reawakened by a hero\u2014or heroes\u2014who can follow in Alyxian's footsteps."
+				"The Jewel of Three Prayers is a Vestige of Divergence (see the \"Vestiges of Divergence\" sidebar). In ancient times, Alyxian the Apotheon bore this amulet as a symbol of his covenant with three Prime Deities: Sehanine the Moon Weaver, Avandra the Change Bringer, and Corellon the Arch Heart. When the jewel is found, only Sehanine's power thrums within its dormant heart. The power of the other two deities waits to be reawakened by a hero—or heroes—who can follow in Alyxian's footsteps."
 			],
 			"items": [
 				"Jewel of Three Prayers (Dormant)|CRCotN",
@@ -78935,7 +78935,7 @@
 					"name": "Mental Command",
 					"entries": [
 						"While attuned to the True-Ice Shards, you can use an action to cast the {@spell Detect Thoughts} spell (save {@dc 20}), targeting any creature you have previously met. If the targeted creature is on a different plane of existence, the spell fails.",
-						"As long as you maintain {@status concentration}, you can use a bonus action to send a telepathic message to the focused creature. It can reply\u2014using a bonus action to do so\u2014as long as the focus and {@status concentration} continue."
+						"As long as you maintain {@status concentration}, you can use a bonus action to send a telepathic message to the focused creature. It can reply—using a bonus action to do so—as long as the focus and {@status concentration} continue."
 					]
 				},
 				{

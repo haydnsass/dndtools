@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
+import itemTranslations from '@/data/item-translations';
 
 function normalizeName(name: string) {
     if (!name) return "";
@@ -42,6 +43,10 @@ function getPrice(item: any, sanePrices: Record<string, number>) {
     for (const [key, value] of Object.entries(sanePrices)) {
         if (key.includes(norm) || norm.includes(key)) return `${value} gp (Aprox)`;
     }
+    if (item.name.includes('+1')) return '1,000 gp (Aprox)';
+    if (item.name.includes('+2')) return '4,000 gp (Aprox)';
+    if (item.name.includes('+3')) return '16,000 gp (Aprox)';
+
     if (item.value) return `${item.value / 100} gp`;
     return "Negociável";
 }
@@ -80,6 +85,64 @@ function matchCategory(item: any, category: string) {
     return false;
 }
 
+function matchClass(item: any, selectedClass: string) {
+    if (!selectedClass || selectedClass === 'any') return true;
+    
+    // 1. Attunement Restriction
+    if (item.reqAttuneTags) {
+        const allowedClasses = item.reqAttuneTags
+            .filter((t: any) => t.class)
+            .map((t: any) => t.class.split('|')[0].toLowerCase());
+        
+        if (allowedClasses.length > 0 && !allowedClasses.includes(selectedClass)) {
+            return false;
+        }
+    }
+    
+    // 2. Spellcasting Focus
+    if (item.focus && Array.isArray(item.focus)) {
+        const foci = item.focus.map((f: string) => typeof f === 'string' ? f.toLowerCase() : '');
+        if (foci.length > 0 && !foci.includes(selectedClass) && !foci.includes('any')) {
+            return false; 
+        }
+    }
+    
+    const t = item.type || '';
+    
+    // 3. Armor Proficiencies
+    if (['HA', 'MA', 'LA', 'S'].includes(t)) {
+        if (t === 'HA' && !['fighter', 'paladin'].includes(selectedClass)) return false;
+        if (t === 'MA' && !['fighter', 'paladin', 'ranger', 'barbarian', 'cleric', 'druid'].includes(selectedClass)) return false;
+        if (t === 'S' && !['fighter', 'paladin', 'ranger', 'barbarian', 'cleric', 'druid'].includes(selectedClass)) return false;
+        if (t === 'LA' && !['fighter', 'paladin', 'ranger', 'barbarian', 'cleric', 'druid', 'rogue', 'bard', 'warlock'].includes(selectedClass)) return false;
+    }
+    
+    // 4. Weapon Proficiencies (Simplified)
+    if (item.weaponCategory === 'martial') {
+        const martialClasses = ['fighter', 'paladin', 'ranger', 'barbarian'];
+        const itemName = item.name.toLowerCase();
+        
+        // Exceptions
+        if (selectedClass === 'rogue' && ['rapier', 'longsword', 'shortsword', 'hand crossbow'].some(w => itemName.includes(w))) return true;
+        if (selectedClass === 'bard' && ['rapier', 'longsword', 'shortsword', 'hand crossbow'].some(w => itemName.includes(w))) return true;
+        if (selectedClass === 'monk' && ['shortsword'].some(w => itemName.includes(w))) return true;
+        if (selectedClass === 'druid' && ['scimitar'].some(w => itemName.includes(w))) return true;
+        
+        if (!martialClasses.includes(selectedClass)) return false;
+    }
+    
+    if (item.weaponCategory === 'simple') {
+        const restrictedSimple = ['wizard', 'sorcerer'];
+        if (restrictedSimple.includes(selectedClass)) {
+            const itemName = item.name.toLowerCase();
+            const allowed = ['dagger', 'dart', 'sling', 'quarterstaff', 'light crossbow'];
+            if (!allowed.some(w => itemName.includes(w))) return false;
+        }
+    }
+    
+    return true;
+}
+
 export async function POST(req: Request) {
     try {
         const body = await req.json();
@@ -93,10 +156,48 @@ export async function POST(req: Request) {
         const baseItemsData = JSON.parse(fs.readFileSync(baseItemsPath, 'utf-8'));
         const sanePrices = JSON.parse(fs.readFileSync(sanePricesPath, 'utf-8'));
         
+        const injectedVariants: any[] = [];
+        for (const base of (baseItemsData.baseitem || [])) {
+            if (base.weaponCategory || ['HA', 'MA', 'LA'].includes(base.type)) {
+                const isW = !!base.weaponCategory;
+                const vars = [
+                    { b: "+1", r: isW ? "uncommon" : "rare" },
+                    { b: "+2", r: isW ? "rare" : "very rare" },
+                    { b: "+3", r: isW ? "very rare" : "legendary" }
+                ];
+                for (const v of vars) {
+                    injectedVariants.push({
+                        ...base,
+                        name: `${base.name}, ${v.b}`,
+                        rarity: v.r,
+                        bonusWeapon: isW ? v.b : undefined,
+                        bonusAc: !isW ? v.b : undefined,
+                        entries: isW ? [`You have a ${v.b} bonus to attack and damage rolls made with this magic weapon.`] : [`You have a ${v.b} bonus to AC while wearing this armor.`],
+                        source: "DMG",
+                        value: undefined
+                    });
+                }
+            } else if (base.type === 'S') {
+                const vars = [{ b: "+1", r: "uncommon" }, { b: "+2", r: "rare" }, { b: "+3", r: "very rare" }];
+                for (const v of vars) {
+                    injectedVariants.push({
+                        ...base,
+                        name: `${base.name}, ${v.b}`,
+                        rarity: v.r,
+                        bonusAc: v.b,
+                        entries: [`While holding this shield, you have a ${v.b} bonus to AC. This bonus is in addition to the shield's normal bonus to AC.`],
+                        source: "DMG",
+                        value: undefined
+                    });
+                }
+            }
+        }
+
         const allItems = [
             ...(itemsData.item || []), 
             ...(baseItemsData.baseitem || []),
-            ...(baseItemsData.item || [])
+            ...(baseItemsData.item || []),
+            ...injectedVariants
         ];
 
         const generatedShops = [];
@@ -114,6 +215,7 @@ export async function POST(req: Request) {
                     const itemRarity = i.rarity || 'none';
                     if (rule.rarity !== 'any' && itemRarity !== rule.rarity) return false;
                     if (!matchCategory(i, rule.category)) return false;
+                    if (!matchClass(i, rule.classFilter)) return false;
                     return true;
                 });
 
@@ -176,7 +278,7 @@ export async function POST(req: Request) {
 
                         shopItems.push({
                             id: Math.random().toString(36).substring(7),
-                            name: rawItem.name,
+                            name: itemTranslations[rawItem.name] || rawItem.name,
                             rarity: r,
                             price: getPrice(rawItem, sanePrices),
                             

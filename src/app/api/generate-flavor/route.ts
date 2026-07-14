@@ -54,12 +54,11 @@ Sua tarefa é narrar a cena do vendedor interagindo com a peça seguindo estas r
     }
 
     const response = await openai.chat.completions.create({
-      model: "gpt-4o-mini",
+      model: "gpt-4.1-nano",
       messages: [
         { role: "system", content: "Você é um mestre contador de histórias focado em dark fantasy." },
         { role: "user", content: prompt }
       ],
-      temperature: 0.8,
       max_tokens: 350,
     });
 
