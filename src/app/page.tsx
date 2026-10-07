@@ -466,9 +466,9 @@ export default function Home() {
         
         <header className="text-center space-y-3 mb-12">
           <h1 className="text-5xl md:text-7xl font-[family-name:var(--font-cinzel)] font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-neutral-200 to-neutral-500 uppercase">
-            FALLEN SHOP BUILDER
+            DNDTOOLS
           </h1>
-          <p className="text-neutral-400 text-lg font-light tracking-wider">Construtor de Lojas com Statblocks Oficiais</p>
+          <p className="text-neutral-400 text-lg font-light tracking-wider">Gerador open source de lojas e inventários para mestres de RPG</p>
         </header>
 
         {/* BUILDER SECTION (STACKED SINGLE COLUMN, SMALLER WIDTH) */}
@@ -623,6 +623,18 @@ export default function Home() {
             </div>
           </section>
         )}
+
+        <footer className="border-t border-neutral-800 pt-6 text-center text-xs leading-relaxed text-neutral-500">
+          <p>O catálogo distribuído usa material do SRD 5.1 sob CC-BY-4.0. DnDTools é um projeto independente, sem afiliação ou endosso da Wizards of the Coast.</p>
+          <a
+            className="mt-2 inline-block text-amber-600 hover:text-amber-500 transition-colors"
+            href="https://github.com/haydnsass/dndtools"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Código-fonte e atribuição
+          </a>
+        </footer>
 
       </div>
     </main>

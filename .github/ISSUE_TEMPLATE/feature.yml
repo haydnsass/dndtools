@@ -1,0 +1,26 @@
+name: Proposta de funcionalidade
+description: Sugira uma melhoria para mestres e mesas de RPG.
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema
+      description: Que tarefa repetitiva de um mestre esta melhoria resolve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposta
+      description: Descreva o comportamento esperado e um exemplo de uso.
+    validations:
+      required: true
+  - type: checkboxes
+    id: licensing
+    attributes:
+      label: Conteúdo e licença
+      options:
+        - label: Minha proposta não exige redistribuir material de terceiros.
+          required: true

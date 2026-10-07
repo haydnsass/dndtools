@@ -12,13 +12,13 @@ export async function POST(req: Request) {
 
     const merchantContext = merchantPersonality 
       ? `Sua personalidade: ${merchantPersonality}.` 
-      : `Sua personalidade: Um comerciante misterioso e calculista de um cenário de fantasia sombria.`;
+      : `Sua personalidade: Um comerciante misterioso e calculista em um cenário de fantasia.`;
 
     let prompt = "";
 
     if (promptType === 'greeting') {
       prompt = `
-Você é um mestre de RPG (Dungeon Master) no mundo de D&D chamado "Fallen" (um cenário de dark fantasy). 
+Você é um mestre de RPG em um cenário de fantasia.
 ${merchantContext}
 ${inventorySummary ? `\nContexto da Loja: Esta loja vende principalmente ${inventorySummary}. Adapte a aura e a imponência do vendedor a esse nível de mercadoria.` : ''}
 
@@ -38,7 +38,7 @@ Sua tarefa é criar a cena de introdução deste NPC seguindo **ESTRITAMENTE** a
       }
 
       prompt = `
-Você é um mestre de RPG (Dungeon Master) no mundo de D&D chamado "Fallen" (um cenário de dark fantasy). 
+Você é um mestre de RPG em um cenário de fantasia.
 ${merchantContext}
 
 Você acabou de narrar a introdução deste NPC. Agora, um dos jogadores demonstrou interesse no seguinte item:
@@ -68,6 +68,6 @@ Sua tarefa é narrar a cena do vendedor interagindo com a peça seguindo estas r
 
   } catch (error) {
     console.error('Error generating flavor text:', error);
-    return NextResponse.json({ error: 'Falha ao consultar os oráculos de Fallen.' }, { status: 500 });
+    return NextResponse.json({ error: 'Falha ao consultar o gerador narrativo.' }, { status: 500 });
   }
 }

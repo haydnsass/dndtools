@@ -36,3 +36,18 @@ next-env.d.ts
 
 # legacy
 5etools-src/
+
+# Local archival/reference material — do not publish without a verified license.
+/Sane_Magical_Prices 2.pdf
+/SHOP-legacy/
+/mercado_ignis_interativo_v2.html
+/scripts/translate-descriptions.mjs
+/src/data/items.json
+/src/data/items-base.json
+/src/data/item-translations.ts
+/src/data/sane_prices.json
+/src/data/*.bak*.json
+
+# Local agent configuration
+/.agents/
+/skills-lock.json

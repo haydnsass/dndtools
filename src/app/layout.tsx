@@ -18,8 +18,8 @@ const cinzel = Cinzel({
 });
 
 export const metadata: Metadata = {
-  title: "D&D Hub - Ignis Market",
-  description: "Epic Shop Builder for D&D 5e",
+  title: "DnDTools — Gerador de Lojas para Mestres",
+  description: "Ferramenta open source para gerar lojas e inventários de RPG.",
 };
 
 export default function RootLayout({
@@ -29,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="pt-BR"
       className={`${geistSans.variable} ${geistMono.variable} ${cinzel.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>

@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Política de conteúdo
+    url: https://github.com/haydnsass/dndtools/blob/main/docs/CONTENT_POLICY.md
+    about: Leia esta política antes de propor dados, regras ou assets.

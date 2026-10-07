@@ -1,19 +1,7 @@
 import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
-import itemTranslations from '@/data/item-translations';
-
-function normalizeName(name: string) {
-    if (!name) return "";
-    let clean = name.toLowerCase();
-    if (clean.includes(',')) {
-        const parts = clean.split(',');
-        if (parts.length === 2 && parts[1].trim().startsWith('+')) {
-            clean = `${parts[1].trim()} ${parts[0].trim()}`;
-        }
-    }
-    return clean.replace(/\(.*?\)/g, '').trim();
-}
+import itemTranslations from '@/data/srd-item-translations';
 
 function extractDescriptionRaw(entries: any[]): string[] {
     if (!entries) return ["Sem descrição disponível."];
@@ -37,18 +25,19 @@ function extractDescriptionRaw(entries: any[]): string[] {
     return paragraphs;
 }
 
-function getPrice(item: any, sanePrices: Record<string, number>) {
-    const norm = normalizeName(item.name);
-    if (sanePrices[norm]) return `${sanePrices[norm]} gp`;
-    for (const [key, value] of Object.entries(sanePrices)) {
-        if (key.includes(norm) || norm.includes(key)) return `${value} gp (Aprox)`;
-    }
-    if (item.name.includes('+1')) return '1,000 gp (Aprox)';
-    if (item.name.includes('+2')) return '4,000 gp (Aprox)';
-    if (item.name.includes('+3')) return '16,000 gp (Aprox)';
-
+function getPrice(item: any) {
     if (item.value) return `${item.value / 100} gp`;
-    return "Negociável";
+
+    const suggestedPriceByRarity: Record<string, number> = {
+        common: 100,
+        uncommon: 500,
+        rare: 5000,
+        "very rare": 25000,
+        legendary: 100000,
+    };
+    const suggestedPrice = suggestedPriceByRarity[(item.rarity || '').toLowerCase()];
+
+    return suggestedPrice ? `${suggestedPrice.toLocaleString('pt-BR')} gp (sugestão)` : "Negociável";
 }
 
 function mapDamageType(t: string) {
@@ -148,13 +137,10 @@ export async function POST(req: Request) {
         const body = await req.json();
         const shopsConfig = body.shopsConfig || [];
 
-        const itemsPath = path.join(process.cwd(), 'src', 'data', 'items.json');
-        const baseItemsPath = path.join(process.cwd(), 'src', 'data', 'items-base.json');
-        const sanePricesPath = path.join(process.cwd(), 'src', 'data', 'sane_prices.json');
+        const itemsPath = path.join(process.cwd(), 'src', 'data', 'srd-items.json');
 
         const itemsData = JSON.parse(fs.readFileSync(itemsPath, 'utf-8'));
-        const baseItemsData = JSON.parse(fs.readFileSync(baseItemsPath, 'utf-8'));
-        const sanePrices = JSON.parse(fs.readFileSync(sanePricesPath, 'utf-8'));
+        const baseItemsData = itemsData;
         
         const injectedVariants: any[] = [];
         for (const base of (baseItemsData.baseitem || [])) {
@@ -280,7 +266,7 @@ export async function POST(req: Request) {
                             id: Math.random().toString(36).substring(7),
                             name: itemTranslations[rawItem.name] || rawItem.name,
                             rarity: r,
-                            price: getPrice(rawItem, sanePrices),
+                            price: getPrice(rawItem),
                             
                             // Mechanical Stats
                             categorySubtitle: `${subCat}, ${r}${attuneString}`,

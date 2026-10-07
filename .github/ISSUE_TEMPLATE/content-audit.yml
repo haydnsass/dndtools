@@ -1,0 +1,26 @@
+name: Revisão de conteúdo
+description: Revise a licença ou atribuição de dados, textos ou assets.
+title: "[Conteúdo]: "
+labels: [content, legal-review]
+body:
+  - type: input
+    id: source
+    attributes:
+      label: Fonte
+      description: Link ou identificação exata do material.
+    validations:
+      required: true
+  - type: input
+    id: license
+    attributes:
+      label: Licença
+      description: Link para a licença que permite redistribuição.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Escopo
+      description: Quais arquivos, campos ou assets são afetados?
+    validations:
+      required: true
