@@ -51,3 +51,7 @@ next-env.d.ts
 # Local agent configuration
 /.agents/
 /skills-lock.json
+
+.vercel
+.env*
+!.env.example

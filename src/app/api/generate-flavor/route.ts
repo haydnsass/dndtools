@@ -1,12 +1,21 @@
 import { NextResponse } from 'next/server';
 import OpenAI from 'openai';
 
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-});
-
 export async function POST(req: Request) {
   try {
+    const apiKey = process.env.OPENAI_API_KEY;
+
+    if (!apiKey) {
+      return NextResponse.json(
+        {
+          error:
+            'A geração narrativa está indisponível. Configure OPENAI_API_KEY para habilitá-la.',
+        },
+        { status: 503 }
+      );
+    }
+
+    const openai = new OpenAI({ apiKey });
     const body = await req.json();
     const { promptType, shopName, itemName, itemRarity, itemType, merchantPersonality, inventorySummary } = body;
 
