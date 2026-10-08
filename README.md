@@ -6,11 +6,9 @@
 [![Licença MIT](https://img.shields.io/badge/license-MIT-amber.svg)](LICENSE)
 [![Conteúdo SRD](https://img.shields.io/badge/game%20content-SRD%205.1%20%2F%20CC--BY--4.0-blue.svg)](ATTRIBUTION.md)
 
-**[Ver roadmap](ROADMAP.md)** · **[Contribuir](CONTRIBUTING.md)**
+**[Demonstração online](https://dndtools-phi.vercel.app)** · **[Ver roadmap](ROADMAP.md)** · **[Contribuir](CONTRIBUTING.md)**
 
-> A demonstração online será adicionada assim que o projeto for publicado no
-> domínio de produção correto. Para rodar a aplicação agora, siga as instruções
-> de [execução local](#executar-localmente).
+![Interface do gerador de lojas do DnDTools](docs/images/shop-builder.png)
 
 DnDTools é uma plataforma aberta para automatizar tarefas repetitivas de
 Dungeon Masters e outros mestres de RPG. A primeira ferramenta é um gerador e
