@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { type ChangeEvent, useState } from 'react';
 
 // --- TYPES ---
 type ShopRule = {
@@ -42,6 +42,113 @@ type GeneratedShop = {
   merchantPersonality?: string;
   items: ShopItem[];
 };
+
+type ShopExportFile = {
+  format: 'dndtools-shop-export';
+  version: 1;
+  exportedAt: string;
+  shops: GeneratedShop[];
+};
+
+type TransferMessage = {
+  kind: 'success' | 'error';
+  text: string;
+};
+
+const MAX_IMPORTED_SHOPS = 25;
+const MAX_IMPORTED_ITEMS_PER_SHOP = 250;
+
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return typeof value === 'object' && value !== null && !Array.isArray(value);
+}
+
+function requireString(value: unknown, fieldName: string): string {
+  if (typeof value !== 'string' || value.trim().length === 0) {
+    throw new Error(`Campo invalido no arquivo importado: ${fieldName}.`);
+  }
+
+  return value;
+}
+
+function readNullableString(value: unknown, fieldName: string): string | null {
+  if (value === null || value === undefined) return null;
+  return requireString(value, fieldName);
+}
+
+function readShopItem(value: unknown, shopIndex: number, itemIndex: number): ShopItem {
+  if (!isRecord(value)) {
+    throw new Error(`Item ${itemIndex + 1} da loja ${shopIndex + 1} e invalido.`);
+  }
+
+  if (!Array.isArray(value.descriptionParagraphs) || !value.descriptionParagraphs.every((paragraph) => typeof paragraph === 'string')) {
+    throw new Error(`Descricao do item ${itemIndex + 1} da loja ${shopIndex + 1} e invalida.`);
+  }
+
+  return {
+    id: requireString(value.id, 'item.id'),
+    name: requireString(value.name, 'item.name'),
+    rarity: requireString(value.rarity, 'item.rarity'),
+    price: requireString(value.price, 'item.price'),
+    categorySubtitle: requireString(value.categorySubtitle, 'item.categorySubtitle'),
+    armorClass: readNullableString(value.armorClass, 'item.armorClass'),
+    damage: readNullableString(value.damage, 'item.damage'),
+    damageType: readNullableString(value.damageType, 'item.damageType'),
+    weight: readNullableString(value.weight, 'item.weight'),
+    modifiers: readNullableString(value.modifiers, 'item.modifiers'),
+    properties: readNullableString(value.properties, 'item.properties'),
+    descriptionParagraphs: value.descriptionParagraphs,
+  };
+}
+
+function readImportedShops(value: unknown): GeneratedShop[] {
+  if (!isRecord(value) || value.format !== 'dndtools-shop-export' || value.version !== 1) {
+    throw new Error('Este arquivo nao e uma exportacao compativel do DnDTools.');
+  }
+
+  if (!Array.isArray(value.shops) || value.shops.length === 0 || value.shops.length > MAX_IMPORTED_SHOPS) {
+    throw new Error(`O arquivo deve conter entre 1 e ${MAX_IMPORTED_SHOPS} lojas.`);
+  }
+
+  const shopIds = new Set<string>();
+
+  return value.shops.map((shop, shopIndex) => {
+    if (!isRecord(shop)) {
+      throw new Error(`Loja ${shopIndex + 1} e invalida.`);
+    }
+
+    if (!Array.isArray(shop.items) || shop.items.length > MAX_IMPORTED_ITEMS_PER_SHOP) {
+      throw new Error(`A loja ${shopIndex + 1} excede o limite de ${MAX_IMPORTED_ITEMS_PER_SHOP} itens.`);
+    }
+
+    const shopId = requireString(shop.id, 'shop.id');
+    if (shopIds.has(shopId)) {
+      throw new Error('O arquivo possui identificadores de loja duplicados.');
+    }
+    shopIds.add(shopId);
+
+    const itemIds = new Set<string>();
+    const items = shop.items.map((item, itemIndex) => {
+      const parsedItem = readShopItem(item, shopIndex, itemIndex);
+      if (itemIds.has(parsedItem.id)) {
+        throw new Error(`A loja ${shopIndex + 1} possui identificadores de item duplicados.`);
+      }
+      itemIds.add(parsedItem.id);
+      return parsedItem;
+    });
+
+    const merchantPersonality = shop.merchantPersonality;
+    if (merchantPersonality !== undefined && merchantPersonality !== null && typeof merchantPersonality !== 'string') {
+      throw new Error(`Vendedor da loja ${shopIndex + 1} e invalido.`);
+    }
+
+    return {
+      id: shopId,
+      name: requireString(shop.name, 'shop.name'),
+      merchantPersonality: merchantPersonality || undefined,
+      items,
+    };
+  });
+}
 
 // --- CONSTANTS ---
 const CATEGORIES = [
@@ -381,6 +488,7 @@ export default function Home() {
   const [openShops, setOpenShops] = useState<Record<string, boolean>>({});
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
+  const [transferMessage, setTransferMessage] = useState<TransferMessage | null>(null);
 
   // BUILDER ACTIONS
   const addShop = () => {
@@ -439,6 +547,7 @@ export default function Home() {
   const generateShops = async () => {
     setLoading(true);
     setError('');
+    setTransferMessage(null);
     setGeneratedShops([]);
     try {
       const res = await fetch('/api/generate-shop', {
@@ -456,6 +565,52 @@ export default function Home() {
       setError('Erro de conexão ao gerar loja.');
     }
     setLoading(false);
+  };
+
+  const exportShops = () => {
+    if (generatedShops.length === 0) {
+      setTransferMessage({ kind: 'error', text: 'Gere ao menos uma loja antes de exportar.' });
+      return;
+    }
+
+    const exportedShops: ShopExportFile = {
+      format: 'dndtools-shop-export',
+      version: 1,
+      exportedAt: new Date().toISOString(),
+      shops: generatedShops,
+    };
+    const blob = new Blob([JSON.stringify(exportedShops, null, 2)], { type: 'application/json' });
+    const url = window.URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = `dndtools-lojas-${new Date().toISOString().slice(0, 10)}.json`;
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+    window.URL.revokeObjectURL(url);
+    setTransferMessage({ kind: 'success', text: `${generatedShops.length} loja(s) exportada(s) em JSON.` });
+  };
+
+  const importShops = async (event: ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0];
+    event.target.value = '';
+
+    if (!file) return;
+
+    if (file.size > 1_000_000) {
+      setTransferMessage({ kind: 'error', text: 'Escolha um arquivo JSON com no maximo 1 MB.' });
+      return;
+    }
+
+    try {
+      const content = await file.text();
+      const shops = readImportedShops(JSON.parse(content));
+      setGeneratedShops(shops);
+      setTransferMessage({ kind: 'success', text: `${shops.length} loja(s) importada(s) com sucesso.` });
+    } catch (caughtError) {
+      const message = caughtError instanceof Error ? caughtError.message : 'Nao foi possivel importar este arquivo.';
+      setTransferMessage({ kind: 'error', text: message });
+    }
   };
 
   const toggleShop = (id: string) => setOpenShops(prev => ({ ...prev, [id]: !prev[id] }));
@@ -615,6 +770,42 @@ export default function Home() {
             <h2 className="text-3xl font-[family-name:var(--font-cinzel)] font-black text-neutral-300 text-center uppercase tracking-widest mb-10">
               Lojas Geradas
             </h2>
+
+            <div className="max-w-4xl mx-auto rounded-2xl border border-neutral-800 bg-neutral-900/50 p-4 md:p-5">
+              <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                <div>
+                  <h3 className="text-sm font-black uppercase tracking-widest text-neutral-200">Leve estas lojas para outra sessao</h3>
+                  <p className="mt-1 text-sm text-neutral-500">Exportacoes ficam no seu dispositivo e arquivos importados sao validados antes de aparecerem aqui.</p>
+                </div>
+                <div className="flex flex-col gap-2 sm:flex-row">
+                  <button
+                    type="button"
+                    onClick={exportShops}
+                    className="rounded-lg border border-amber-500/40 bg-amber-500/10 px-4 py-2.5 text-xs font-bold uppercase tracking-wider text-amber-400 transition-colors hover:border-amber-400 hover:bg-amber-500/20"
+                  >
+                    Exportar JSON
+                  </button>
+                  <label className="cursor-pointer rounded-lg border border-neutral-700 bg-neutral-950 px-4 py-2.5 text-center text-xs font-bold uppercase tracking-wider text-neutral-300 transition-colors hover:border-neutral-500 hover:text-white">
+                    Importar JSON
+                    <input
+                      type="file"
+                      accept="application/json,.json"
+                      onChange={importShops}
+                      className="sr-only"
+                    />
+                  </label>
+                </div>
+              </div>
+              {transferMessage && (
+                <p
+                  className={`mt-4 rounded-lg border px-3 py-2 text-sm ${transferMessage.kind === 'success' ? 'border-emerald-700/50 bg-emerald-950/30 text-emerald-300' : 'border-red-700/50 bg-red-950/30 text-red-300'}`}
+                  role={transferMessage.kind === 'error' ? 'alert' : 'status'}
+                  aria-live="polite"
+                >
+                  {transferMessage.text}
+                </p>
+              )}
+            </div>
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {generatedShops.map((shop) => (

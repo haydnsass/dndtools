@@ -30,9 +30,19 @@ um inventário legível, pronto para improvisar ou preparar a próxima sessão.
 - Catálogo de itens baseado no SRD 5.1 distribuído com atribuição CC-BY-4.0.
 - Detalhes expansíveis para consultar propriedades e descrições dos itens.
 - Nomes de loja e personalidade de comerciante personalizáveis.
+- Exportação e importação local de lojas em JSON, com validação antes de
+  restaurar uma coleção.
 - Texto narrativo opcional para a entrada da loja e apresentação de itens,
   gerado pela API da OpenAI.
 - Interface em português brasileiro, responsiva e adequada para uso à mesa.
+
+## Exportar e importar lojas
+
+Depois de gerar uma ou mais lojas, use **Exportar JSON** para salvar a coleção
+no seu dispositivo. Para restaurar uma coleção em outra sessão, use
+**Importar JSON** e selecione um arquivo criado pelo DnDTools. A importação
+acontece inteiramente no navegador: o arquivo não é enviado a um servidor e a
+estrutura é validada antes de substituir as lojas exibidas.
 
 ## Executar localmente
 
